@@ -1,0 +1,31 @@
+{{- if .Values.ingress.enabled -}}
+{{- $fullName := include "my-bloody-jenkins.fullname" . -}}
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: {{ $fullName }}
+  labels:
+    app: {{ template "my-bloody-jenkins.name" . }}
+    chart: {{ template "my-bloody-jenkins.chart" . }}
+    release: {{ .Release.Name }}
+    heritage: {{ .Release.Service }}
+{{- with .Values.ingress.annotations }}
+  annotations:
+{{ toYaml . | indent 4 }}
+{{- end }}
+spec:
+{{- if .Values.ingress.tls }}
+  tls:
+    - hosts:
+      - {{ .Values.ingress.hostname }}
+      secretName: {{ .Values.ingress.tls.secretName }}
+{{- end }}
+  rules:
+    - host: {{ .Values.ingress.hostname }}
+      http:
+        paths:
+          - path: {{ .Values.ingress.path }}
+            backend:
+              serviceName: {{ $fullName }}
+              servicePort: http
+{{- end }}

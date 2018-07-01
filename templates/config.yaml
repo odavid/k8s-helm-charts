@@ -1,0 +1,13 @@
+{{- if not .Values.externalConfigUri }}
+{{- $fullName := include "my-bloody-jenkins.fullname" . -}}
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: {{ template "my-bloody-jenkins.fullname" . }}
+data:
+  {{ template "my-bloody-jenkins.jenkinsConfigFile" . }}: |
+    ---
+{{- if .Values.managedConfig }}
+{{ toYaml .Values.managedConfig | indent 4}}
+{{ end }}
+{{ end }}

@@ -1,0 +1,171 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: {{ template "my-bloody-jenkins.fullname" . }}
+  labels:
+    app: {{ template "my-bloody-jenkins.name" . }}
+    chart: {{ template "my-bloody-jenkins.chart" . }}
+    release: {{ .Release.Name }}
+    heritage: {{ .Release.Service }}
+spec:
+  replicas: 1
+  strategy:
+    type: Recreate
+    rollingUpdate: null
+  selector:
+    matchLabels:
+      app: {{ template "my-bloody-jenkins.name" . }}
+      release: {{ .Release.Name }}
+  template:
+    metadata:
+      labels:
+        app: {{ template "my-bloody-jenkins.name" . }}
+        release: {{ .Release.Name }}
+    spec:
+      {{- if and .Values.rbac .Values.rbac.create }}
+      serviceAccountName: {{ (include "my-bloody-jenkins.fullname" .) | quote }}
+      {{- end }}
+      containers:
+        - name: {{ .Chart.Name }}
+          image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
+          imagePullPolicy: {{ .Values.image.pullPolicy }}
+          ports:
+            - name: http
+              containerPort: {{ template "my-bloody-jenkins.httpPort" . }}
+              protocol: TCP
+            - name: jnlp
+              containerPort: {{ template "my-bloody-jenkins.jnlpPort" . }}
+              protocol: TCP
+            - name: sshd
+              containerPort: {{ template "my-bloody-jenkins.sshdPort" . }}
+              protocol: TCP
+          
+          {{- if .Values.livenessProbe }}
+          livenessProbe:
+            httpGet:
+              path: /login
+              port: http
+            initialDelaySeconds: {{ .Values.livenessProbe.initialDelaySeconds }}
+            periodSeconds: {{ .Values.livenessProbe.periodSeconds }}
+            timeout: {{ .Values.livenessProbe.timeout }}
+            failureThreshold: {{ .Values.livenessProbe.failureThreshold }}
+
+          {{- end }}
+          
+          {{- if .Values.readinessProbe }}
+          readinessProbe:
+            httpGet:
+              path: /login
+              port: http
+            initialDelaySeconds: {{ .Values.readinessProbe.initialDelaySeconds }}
+            periodSeconds: {{ .Values.readinessProbe.periodSeconds }}
+            timeout: {{ .Values.readinessProbe.timeout }}
+            failureThreshold: {{ .Values.readinessProbe.failureThreshold }}
+          {{- end }}
+
+          {{- if .Values.resources }}
+          resources:
+          {{- if .Values.resources.cpu }}
+            cpu: {{ .Values.resources.cpu }}
+          {{- end }}
+          {{- if .Values.resources.memory }}
+            memory: {{ .Values.resources.memory }}
+          {{- end }}
+          {{- end }}
+
+          env:
+            - name: K8S_NAMESPACE
+              value: "{{ .Release.Namespace }}"
+          {{- if .Values.javaMemoryOpts }}
+            - name: JAVA_OPTS_MEMORY
+              value: {{ .Values.javaMemoryOpts | quote }}
+          {{- end }}
+          {{- if .Values.jenkinsAdminUser }}
+            - name: JENKINS_ENV_ADMIN_USER
+              value: {{ .Values.jenkinsAdminUser | quote }}
+          {{- end }}
+            - name: JENKINS_ENV_CONFIG_YML_URL
+          {{- if .Values.externalConfigUri }}
+              value: {{ .Values.externalConfigUri | quote }}
+          {{- else }}
+              value: file://{{ template "my-bloody-jenkins.jenkinsConfigDir" . }}/{{ template "my-bloody-jenkins.jenkinsConfigFile" . }}
+          {{- end }}
+          {{- range $key, $value := .Values.env }}
+            - name: {{ $key }}
+              value: {{ $value | quote }}
+          {{- end }}
+          {{- range $secret, $keys := .Values.envSecrets }}
+          {{- range $keys }}
+            - name: {{ . }}
+              valueFrom: 
+                secretKeyRef: {{ $secret }}
+                key: {{ . | quote }}
+          {{- end }}
+          {{- end }}
+
+          volumeMounts:
+{{- if and .Values.persistence .Values.persistence.mounts }}
+{{ toYaml .Values.persistence.mounts | indent 12 }}
+{{- end }}
+
+            - mountPath: /var/jenkins_home
+              name: jenkins-home
+              readOnly: false
+            - mountPath: /jenkins-workspace-home
+              name: jenkins-workspace-home
+              readOnly: false
+            {{- if .Values.persistence.mountDockerSocket }}
+            - mountPath: /var/run/docker.sock
+              name: docker-socket
+              readOnly: false
+            {{- end }}
+            {{- if not .Values.externalConfigUri }}
+            - mountPath: {{ template "my-bloody-jenkins.jenkinsConfigDir" .}}
+              name: jenkins-config
+              readOnly: false
+            {{- end }}
+
+      volumes:
+{{- if and .Values.persistence .Values.persistence.volumes }}
+{{ toYaml .Values.persistence.volumes | indent 6 }}
+{{- end }}
+        {{- if .Values.persistence.mountDockerSocket }}
+        - name: docker-socket
+          hostPath: 
+            path: /var/run/docker.sock
+        {{- end }}
+        {{- if not .Values.externalConfigUri }}
+        - name: jenkins-config
+          configMap:
+            name: {{ template "my-bloody-jenkins.fullname" . }}
+        {{- end }}
+
+        - name: jenkins-home
+        {{- if and .Values.persistence .Values.persistence.jenkinsHome .Values.persistence.jenkinsHome.enabled }}
+          persistentVolumeClaim:
+            claimName: {{ .Values.persistence.jenkinsHome.existingClaim | default (include "my-bloody-jenkins.jenkinsHome.claimName" .) }}
+        {{- else }}
+          emptyDir: {}
+        {{- end }}
+
+        - name: jenkins-workspace-home
+        {{- if and .Values.persistence .Values.persistence.jenkinsWorkspace .Values.persistence.jenkinsWorkspace.enabled }}
+          persistentVolumeClaim:
+            claimName: {{ .Values.persistence.jenkinsWorkspace.existingClaim | default (include "my-bloody-jenkins.jenkinsWorkspace.claimName" .) }}
+        {{- else }}
+          emptyDir: {}
+        {{- end }}
+
+
+    {{- with .Values.nodeSelector }}
+      nodeSelector:
+{{ toYaml . | indent 8 }}
+    {{- end }}
+    {{- with .Values.affinity }}
+      affinity:
+{{ toYaml . | indent 8 }}
+    {{- end }}
+    {{- with .Values.tolerations }}
+      tolerations:
+{{ toYaml . | indent 8 }}
+    {{- end }}

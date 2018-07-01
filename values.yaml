@@ -1,0 +1,175 @@
+########################################################
+## Override image
+image:
+  repository: odavid/my-bloody-jenkins
+  tag: lts
+  pullPolicy: IfNotPresent
+  imagePullSecret:
+########################################################
+
+########################################################
+## Exposing service
+service:
+  type: ClusterIP
+  # type: LoadBalancer
+  annotations: {}
+  # httpPort: 8080
+  # jnlpPort: 50000
+  # sshdPort: 16022
+  # loadBalancerSourceRanges: 0.0.0.0/0
+  # loadBalancerIP:
+########################################################
+
+########################################################
+## Exposing ingress
+ingress:
+  enabled: false
+  # path: /
+  # hostname: 
+  # annotations: {}
+  # tls:
+  #   secretName: 
+########################################################
+
+########################################################
+## By default rbac are not used and default service account 
+## is being used. 
+rbac:
+  ## Create serviceAccount, Eole and RoleBindings
+  create: false
+  ## Instead of Role, create a ClusterRole and ClusterRoleBindings
+  clusterWideAccess: false
+########################################################
+
+########################################################
+## Control requests limit
+## These values must be changed for production usage 
+resources:
+  cpu: 200m
+  memory: 256Mi
+########################################################
+
+########################################################
+## It can take a lot of time for jenkins to be started
+## This is why the livenessProbe.initialDelaySeconds is high  
+readinessProbe:
+  timeout: 5
+  initialDelaySeconds: 5
+  periodSeconds: 5
+  failureThreshold: 3
+
+livenessProbe:
+  timeout: 5
+  initialDelaySeconds: 600
+  periodSeconds: 5
+  failureThreshold: 3
+########################################################
+
+########################################################
+## Control peristence of jenkins data:
+## By default, the master workspace and master home are separated
+## Since master should be used as executer, the workspace directory is
+## mainly used for fetching pipeline libraries and some initial clone of
+## projects. Therefore, the jenkinsWorkspace can be left as emptyDir (enabled=false).
+## On the other hand, jenkinsHome must be persistent!
+persistence:
+  mountDockerSocket: true
+  jenkinsHome:
+    enabled: false
+    annotations: {}
+    accessMode: ReadWriteOnce
+    size: 8Gi
+    ## A manually managed Persistent Volume and Claim
+    ## Requires Persistence.Enabled: true
+    ## If defined, PVC must be created manually before volume will be bound
+    existingClaim:
+
+    ## If defined, storageClassName: <storageClass>
+    ## If set to "-", storageClassName: "", which disables dynamic provisioning
+    ## If undefined (the default) or set to null, no storageClassName spec is
+    ##   set, choosing the default provisioner.  (gp2 on AWS, standard on
+    ##   GKE, AWS & OpenStack)
+    ##
+    # storageClass: "-"
+  jenkinsWorkspace:
+    enabled: false
+    annotations: {}
+    accessMode: ReadWriteOnce
+    size: 8Gi
+    ## A manually managed Persistent Volume and Claim
+    ## Requires Persistence.Enabled: true
+    ## If defined, PVC must be created manually before volume will be bound
+    existingClaim:
+
+    ## If defined, storageClassName: <storageClass>
+    ## If set to "-", storageClassName: "", which disables dynamic provisioning
+    ## If undefined (the default) or set to null, no storageClassName spec is
+    ##   set, choosing the default provisioner.  (gp2 on AWS, standard on
+    ##   GKE, AWS & OpenStack)
+    ##
+    # storageClass: "-"
+
+  ## Additional volumes and mounts that will be attached to the container. e.g. secrets
+  volumes:
+  #  - name: nothing
+  #    emptyDir: {}
+  mounts:
+  #  - mountPath: /var/nothing
+  #    name: nothing
+  #    readOnly: true
+########################################################
+
+
+########################################################
+## See: https://kubernetes.io/docs/concepts/configuration/assign-pod-node/
+nodeSelector: {}
+tolerations: []
+affinity: {}
+########################################################
+
+
+########################################################
+## Additional Environment variables to be provided to the container
+env:
+#   ENVIRONMENT_VARIABLE_NAME: VALUE
+########################################################
+
+########################################################
+## Use external secrets as environment variables
+## Each top level key represents an existing secret name
+## Its value is a list of keys that this secret contain and will 
+## be mapped as an environment variable 
+envSecrets:
+#   my-jenkins-external-secret:
+#     - JENKINS_SECRET_KEY
+#     - JENKINS_SECRET_KEY2
+########################################################
+
+
+## By default the chart is generating a config map that will be watched by my-bloody-jenkins
+## Use http[s]://<path> or s3://<path>
+## You can use file://<path> if your are using an external ConfigMap
+# externalConfigUri:
+
+jenkinsAdminUser: admin
+javaMemoryOpts: '-Xmx256m'
+
+managedConfig:
+  clouds:
+    k8s:
+      type: kubernetes
+      jenkinsUrl: http://${JENKINS_MY_BLOODY_JENKINS_SERVICE_HOST}:${JENKINS_MY_BLOODY_JENKINS_SERVICE_PORT_HTTP}
+      namespace: ${K8S_NAMESPACE}
+      templates:
+        - name: kubeslave
+          image: odavid/jenkins-jnlp-slave:latest
+          labels:
+            - generic
+          remoteFs: /home/jenkins
+          jvmArgs: -Xmx1g
+          volumes:
+            - '/var/run/docker.sock:/var/run/docker.sock'
+  security:
+    securityOptions: {}
+
+
