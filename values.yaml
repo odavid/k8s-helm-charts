@@ -25,15 +25,15 @@ service:
 ingress:
   enabled: false
   # path: /
-  # hostname: 
+  # hostname:
   # annotations: {}
   # tls:
-  #   secretName: 
+  #   secretName:
 ########################################################
 
 ########################################################
-## By default rbac are not used and default service account 
-## is being used. 
+## By default rbac are not used and default service account
+## is being used.
 rbac:
   ## Create serviceAccount, Eole and RoleBindings
   create: false
@@ -43,7 +43,7 @@ rbac:
 
 ########################################################
 ## Control requests limit
-## These values must be changed for production usage 
+## These values must be changed for production usage
 resources:
   cpu: 200m
   memory: 256Mi
@@ -51,7 +51,7 @@ resources:
 
 ########################################################
 ## It can take a lot of time for jenkins to be started
-## This is why the livenessProbe.initialDelaySeconds is high  
+## This is why the livenessProbe.initialDelaySeconds is high
 readinessProbe:
   timeout: 5
   initialDelaySeconds: 5
@@ -119,14 +119,12 @@ persistence:
   #    readOnly: true
 ########################################################
 
-
 ########################################################
 ## See: https://kubernetes.io/docs/concepts/configuration/assign-pod-node/
 nodeSelector: {}
 tolerations: []
 affinity: {}
 ########################################################
-
 
 ########################################################
 ## Additional Environment variables to be provided to the container
@@ -136,20 +134,21 @@ env:
 
 ########################################################
 ## Use external secrets as environment variables
-## Each top level key represents an existing secret name
-## Its value is a list of keys that this secret contain and will 
-## be mapped as an environment variable 
+## Each item in the list represents an existing secret name
+## All its keys will be transformed to environment variables
+## See https://github.com/odavid/my-bloody-jenkins/pull/102
 envSecrets:
-#   my-jenkins-external-secret:
-#     - JENKINS_SECRET_KEY
-#     - JENKINS_SECRET_KEY2
+#   - my-jenkins-external-secret
 ########################################################
 
+########################################################
+## List of ConfigMaps that will be mounted as configuration files
+## All configuration files will be deep merged into single config
+## See https://github.com/odavid/my-bloody-jenkins/pull/102
+configMaps:
+#  - my-config-map
+########################################################
 
-## By default the chart is generating a config map that will be watched by my-bloody-jenkins
-## Use http[s]://<path> or s3://<path>
-## You can use file://<path> if your are using an external ConfigMap
-# externalConfigUri:
 
 jenkinsAdminUser: admin
 javaMemoryOpts: '-Xmx256m'
