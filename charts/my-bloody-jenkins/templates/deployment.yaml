@@ -65,12 +65,7 @@ spec:
 
           {{- if .Values.resources }}
           resources:
-          {{- if .Values.resources.cpu }}
-            cpu: {{ .Values.resources.cpu }}
-          {{- end }}
-          {{- if .Values.resources.memory }}
-            memory: {{ .Values.resources.memory }}
-          {{- end }}
+{{ toYaml .Values.resources | indent 12 }}          
           {{- end }}
 
           env:

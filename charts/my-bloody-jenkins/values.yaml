@@ -45,8 +45,13 @@ rbac:
 ## Control requests limit
 ## These values must be changed for production usage
 resources:
-  cpu: 200m
-  memory: 256Mi
+  requests:
+    cpu: 200m
+    memory: 256Mi
+  # limits:
+    # cpu: 200m
+    # memory: 256Mi
+
 ########################################################
 
 ########################################################
