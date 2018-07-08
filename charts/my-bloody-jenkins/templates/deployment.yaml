@@ -80,7 +80,7 @@ spec:
               value: {{ .Values.jenkinsAdminUser | quote }}
           {{- end }}
             - name: JENKINS_ENV_CONFIG_YML_URL
-              value: file:///var/jenkins_managed_config{{ range $i, $configMapName := .Values.configMaps }},file:///var/jenkins_config/{{ $configMapName }}{{ end }}
+              value: file:///var/jenkins_managed_config/jenkins-config.yml{{ range $i, $configMapName := .Values.configMaps }},file:///var/jenkins_config/{{ $configMapName }}{{ end }}
           {{- range $key, $value := .Values.env }}
             - name: {{ $key }}
               value: {{ $value | quote }}
