@@ -43,14 +43,15 @@ rbac:
 
 ########################################################
 ## Control requests limit
-## These values must be changed for production usage
+## It is highly recommended to give jenkins the amount of 
+## cpu and memory in production usage  
 resources:
-  requests:
-    cpu: 200m
-    memory: 256Mi
+  # requests:
+  #   cpu: 200m
+  #   memory: 256Mi
   # limits:
-    # cpu: 200m
-    # memory: 256Mi
+  #   cpu: 200m
+  #   memory: 256Mi
 
 ########################################################
 
@@ -80,18 +81,17 @@ livenessProbe:
 persistence:
   mountDockerSocket: true
   jenkinsHome:
-    enabled: false
+    enabled: true
     annotations: {}
     accessMode: ReadWriteOnce
-    size: 8Gi
+    size: 20Gi
     ## A manually managed Persistent Volume and Claim
-    ## Requires Persistence.Enabled: true
+    ## Requires persistence.jenkinsHome.enabled: true
     ## If defined, PVC must be created manually before volume will be bound
     existingClaim:
-
-    ## If defined, storageClassName: <storageClass>
-    ## If set to "-", storageClassName: "", which disables dynamic provisioning
-    ## If undefined (the default) or set to null, no storageClassName spec is
+    ## If defined, storageClass: <storageClass>
+    ## If set to "-", storageClass: "", which disables dynamic provisioning
+    ## If undefined (the default) or set to null, no storageClass spec is
     ##   set, choosing the default provisioner.  (gp2 on AWS, standard on
     ##   GKE, AWS & OpenStack)
     ##
@@ -102,13 +102,12 @@ persistence:
     accessMode: ReadWriteOnce
     size: 8Gi
     ## A manually managed Persistent Volume and Claim
-    ## Requires Persistence.Enabled: true
+    ## Requires persistence.jenkinsWorkspace.enabled: true
     ## If defined, PVC must be created manually before volume will be bound
     existingClaim:
-
-    ## If defined, storageClassName: <storageClass>
-    ## If set to "-", storageClassName: "", which disables dynamic provisioning
-    ## If undefined (the default) or set to null, no storageClassName spec is
+    ## If defined, storageClass: <storageClass>
+    ## If set to "-", storageClass: "", which disables dynamic provisioning
+    ## If undefined (the default) or set to null, no storageClass spec is
     ##   set, choosing the default provisioner.  (gp2 on AWS, standard on
     ##   GKE, AWS & OpenStack)
     ##
