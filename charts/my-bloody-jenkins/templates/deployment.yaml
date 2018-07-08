@@ -85,7 +85,7 @@ spec:
               value: {{ .Values.jenkinsAdminUser | quote }}
           {{- end }}
             - name: JENKINS_ENV_CONFIG_YML_URL
-              value: file:///var/jenkins_managed_config/{{ range $i, $configMapName := .Values.configMaps }},file:///var/jenkins_config/{{ $configMapName }}{{ end }}
+              value: file:///var/jenkins_managed_config{{ range $i, $configMapName := .Values.configMaps }},file:///var/jenkins_config/{{ $configMapName }}{{ end }}
           {{- range $key, $value := .Values.env }}
             - name: {{ $key }}
               value: {{ $value | quote }}
@@ -98,16 +98,19 @@ spec:
             - mountPath: /var/jenkins_home
               name: jenkins-home
               readOnly: false
+
             - mountPath: /jenkins-workspace-home
               name: jenkins-workspace-home
               readOnly: false
             {{- if .Values.persistence.mountDockerSocket }}
+
             - mountPath: /var/run/docker.sock
               name: docker-socket
               readOnly: false
             {{- end }}
             {{- if .Values.envSecrets }}
             {{- range .Values.envSecrets }}
+
             - mountPath: /var/jenkins_secrets/{{ . }}
               name: {{ . | quote }}
               readOnly: true
@@ -115,11 +118,13 @@ spec:
             {{- end }}
             {{- if .Values.configMaps }}
             {{- range .Values.configMaps }}
+
             - mountPath: /var/jenkins_config/{{ . }}
               name: {{ . | quote }}
               readOnly: true
             {{- end }}
             {{- end }}
+
             - mountPath: /var/jenkins_managed_config
               name: {{ (include "my-bloody-jenkins.fullname" .) | quote }}
               readOnly: true
