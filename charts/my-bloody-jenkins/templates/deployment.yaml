@@ -65,12 +65,7 @@ spec:
 
           {{- if .Values.resources }}
           resources:
-          {{- if .Values.resources.cpu }}
-            cpu: {{ .Values.resources.cpu }}
-          {{- end }}
-          {{- if .Values.resources.memory }}
-            memory: {{ .Values.resources.memory }}
-          {{- end }}
+{{ toYaml .Values.resources | indent 12 }}          
           {{- end }}
 
           env:
@@ -85,45 +80,49 @@ spec:
               value: {{ .Values.jenkinsAdminUser | quote }}
           {{- end }}
             - name: JENKINS_ENV_CONFIG_YML_URL
-          {{- if .Values.externalConfigUri }}
-              value: {{ .Values.externalConfigUri | quote }}
-          {{- else }}
-              value: file://{{ template "my-bloody-jenkins.jenkinsConfigDir" . }}/{{ template "my-bloody-jenkins.jenkinsConfigFile" . }}
-          {{- end }}
+              value: file:///var/jenkins_managed_config{{ range $i, $configMapName := .Values.configMaps }},file:///var/jenkins_config/{{ $configMapName }}{{ end }}
           {{- range $key, $value := .Values.env }}
             - name: {{ $key }}
               value: {{ $value | quote }}
-          {{- end }}
-          {{- range $secret, $keys := .Values.envSecrets }}
-          {{- range $keys }}
-            - name: {{ . }}
-              valueFrom: 
-                secretKeyRef: {{ $secret }}
-                key: {{ . | quote }}
-          {{- end }}
           {{- end }}
 
           volumeMounts:
 {{- if and .Values.persistence .Values.persistence.mounts }}
 {{ toYaml .Values.persistence.mounts | indent 12 }}
 {{- end }}
-
             - mountPath: /var/jenkins_home
               name: jenkins-home
               readOnly: false
+
             - mountPath: /jenkins-workspace-home
               name: jenkins-workspace-home
               readOnly: false
             {{- if .Values.persistence.mountDockerSocket }}
+
             - mountPath: /var/run/docker.sock
               name: docker-socket
               readOnly: false
             {{- end }}
-            {{- if not .Values.externalConfigUri }}
-            - mountPath: {{ template "my-bloody-jenkins.jenkinsConfigDir" .}}
-              name: jenkins-config
-              readOnly: false
+            {{- if .Values.envSecrets }}
+            {{- range .Values.envSecrets }}
+
+            - mountPath: /var/jenkins_secrets/{{ . }}
+              name: {{ . | quote }}
+              readOnly: true
             {{- end }}
+            {{- end }}
+            {{- if .Values.configMaps }}
+            {{- range .Values.configMaps }}
+
+            - mountPath: /var/jenkins_config/{{ . }}
+              name: {{ . | quote }}
+              readOnly: true
+            {{- end }}
+            {{- end }}
+
+            - mountPath: /var/jenkins_managed_config
+              name: {{ (include "my-bloody-jenkins.fullname" .) | quote }}
+              readOnly: true
 
       volumes:
 {{- if and .Values.persistence .Values.persistence.volumes }}
@@ -134,12 +133,6 @@ spec:
           hostPath: 
             path: /var/run/docker.sock
         {{- end }}
-        {{- if not .Values.externalConfigUri }}
-        - name: jenkins-config
-          configMap:
-            name: {{ template "my-bloody-jenkins.fullname" . }}
-        {{- end }}
-
         - name: jenkins-home
         {{- if and .Values.persistence .Values.persistence.jenkinsHome .Values.persistence.jenkinsHome.enabled }}
           persistentVolumeClaim:
@@ -155,7 +148,25 @@ spec:
         {{- else }}
           emptyDir: {}
         {{- end }}
-
+        {{- if .Values.envSecrets }}
+        {{- range .Values.envSecrets }}
+        - name: {{ . | quote }}
+          secret:
+            secretName: {{ . }}
+        {{- end }}
+        {{- end }}
+        {{- if .Values.configMaps }}
+        {{- range .Values.configMaps }}
+        - name: {{ . | quote }}
+          configMap:
+            name: {{ . | quote }}
+        {{- end }}
+        {{- end }}
+        {{- if .Values.managedConfig }}
+        - name: {{ (include "my-bloody-jenkins.fullname" .) | quote }}
+          configMap:
+            name: {{ (include "my-bloody-jenkins.fullname" .) | quote }} 
+        {{- end }}
 
     {{- with .Values.nodeSelector }}
       nodeSelector:

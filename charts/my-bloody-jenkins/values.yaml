@@ -10,8 +10,8 @@ image:
 ########################################################
 ## Exposing service
 service:
-  type: ClusterIP
-  # type: LoadBalancer
+  # type: ClusterIP
+  type: LoadBalancer
   annotations: {}
   # httpPort: 8080
   # jnlpPort: 50000
@@ -25,15 +25,15 @@ service:
 ingress:
   enabled: false
   # path: /
-  # hostname: 
+  # hostname:
   # annotations: {}
   # tls:
-  #   secretName: 
+  #   secretName:
 ########################################################
 
 ########################################################
-## By default rbac are not used and default service account 
-## is being used. 
+## By default rbac are not used and default service account
+## is being used.
 rbac:
   ## Create serviceAccount, Eole and RoleBindings
   create: false
@@ -43,15 +43,21 @@ rbac:
 
 ########################################################
 ## Control requests limit
-## These values must be changed for production usage 
+## It is highly recommended to give jenkins the amount of 
+## cpu and memory in production usage  
 resources:
-  cpu: 200m
-  memory: 256Mi
+  # requests:
+  #   cpu: 200m
+  #   memory: 256Mi
+  # limits:
+  #   cpu: 200m
+  #   memory: 256Mi
+
 ########################################################
 
 ########################################################
 ## It can take a lot of time for jenkins to be started
-## This is why the livenessProbe.initialDelaySeconds is high  
+## This is why the livenessProbe.initialDelaySeconds is high
 readinessProbe:
   timeout: 5
   initialDelaySeconds: 5
@@ -75,18 +81,17 @@ livenessProbe:
 persistence:
   mountDockerSocket: true
   jenkinsHome:
-    enabled: false
+    enabled: true
     annotations: {}
     accessMode: ReadWriteOnce
-    size: 8Gi
+    size: 20Gi
     ## A manually managed Persistent Volume and Claim
-    ## Requires Persistence.Enabled: true
+    ## Requires persistence.jenkinsHome.enabled: true
     ## If defined, PVC must be created manually before volume will be bound
     existingClaim:
-
-    ## If defined, storageClassName: <storageClass>
-    ## If set to "-", storageClassName: "", which disables dynamic provisioning
-    ## If undefined (the default) or set to null, no storageClassName spec is
+    ## If defined, storageClass: <storageClass>
+    ## If set to "-", storageClass: "", which disables dynamic provisioning
+    ## If undefined (the default) or set to null, no storageClass spec is
     ##   set, choosing the default provisioner.  (gp2 on AWS, standard on
     ##   GKE, AWS & OpenStack)
     ##
@@ -97,13 +102,12 @@ persistence:
     accessMode: ReadWriteOnce
     size: 8Gi
     ## A manually managed Persistent Volume and Claim
-    ## Requires Persistence.Enabled: true
+    ## Requires persistence.jenkinsWorkspace.enabled: true
     ## If defined, PVC must be created manually before volume will be bound
     existingClaim:
-
-    ## If defined, storageClassName: <storageClass>
-    ## If set to "-", storageClassName: "", which disables dynamic provisioning
-    ## If undefined (the default) or set to null, no storageClassName spec is
+    ## If defined, storageClass: <storageClass>
+    ## If set to "-", storageClass: "", which disables dynamic provisioning
+    ## If undefined (the default) or set to null, no storageClass spec is
     ##   set, choosing the default provisioner.  (gp2 on AWS, standard on
     ##   GKE, AWS & OpenStack)
     ##
@@ -119,14 +123,12 @@ persistence:
   #    readOnly: true
 ########################################################
 
-
 ########################################################
 ## See: https://kubernetes.io/docs/concepts/configuration/assign-pod-node/
 nodeSelector: {}
 tolerations: []
 affinity: {}
 ########################################################
-
 
 ########################################################
 ## Additional Environment variables to be provided to the container
@@ -136,20 +138,21 @@ env:
 
 ########################################################
 ## Use external secrets as environment variables
-## Each top level key represents an existing secret name
-## Its value is a list of keys that this secret contain and will 
-## be mapped as an environment variable 
+## Each item in the list represents an existing secret name
+## All its keys will be transformed to environment variables
+## See https://github.com/odavid/my-bloody-jenkins/pull/102
 envSecrets:
-#   my-jenkins-external-secret:
-#     - JENKINS_SECRET_KEY
-#     - JENKINS_SECRET_KEY2
+#   - my-jenkins-external-secret
 ########################################################
 
+########################################################
+## List of ConfigMaps that will be mounted as configuration files
+## All configuration files will be deep merged into single config
+## See https://github.com/odavid/my-bloody-jenkins/pull/102
+configMaps:
+#  - my-config-map
+########################################################
 
-## By default the chart is generating a config map that will be watched by my-bloody-jenkins
-## Use http[s]://<path> or s3://<path>
-## You can use file://<path> if your are using an external ConfigMap
-# externalConfigUri:
 
 jenkinsAdminUser: admin
 javaMemoryOpts: '-Xmx256m'
