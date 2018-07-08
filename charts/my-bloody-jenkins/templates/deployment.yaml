@@ -173,9 +173,6 @@ spec:
             name: {{ (include "my-bloody-jenkins.fullname" .) | quote }} 
         {{- end }}
 
-
-
-
     {{- with .Values.nodeSelector }}
       nodeSelector:
 {{ toYaml . | indent 8 }}
