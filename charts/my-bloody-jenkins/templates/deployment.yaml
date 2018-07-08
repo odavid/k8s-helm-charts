@@ -85,11 +85,7 @@ spec:
               value: {{ .Values.jenkinsAdminUser | quote }}
           {{- end }}
             - name: JENKINS_ENV_CONFIG_YML_URL
-          {{- if .Values.externalConfigUri }}
-              value: {{ .Values.externalConfigUri | quote }}
-          {{- else }}
-              value: file://{{ template "my-bloody-jenkins.jenkinsConfigDir" . }}/{{ template "my-bloody-jenkins.jenkinsConfigFile" . }}
-          {{- end }}
+              value: file:///var/jenkins_managed_config/{{ range $i, $configMapName := .Values.configMaps }},file:///var/jenkins_managed_config/{{ $configMapName }}{{ end }}
           {{- range $key, $value := .Values.env }}
             - name: {{ $key }}
               value: {{ $value | quote }}
@@ -111,12 +107,22 @@ spec:
               readOnly: false
             {{- end }}
             {{- if .Values.envSecrets }}
-            {{- range $i, $secretName := .Values.envSecrets }}
-            - mountPath: /var/jenkins_secrets/{{ $secretName }}
-              name: {{ $secretName | quote }}
+            {{- range .Values.envSecrets }}
+            - mountPath: /var/jenkins_secrets/{{ . }}
+              name: {{ . | quote }}
               readOnly: true
             {{- end }}
             {{- end }}
+            {{- if .Values.configMaps }}
+            {{- range .Values.configMaps }}
+            - mountPath: /var/jenkins_config/{{ . }}
+              name: {{ . | quote }}
+              readOnly: true
+            {{- end }}
+            {{- end }}
+            - mountPath: /var/jenkins_managed_config
+              name: {{ (include "my-bloody-jenkins.fullname" .) | quote }}
+              readOnly: true
 
       volumes:
 {{- if and .Values.persistence .Values.persistence.volumes }}
@@ -127,12 +133,6 @@ spec:
           hostPath: 
             path: /var/run/docker.sock
         {{- end }}
-        {{- if not .Values.externalConfigUri }}
-        - name: jenkins-config
-          configMap:
-            name: {{ template "my-bloody-jenkins.fullname" . }}
-        {{- end }}
-
         - name: jenkins-home
         {{- if and .Values.persistence .Values.persistence.jenkinsHome .Values.persistence.jenkinsHome.enabled }}
           persistentVolumeClaim:
@@ -149,12 +149,25 @@ spec:
           emptyDir: {}
         {{- end }}
         {{- if .Values.envSecrets }}
-        {{- range $i, $secretName := .Values.envSecrets }}
-        - name: {{ $secretName | quote }}
+        {{- range .Values.envSecrets }}
+        - name: {{ . | quote }}
           secret:
-            secretName: { {$secretName }}
+            secretName: {{ . }}
         {{- end }}
         {{- end }}
+        {{- if .Values.configMaps }}
+        {{- range .Values.configMaps }}
+        - name: {{ . | quote }}
+          configMap:
+            name: {{ . | quote }}
+        {{- end }}
+        {{- end }}
+        {{- if .Values.managedConfig }}
+        - name: {{ (include "my-bloody-jenkins.fullname" .) | quote }}
+          configMap:
+            name: {{ (include "my-bloody-jenkins.fullname" .) | quote }} 
+        {{- end }}
+
 
 
 

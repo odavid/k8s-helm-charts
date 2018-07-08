@@ -58,14 +58,6 @@ Define default values
 {{- 16022 -}}
 {{- end -}}
 
-{{- define "my-bloody-jenkins.jenkinsConfigDir" -}}
-{{- "/var/jenkins_config" -}}
-{{- end -}}
-
-{{- define "my-bloody-jenkins.jenkinsConfigFile" -}}
-{{- "jenkins-config.yml" -}}
-{{- end -}}
-
 {{- define "my-bloody-jenkins.persistentVolumeClaimName" -}}
 {{- .Values.persistenceExistingClaim | default (include "my-bloody-jenkins.fullname" .) -}}
 {{- end -}}
