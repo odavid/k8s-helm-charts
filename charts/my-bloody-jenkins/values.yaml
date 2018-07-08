@@ -10,8 +10,8 @@ image:
 ########################################################
 ## Exposing service
 service:
-  type: ClusterIP
-  # type: LoadBalancer
+  # type: ClusterIP
+  type: LoadBalancer
   annotations: {}
   # httpPort: 8080
   # jnlpPort: 50000
