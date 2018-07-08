@@ -94,20 +94,11 @@ spec:
             - name: {{ $key }}
               value: {{ $value | quote }}
           {{- end }}
-          {{- range $secret, $keys := .Values.envSecrets }}
-          {{- range $keys }}
-            - name: {{ . }}
-              valueFrom: 
-                secretKeyRef: {{ $secret }}
-                key: {{ . | quote }}
-          {{- end }}
-          {{- end }}
 
           volumeMounts:
 {{- if and .Values.persistence .Values.persistence.mounts }}
 {{ toYaml .Values.persistence.mounts | indent 12 }}
 {{- end }}
-
             - mountPath: /var/jenkins_home
               name: jenkins-home
               readOnly: false
@@ -119,10 +110,12 @@ spec:
               name: docker-socket
               readOnly: false
             {{- end }}
-            {{- if not .Values.externalConfigUri }}
-            - mountPath: {{ template "my-bloody-jenkins.jenkinsConfigDir" .}}
-              name: jenkins-config
-              readOnly: false
+            {{- if .Values.envSecrets }}
+            {{- range $i, $secretName := .Values.envSecrets }}
+            - mountPath: /var/jenkins_secrets/{{ $secretName }}
+              name: {{ $secretName | quote }}
+              readOnly: true
+            {{- end }}
             {{- end }}
 
       volumes:
@@ -155,6 +148,14 @@ spec:
         {{- else }}
           emptyDir: {}
         {{- end }}
+        {{- if .Values.envSecrets }}
+        {{- range $i, $secretName := .Values.envSecrets }}
+        - name: {{ $secretName | quote }}
+          secret:
+            secretName: { {$secretName }}
+        {{- end }}
+        {{- end }}
+
 
 
     {{- with .Values.nodeSelector }}
