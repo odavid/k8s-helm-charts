@@ -16,20 +16,26 @@ The chart will do the following:
 
 
 ## Installing the Chart
+First add the following repo:
+
+```shell
+helm repo add odavid https://odavid.github.io/k8s-helm-charts
+```
+
 To install the chart with the release name `jenkins`:
 ```shell
-helm install --name jenkins charts/my-bloody-jenkins
+helm install --name jenkins odavid/my-bloody-jenkins
 ```
 
 To install the chart with a custom configuration values.yml
 ```shell
-helm install --name jenkins charts/my-bloody-jenkins -f <valueFiles>
+helm install --name jenkins odavid/my-bloody-jenkins -f <valueFiles>
 ```
 
 ## Upgrading the Release
 To install the chart with a custom configuration values.yml
 ```shell
-helm upgrade jenkins charts/my-bloody-jenkins -f <valueFiles>
+helm upgrade jenkins odavid/my-bloody-jenkins -f <valueFiles>
 ```
 
 ## Deleting the Chart
