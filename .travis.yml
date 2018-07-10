@@ -1,0 +1,20 @@
+---
+language: python
+
+env:
+  global:
+    - HELM_URL=https://storage.googleapis.com/kubernetes-helm
+    - HELM_TGZ=helm-v2.9.1-linux-amd64.tar.gz
+    - TARGET_BR=gh-pages
+    - REPO_DIR=/home/travis/build/odavid/k8s-helm-charts
+    - GH_URL=https://odavid.github.io/k8s-helm-charts
+    - YAMLLINT_VERSION=1.11.1
+
+install:
+  # Installing Helm
+  - wget -q ${HELM_URL}/${HELM_TGZ}
+  - tar xzfv ${HELM_TGZ}
+  - PATH=`pwd`/linux-amd64/:$PATH
+  - helm init --client-only
+  # Installig pip deps
+  - pip install yamllint=="${YAMLLINT_VERSION}"

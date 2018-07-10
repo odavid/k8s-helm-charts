@@ -1,3 +1,4 @@
+---
 ########################################################
 ## Override image
 image:
@@ -46,13 +47,12 @@ rbac:
 ## It is highly recommended to give jenkins the amount of
 ## cpu and memory in production usage
 resources:
-  # requests:
-  #   cpu: 200m
-  #   memory: 256Mi
-  # limits:
-  #   cpu: 200m
-  #   memory: 256Mi
-
+# requests:
+#   cpu: 200m
+#   memory: 256Mi
+# limits:
+#   cpu: 200m
+#   memory: 256Mi
 ########################################################
 
 ########################################################
@@ -174,5 +174,3 @@ managedConfig:
             - '/var/run/docker.sock:/var/run/docker.sock'
   security:
     securityOptions: {}
-
-
