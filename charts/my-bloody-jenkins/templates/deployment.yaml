@@ -39,7 +39,7 @@ spec:
             - name: sshd
               containerPort: {{ template "my-bloody-jenkins.sshdPort" . }}
               protocol: TCP
-          
+
           {{- if .Values.livenessProbe }}
           livenessProbe:
             httpGet:
@@ -51,7 +51,7 @@ spec:
             failureThreshold: {{ .Values.livenessProbe.failureThreshold }}
 
           {{- end }}
-          
+
           {{- if .Values.readinessProbe }}
           readinessProbe:
             httpGet:
@@ -65,7 +65,7 @@ spec:
 
           {{- if .Values.resources }}
           resources:
-{{ toYaml .Values.resources | indent 12 }}          
+{{ toYaml .Values.resources | indent 12 }}
           {{- end }}
 
           env:
@@ -80,7 +80,7 @@ spec:
               value: {{ .Values.jenkinsAdminUser | quote }}
           {{- end }}
             - name: JENKINS_ENV_CONFIG_YML_URL
-              value: file:///var/jenkins_managed_config/jenkins-config.yml{{ range $i, $configMapName := .Values.configMaps }},file:///var/jenkins_config/{{ $configMapName }}{{ end }}
+              value: file:///var/jenkins_managed_config/k8s-default-cloud.yml,file:///var/jenkins_managed_config/jenkins-config.yml{{ range $i, $configMapName := .Values.configMaps }},file:///var/jenkins_config/{{ $configMapName }}{{ end }}
           {{- range $key, $value := .Values.env }}
             - name: {{ $key }}
               value: {{ $value | quote }}
@@ -130,7 +130,7 @@ spec:
 {{- end }}
         {{- if .Values.persistence.mountDockerSocket }}
         - name: docker-socket
-          hostPath: 
+          hostPath:
             path: /var/run/docker.sock
         {{- end }}
         - name: jenkins-home
@@ -165,7 +165,7 @@ spec:
         {{- if .Values.managedConfig }}
         - name: {{ (include "my-bloody-jenkins.fullname" .) | quote }}
           configMap:
-            name: {{ (include "my-bloody-jenkins.fullname" .) | quote }} 
+            name: {{ (include "my-bloody-jenkins.fullname" .) | quote }}
         {{- end }}
 
     {{- with .Values.nodeSelector }}

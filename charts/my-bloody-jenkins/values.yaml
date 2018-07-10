@@ -154,23 +154,35 @@ configMaps:
 ########################################################
 
 
+########################################################
+## The jenkins Admin Username - must be a valid username
+## within the Jenkins Security Realm
 jenkinsAdminUser: admin
-javaMemoryOpts: '-Xmx256m'
+########################################################
 
+########################################################
+## Java Options for Jenkins Master. Make sure
+## resource limits and requests are defined accordingly
+javaMemoryOpts: '-Xmx256m'
+########################################################
+
+########################################################
+## If enabled = 'true', then
+## a Default k8s Jenkins cloud will be configured to
+## provision slaves automatically based on labels
+defaultK8sCloud:
+  enabled: true
+  name: "k8s"
+  labels:
+    - "generic"
+  jvmArgs: "-Xmx1g"
+  remoteFs: "/home/jenkins"
+  image: "odavid/jenkins-jnlp-slave:latest"
+########################################################
+
+########################################################
+## A managed configuration based on
+## My Bloody Jenkins YAML config.
+## See: https://github.com/odavid/my-bloody-jenkins#configuration-reference
 managedConfig:
-  clouds:
-    k8s:
-      type: kubernetes
-      jenkinsUrl: http://${JENKINS_MY_BLOODY_JENKINS_SERVICE_HOST}:${JENKINS_MY_BLOODY_JENKINS_SERVICE_PORT_HTTP}
-      namespace: ${K8S_NAMESPACE}
-      templates:
-        - name: kubeslave
-          image: odavid/jenkins-jnlp-slave:latest
-          labels:
-            - generic
-          remoteFs: /home/jenkins
-          jvmArgs: -Xmx1g
-          volumes:
-            - '/var/run/docker.sock:/var/run/docker.sock'
-  security:
-    securityOptions: {}
+########################################################

@@ -155,4 +155,11 @@ The following table lists the configurable parameters of the chart and their def
 | `configMaps` | List of external config maps to be used as configuration files - see [Docs](https://github.com/odavid/my-bloody-jenkins/pull/102) |
 | `jenkinsAdminUser` | The name of the admin user - must be a valid user within the [Jenkins Security Realm](https://github.com/odavid/my-bloody-jenkins#security-section)| `admin`
 | `javaMemoryOpts` | Jenkins Java Memory Opts | `-Xmx256m`
-| `managedConfig` | `My Bloody Jenkins` Configuration yaml - See [Configuration Reference](https://github.com/odavid/my-bloody-jenkins#configuration-reference) | By default, a k8s cloud with default node label `generic` is created, enabling Jenkins to provision jnlp slave nodes within the cluster
+| `managedConfig` | `My Bloody Jenkins` Configuration yaml - See [Configuration Reference](https://github.com/odavid/my-bloody-jenkins#configuration-reference) |
+| `defaultK8sCloud.enabled` | If `true` a default k8s jenkins cloud will be configured to enable automatic slave provisioning | `true`
+| `defaultK8sCloud.name` | The name of the default k8s cloud | `k8s`
+| `defaultK8sCloud.labels` | List of labels that mark the k8s provisioned slaves, use `node(label){}` within pipeline | `["generic"]`
+| `defaultK8sCloud.jvmArgs` | Default JVM Args to pass to the jnlp slave of the k8s cloud | `-Xmx1g`
+| `defaultK8sCloud.remoteFs` | The remoteFS of the JNLP Slave | `/home/jenkins`
+| `defaultK8sCloud.image` | The docker image of the JNLP Slave | `odavid/jenkins-jnlp-slave:latest`
+

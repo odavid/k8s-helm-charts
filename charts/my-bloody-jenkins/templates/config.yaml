@@ -8,3 +8,24 @@ data:
 {{- if .Values.managedConfig }}
 {{ toYaml .Values.managedConfig | indent 4}}
 {{ end }}
+
+  k8s-default-cloud.yml: |-
+    ---
+{{- if and (.Values.defaultK8sCloud) (.Values.defaultK8sCloud.enabled) }}
+    security:
+      securityOptions: {}
+    clouds:
+      {{ default .Values.defaultK8sCloud.name "k8s" }}:
+        type: kubernetes
+        jenkinsUrl: http://{{ .Release.Name }}-{{ (include "my-bloody-jenkins.fullname" .)}}:8080
+        namespace: {{ .Release.Namespace }}
+        templates:
+          - name: kubeslave
+            image: {{ default .Values.defaultK8sCloud.slaveImage "odavid/jenkins-jnlp-slave:latest" }}
+            labels:
+{{ toYaml (default .Values.defaultK8sCloud.labels) | indent 14 }}
+            remoteFs: {{ default .Values.defaultK8sCloud.remoteFs "/home/jenkins" }}
+            jvmArgs: {{ default .Values.defaultK8sCloud.jvmArgs "-Xmx1g" }}
+            volumes:
+              - '/var/run/docker.sock:/var/run/docker.sock'
+{{- end }}
