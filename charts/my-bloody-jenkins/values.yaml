@@ -185,4 +185,22 @@ defaultK8sCloud:
 ## My Bloody Jenkins YAML config.
 ## See: https://github.com/odavid/my-bloody-jenkins#configuration-reference
 managedConfig:
+## Configure Security - https://github.com/odavid/my-bloody-jenkins#security-section
+# security:
+## Configure tools - https://github.com/odavid/my-bloody-jenkins#tools-section
+# tools:
+## Configure credentials - https://github.com/odavid/my-bloody-jenkins#credentials-section
+# credentials:
+## Configure notifiers - https://github.com/odavid/my-bloody-jenkins#notifiers-section
+# notifiers:
+## Configure notifiers - https://github.com/odavid/my-bloody-jenkins#pipeline-libraries-section
+# pipeline_libraries:
+## Script Approvals - https://github.com/odavid/my-bloody-jenkins#script-approval-section
+# script_approval:
+## Configure Clouds - https://github.com/odavid/my-bloody-jenkins#clouds-section
+# clouds:
+## Configure Seed Jobs - https://github.com/odavid/my-bloody-jenkins#seed-jobs-section
+# seed_jobs:
+## Configure Job DSL Scripts - https://github.com/odavid/my-bloody-jenkins#jobdsl-scripts-section
+# job_dsl_scripts:
 ########################################################
