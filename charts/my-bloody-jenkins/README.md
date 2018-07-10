@@ -98,6 +98,15 @@ The `managedConfig` is mounted as `/var/jenkins_managed_config/jenkins-config.ym
 
 Additional `configMaps` list are mounted as `/var/jenkins_config/<ConfigMapName>` within the container and are merged with the `managedConfig`
 
+## Default K8S Jenkins Cloud for provisioning slaves within k8s
+By default the Helm Chart Configures a [kubernetes cloud](https://plugins.jenkins.io/kubernetes) with a simple jnlp slave template.
+For disabling this behavior, you need to set `defaultK8sCloud.enabled` to `false`
+The following attributes can control the default template:
+* `defaultK8sCloud.name` - the name of the k8s cloud - default (`k8s`)
+* `defaultK8sCloud.labels` - list of agent labels that are used to provision the node - e.g. ```node(labels){}``` pipeline step - default (`["generic"]`)
+* `defaultK8sCloud.jvmArgs` - JVM Args for the JNLP Slave - default (`"-Xmx1g"`)
+* `defaultK8sCloud.remoteFs` - JNLP Remote FS - default (`"/home/jenkins"`)
+* `defaultK8sCloud.image` - JNLP Slave Image - default (`"odavid/jenkins-jnlp-slave:latest"`)
 
 ## Configuration
 
@@ -105,6 +114,13 @@ The following table lists the configurable parameters of the chart and their def
 
 |         Parameter         |           Description             |                         Default                          |
 |---------------------------|-----------------------------------|----------------------------------------------------------|
+| `managedConfig` | `My Bloody Jenkins` Configuration yaml - See [Configuration Reference](https://github.com/odavid/my-bloody-jenkins#configuration-reference) |
+| `defaultK8sCloud.enabled` | If `true` a default k8s jenkins cloud will be configured to enable automatic slave provisioning | `true`
+| `defaultK8sCloud.name` | The name of the default k8s cloud | `k8s`
+| `defaultK8sCloud.labels` | List of labels that mark the k8s provisioned slaves, use `node(label){}` within pipeline | `["generic"]`
+| `defaultK8sCloud.jvmArgs` | Default JVM Args to pass to the jnlp slave of the k8s cloud | `-Xmx1g`
+| `defaultK8sCloud.remoteFs` | The remoteFS of the JNLP Slave | `/home/jenkins`
+| `defaultK8sCloud.image` | The docker image of the JNLP Slave | `odavid/jenkins-jnlp-slave:latest`
 | `image.repository`        | `My Bloody Jenkins` Docker Image       | `odavid/my-bloody-jenkins`
 | `image.tag`               | `My Bloody Jenkins` Docker Image Tag       | `lts`
 | `image.pullPolicy`        | Image Pull Policy                 | `IfNotPresent`
@@ -155,11 +171,4 @@ The following table lists the configurable parameters of the chart and their def
 | `configMaps` | List of external config maps to be used as configuration files - see [Docs](https://github.com/odavid/my-bloody-jenkins/pull/102) |
 | `jenkinsAdminUser` | The name of the admin user - must be a valid user within the [Jenkins Security Realm](https://github.com/odavid/my-bloody-jenkins#security-section)| `admin`
 | `javaMemoryOpts` | Jenkins Java Memory Opts | `-Xmx256m`
-| `managedConfig` | `My Bloody Jenkins` Configuration yaml - See [Configuration Reference](https://github.com/odavid/my-bloody-jenkins#configuration-reference) |
-| `defaultK8sCloud.enabled` | If `true` a default k8s jenkins cloud will be configured to enable automatic slave provisioning | `true`
-| `defaultK8sCloud.name` | The name of the default k8s cloud | `k8s`
-| `defaultK8sCloud.labels` | List of labels that mark the k8s provisioned slaves, use `node(label){}` within pipeline | `["generic"]`
-| `defaultK8sCloud.jvmArgs` | Default JVM Args to pass to the jnlp slave of the k8s cloud | `-Xmx1g`
-| `defaultK8sCloud.remoteFs` | The remoteFS of the JNLP Slave | `/home/jenkins`
-| `defaultK8sCloud.image` | The docker image of the JNLP Slave | `odavid/jenkins-jnlp-slave:latest`
 

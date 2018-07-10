@@ -4,20 +4,23 @@ metadata:
   name: {{ template "my-bloody-jenkins.fullname" . }}
 data:
   jenkins-config.yml: |-
-    ---
 {{- if .Values.managedConfig }}
 {{ toYaml .Values.managedConfig | indent 4}}
-{{ end }}
-
-  k8s-default-cloud.yml: |-
-    ---
-{{- if and (.Values.defaultK8sCloud) (.Values.defaultK8sCloud.enabled) }}
+{{- if not .Values.managedConfig.security }}
     security:
       securityOptions: {}
+{{- end }}
+{{- else }}
+    security:
+      securityOptions: {}
+{{- end }}
+
+  k8s-default-cloud.yml: |-
+{{- if and (.Values.defaultK8sCloud) (.Values.defaultK8sCloud.enabled) }}
     clouds:
       {{ default .Values.defaultK8sCloud.name "k8s" }}:
         type: kubernetes
-        jenkinsUrl: http://{{ .Release.Name }}-{{ (include "my-bloody-jenkins.fullname" .)}}:8080
+        jenkinsUrl: http://{{ include "my-bloody-jenkins.fullname" . }}:8080
         namespace: {{ .Release.Namespace }}
         templates:
           - name: kubeslave
@@ -28,4 +31,6 @@ data:
             jvmArgs: {{ default .Values.defaultK8sCloud.jvmArgs "-Xmx1g" }}
             volumes:
               - '/var/run/docker.sock:/var/run/docker.sock'
+{{- else }}
+    clouds: {}
 {{- end }}

@@ -162,11 +162,9 @@ spec:
             name: {{ . | quote }}
         {{- end }}
         {{- end }}
-        {{- if .Values.managedConfig }}
         - name: {{ (include "my-bloody-jenkins.fullname" .) | quote }}
           configMap:
             name: {{ (include "my-bloody-jenkins.fullname" .) | quote }}
-        {{- end }}
 
     {{- with .Values.nodeSelector }}
       nodeSelector:
