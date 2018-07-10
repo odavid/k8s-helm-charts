@@ -43,8 +43,8 @@ rbac:
 
 ########################################################
 ## Control requests limit
-## It is highly recommended to give jenkins the amount of 
-## cpu and memory in production usage  
+## It is highly recommended to give jenkins the amount of
+## cpu and memory in production usage
 resources:
   # requests:
   #   cpu: 200m
