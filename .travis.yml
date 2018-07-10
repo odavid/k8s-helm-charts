@@ -18,3 +18,17 @@ install:
   - helm init --client-only
   # Installig pip deps
   - pip install yamllint=="${YAMLLINT_VERSION}"
+
+script:
+  # Check charts format
+  - >
+     for dir in `ls ${REPO_DIR}/charts`; do
+      helm lint ${REPO_DIR}/charts/$dir
+      if [ $? != 0 ]; then
+       travis_terminate 1
+      fi
+     done
+  # Check YAML styling
+  - yamllint -c .yamllint.yml -s .travis.yml .yamllint.yml
+  - yamllint -c .yamllint.yml -s $(find . -type f -name "Chart.yaml")
+  - yamllint -c .yamllint.yml -s $(find . -type f -name "values.yaml")
