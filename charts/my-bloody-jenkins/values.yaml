@@ -37,7 +37,7 @@ ingress:
 ## is being used.
 rbac:
   ## Create serviceAccount, Eole and RoleBindings
-  create: false
+  create: true
   ## Instead of Role, create a ClusterRole and ClusterRoleBindings
   clusterWideAccess: false
 ########################################################
