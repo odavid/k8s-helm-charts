@@ -2,6 +2,14 @@
 
 List of Helm Charts to support docker images that are maintained by [odavid](https://github.com/odavid).
 
+## Adding Chart Repository to Helm
+In order to use this repo as `odavid`, run the following command:
+
+```shell
+helm repo add odavid https://odavid.github.io/k8s-helm-charts
+```
+
+
 ## Charts
 
 Name      | Description
