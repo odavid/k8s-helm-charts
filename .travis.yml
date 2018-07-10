@@ -10,6 +10,17 @@ env:
     - GH_URL=https://odavid.github.io/k8s-helm-charts
     - YAMLLINT_VERSION=1.11.1
 
+before_install:
+  - >-
+    openssl aes-256-cbc
+    -K $encrypted_87c45dfd716f_key
+    -iv $encrypted_87c45dfd716f_iv
+    -in .ssh-keys/travis.enc
+    -out .ssh-keys/travis -d
+  - chmod 600 .ssh-keys/travis
+  - eval $(ssh-agent -s)
+  - ssh-add .ssh-keys/travis
+
 install:
   # Installing Helm
   - wget -q ${HELM_URL}/${HELM_TGZ}
