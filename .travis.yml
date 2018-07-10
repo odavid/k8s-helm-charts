@@ -78,6 +78,7 @@ after_success:
       rm -rf out/* || exit 0
       # Copying contents of BUILD_DIR to out folder
       cp $BUILD_DIR/* out/
+      cp helpers/index.html out/
       cd out
       # Deploy if there are some changes
       git diff --quiet
