@@ -1,4 +1,4 @@
-# My Bloody Jenkins Helm Chart
+# My Bloody Jenkins
 
 ## Prerequisites Details
 * Kubernetes 1.8+
