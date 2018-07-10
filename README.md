@@ -37,7 +37,7 @@ helm upgrade jenkins charts/my-bloody-jenkins -f <valueFiles>
 helm delete jenkins
 ```
 
-## Docker Image 
+## Docker Image
 By default the chart uses the [`odavid/my-bloody-jenkins:lts`](https://hub.docker.com/r/odavid/my-bloody-jenkins/tags/) image.
 The Helm Chart provides a way to use different repo or tags:
 * `image.repository` - by default `odavid/my-bloody-jenkins`
@@ -48,7 +48,7 @@ The Helm Chart provides a way to use different repo or tags:
 
 ## CPU and Memory Resources
 The Helm chart comes with support for configured resource requests and limits.
-By default these values are commented out. 
+By default these values are commented out.
 It is __highly__ recommended to change this behavior on a production deployment. Also the Helm Chart provides a way to control Jenkins Java Memory Opts. When using Jenkins in production, you will need to set the values that suites your needs.
 
 ## Persistence
@@ -57,7 +57,7 @@ The chart provides the ability to control:
 * `persistence.jenkinsHome.enabled` - if set to false, jenkins home will be using empty{} volume instead of persistentVolumeClaim. Default is `true`
 * `persistence.jenkinsHome.size` - the managed volume size
 * `persistence.jenkinsHome.storageClass` - If set to `"-"`, then storageClass: `""`, which disables dynamic provisioning. If undefined (the default) or set to null, no storageClass spec is set, choosing the default provisioner. (gp2 on AWS, standard on GKE, AWS & OpenStack)
-* `persistence.jenkinsHome.existingClaim` - if provided, jenkins storage will be stored on an manually managed persistentVolumeClaim 
+* `persistence.jenkinsHome.existingClaim` - if provided, jenkins storage will be stored on an manually managed persistentVolumeClaim
 * `persistence.jenkinsHome.annotations` - annotations that will be added to the managed persistentVolumeClaim
 
 ## Secrets
@@ -106,12 +106,12 @@ The following table lists the configurable parameters of the chart and their def
 | `service.type`            | Service Type   | `LoadBalanacer`
 | `service.annotations`        | Service Annotations       | `{}`
 | `service.loadBalancerSourceRanges`        | Array Of IP CIDR ranges to whitelist (Only if service type is `LoadBalancer`) |
-| `service.loadBalancerIP`        | Service Load Balancer IP Address (Only if service type is `LoadBalancer`) | 
+| `service.loadBalancerIP`        | Service Load Balancer IP Address (Only if service type is `LoadBalancer`) |
 | `ingress.enabled`        | If `true` Ingress will be created      | `false`
 | `ingress.path`        | Ingress Path (Only if ingress is enabled)| `/`
-| `ingress.annotations`        | Ingress Annoations| `{}` 
-| `ingress.hostname`        | Ingress Hostname (Required only if ingress is enabled)| 
-| `ingress.tls.secretName`        | Ingress TLS Secret Name - if provided, the ingress will terminate TLS| 
+| `ingress.annotations`        | Ingress Annoations| `{}`
+| `ingress.hostname`        | Ingress Hostname (Required only if ingress is enabled)|
+| `ingress.tls.secretName`        | Ingress TLS Secret Name - if provided, the ingress will terminate TLS|
 | `rbac.create`        | If `true` - a ServiceAccount, and a Role will be created| `false`
 | `rbac.clusterWideAccess`        | If `true` - A ClusterRole will be created instead of Role - relevant only if `rbac.create` is `true`| `false`
 | `resources.requests.cpu` | Initial CPU Request  |
@@ -139,26 +139,14 @@ The following table lists the configurable parameters of the chart and their def
 | `persistence.jenkinsWorkspace.accessMode` | Jenkins Workspace Storage PesistentVolumeClaim accessMode | `ReadWriteOnce`
 | `persistence.jenkinsWorkspace.size` | Jenkins Workspace Storage PesistentVolumeClaim size | `8Gi`
 | `persistence.jenkinsWorkspace.storageClass` | External Jenkins Workspace Storage PesistentVolumeClaim | If set to `"-"`, then storageClass: `""`, which disables dynamic provisioning. If undefined (the default) or set to null, no storageClass spec is set, choosing the default provisioner. (gp2 on AWS, standard on GKE, AWS & OpenStack)
-| `persistence.volumes` | Additional volumes to be included within the Deployments | 
-| `persistence.mounts` | Additional mounts to be mounted to the container | 
+| `persistence.volumes` | Additional volumes to be included within the Deployments |
+| `persistence.mounts` | Additional mounts to be mounted to the container |
 | `nodeSelector` | Node Selector | `{}`
 | `tolerations` | Tolerations | `[]`
 | `affinity` | Affinity | `{}`
-| `env` | Additional Environment Variables to be passed to the container - format `key`: `value` | 
-| `envSecrets` | List of external secret names to be mounted as env secrets - see [Docs](https://github.com/odavid/my-bloody-jenkins/pull/102) | 
+| `env` | Additional Environment Variables to be passed to the container - format `key`: `value` |
+| `envSecrets` | List of external secret names to be mounted as env secrets - see [Docs](https://github.com/odavid/my-bloody-jenkins/pull/102) |
 | `configMaps` | List of external config maps to be used as configuration files - see [Docs](https://github.com/odavid/my-bloody-jenkins/pull/102) |
 | `jenkinsAdminUser` | The name of the admin user - must be a valid user within the [Jenkins Security Realm](https://github.com/odavid/my-bloody-jenkins#security-section)| `admin`
 | `javaMemoryOpts` | Jenkins Java Memory Opts | `-Xmx256m`
-| `managedConfig` | `My Bloody Jenkins` Configuration yaml - See [Configuration Reference](https://github.com/odavid/my-bloody-jenkins#configuration-reference) | By default, a k8s cloud with default node label `generic` is created, enabling Jenkins to provision jnlp slave nodes within the cluster 
-
-
- 
-
-
-
-
- 
-
-
-
-
+| `managedConfig` | `My Bloody Jenkins` Configuration yaml - See [Configuration Reference](https://github.com/odavid/my-bloody-jenkins#configuration-reference) | By default, a k8s cloud with default node label `generic` is created, enabling Jenkins to provision jnlp slave nodes within the cluster
