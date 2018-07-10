@@ -15,4 +15,4 @@ helm repo add odavid https://odavid.github.io/k8s-helm-charts
 
 Name|Description|Deploy Script
 ---|---|--------------
-[my-bloody-jenkins](charts/my-bloody-jenkins)| [My Bloody Jenkins](https://github.com/odavid/my-bloody-jenkins) in kubernetes cluster| ```helm install odavid/my-bloody-jenkins [-f values.yml]```
+[my-bloody-jenkins](charts/my-bloody-jenkins)| [My Bloody Jenkins](https://github.com/odavid/my-bloody-jenkins) in k8s cluster| ```helm install odavid/my-bloody-jenkins [-f values.yml]```
