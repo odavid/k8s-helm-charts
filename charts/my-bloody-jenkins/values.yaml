@@ -24,8 +24,8 @@ service:
 ########################################################
 ## Exposing ingress
 ingress:
-## Change to https if the ingress uses tls or you are using external
-## tls termination using annotations
+  ## Change to https if the ingress uses tls or you are using external
+  ## tls termination using annotations
   httpProtocol: http
   enabled: false
   path: /
