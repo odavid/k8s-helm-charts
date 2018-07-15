@@ -68,7 +68,7 @@ after_success:
       cd out
       git checkout ${TARGET_BR} || git checkout --orphan ${TARGET_BR}
       cd ..
-      
+
       cp out/index.yaml $BUILD_DIR || true
       pushd $BUILD_DIR
       # Indexing of charts
