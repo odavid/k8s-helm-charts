@@ -75,7 +75,6 @@ after_success:
       cd out
       git checkout ${TARGET_BR} || git checkout --orphan ${TARGET_BR}
       cd ..
-      rm -rf out/* || exit 0
       # Copying contents of BUILD_DIR to out folder
       cp $BUILD_DIR/* out/
       cp helpers/index.html out/
