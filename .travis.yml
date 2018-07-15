@@ -60,13 +60,6 @@ after_success:
        helm dep update ${REPO_DIR}/charts/$dir
        helm package ${REPO_DIR}/charts/$dir
       done
-      # Indexing of charts
-      if [ -f index.yaml ]; then
-       helm repo index --url ${GH_URL} --merge index.yaml .
-      else
-       helm repo index --url ${GH_URL} .
-      fi
-      # Pop temporary directory from the stack
       popd
       # List all the contents that we will push
       ls ${BUILD_DIR}
@@ -75,6 +68,18 @@ after_success:
       cd out
       git checkout ${TARGET_BR} || git checkout --orphan ${TARGET_BR}
       cd ..
+      
+      cp out/index.yaml $BUILD_DIR || true
+      pushd $BUILD_DIR
+      # Indexing of charts
+      if [ -f index.yaml ]; then
+       helm repo index --url ${GH_URL} --merge index.yaml .
+      else
+       helm repo index --url ${GH_URL} .
+      fi
+      # Pop temporary directory from the stack
+      popd
+
       # Copying contents of BUILD_DIR to out folder
       cp $BUILD_DIR/* out/
       cp helpers/index.html out/
