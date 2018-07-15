@@ -1,7 +1,7 @@
 ---
 name: my-bloody-jenkins
-version: 0.1.0
-appVersion: "2.121.1"
+version: 0.1.1
+appVersion: "2.121.1-62"
 description: >
    A Helm chart for my-bloody-jenkins - a self configured jenkins docker image, based on Jenkins LTS.
    Inspired by https://github.com/kubernetes/charts/tree/master/stable/jenkins, but better suites https://github.com/odavid/my-bloody-jenkins.

@@ -3,7 +3,7 @@
 ## Override image
 image:
   repository: odavid/my-bloody-jenkins
-  tag: lts
+  tag: 2.121.1-62
   pullPolicy: IfNotPresent
   imagePullSecret:
 ########################################################
@@ -24,9 +24,12 @@ service:
 ########################################################
 ## Exposing ingress
 ingress:
+## Change to https if the ingress uses tls or you are using external
+## tls termination using annotations
+  httpProtocol: http
   enabled: false
-  # path: /
-  # hostname:
+  path: /
+  # hostname: jenkins.host.name
   # annotations: {}
   # tls:
   #   secretName:

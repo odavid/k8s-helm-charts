@@ -122,7 +122,7 @@ The following table lists the configurable parameters of the chart and their def
 | `defaultK8sCloud.remoteFs` | The remoteFS of the JNLP Slave | `/home/jenkins`
 | `defaultK8sCloud.image` | The docker image of the JNLP Slave | `odavid/jenkins-jnlp-slave:latest`
 | `image.repository`        | `My Bloody Jenkins` Docker Image       | `odavid/my-bloody-jenkins`
-| `image.tag`               | `My Bloody Jenkins` Docker Image Tag       | `lts`
+| `image.tag`               | `My Bloody Jenkins` Docker Image Tag       | `2.121.1-62`
 | `image.pullPolicy`        | Image Pull Policy                 | `IfNotPresent`
 | `image.imagePullSecrets`        | Docker registry pull secret       |
 | `service.type`            | Service Type   | `LoadBalanacer`

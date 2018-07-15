@@ -85,6 +85,10 @@ spec:
             - name: {{ $key }}
               value: {{ $value | quote }}
           {{- end }}
+          {{- if .Values.ingress.enabled }}
+            - name: JENKINS_ENV_JENKINS_URL
+              value: {{ .Values.ingress.httpProtocol }}://{{ .Values.ingress.hostname }}{{ .Values.ingress.path }}
+          {{- end }}
 
           volumeMounts:
 {{- if and .Values.persistence .Values.persistence.mounts }}
