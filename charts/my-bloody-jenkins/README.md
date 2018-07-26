@@ -44,10 +44,10 @@ helm delete jenkins
 ```
 
 ## Docker Image
-By default the chart uses the [`odavid/my-bloody-jenkins:lts`](https://hub.docker.com/r/odavid/my-bloody-jenkins/tags/) image.
+By default the chart uses the [latest release of `odavid/my-bloody-jenkins`](https://hub.docker.com/r/odavid/my-bloody-jenkins/tags/) image.
 The Helm Chart provides a way to use different repo or tags:
 * `image.repository` - by default `odavid/my-bloody-jenkins`
-* `image.tag` - by default `lts`
+* `image.tag`
 * `image.pullPolicy` - by default `IfNotPresent`
 * `image.imagePullSecret` - not set by default
 
