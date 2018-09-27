@@ -140,6 +140,13 @@ env:
 ########################################################
 
 ########################################################
+## If specified, an internal secret will be created.
+## Each key will become JENKINS_SECRET_<KEY> environment variable
+secrets:
+# MY_PASSWORD: Very Secret
+########################################################
+
+########################################################
 ## Use external secrets as environment variables
 ## Each item in the list represents an existing secret name
 ## All its keys will be transformed to environment variables

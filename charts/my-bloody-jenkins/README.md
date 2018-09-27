@@ -89,6 +89,8 @@ Now, you can refer these secrets as environmnet variables:
 
 See [Support multiple data sources and secrets from files](https://github.com/odavid/my-bloody-jenkins/pull/102) for more details
 
+The chart also support creating a dedicated k8s secret, which all its keys will become `JENKINS_SECRET_<KEY>`. In order to use it, you will need to provided a key/value dict under the `secrets` value
+
 ## Managed Configuration and additional ConfigMaps
 My Bloody Jenkins natively supports watching multiple config data sources and merge them into one config top to bottom
 The Helm Chart provides a way to define a `managedConfig` yaml within the chart values.yml as well as add additional external `configMaps` that will be merged/override the default configuration.
@@ -167,6 +169,7 @@ The following table lists the configurable parameters of the chart and their def
 | `tolerations` | Tolerations | `[]`
 | `affinity` | Affinity | `{}`
 | `env` | Additional Environment Variables to be passed to the container - format `key`: `value` |
+| `secret` | A dict containing KEY/VALUE pairs. Each pair will become an environment variable `JENKINS_SECRET_<KEY>`, if the `secrets` dict is not empty a k8s secret will be created|
 | `envSecrets` | List of external secret names to be mounted as env secrets - see [Docs](https://github.com/odavid/my-bloody-jenkins/pull/102) |
 | `configMaps` | List of external config maps to be used as configuration files - see [Docs](https://github.com/odavid/my-bloody-jenkins/pull/102) |
 | `jenkinsAdminUser` | The name of the admin user - must be a valid user within the [Jenkins Security Realm](https://github.com/odavid/my-bloody-jenkins#security-section)| `admin`

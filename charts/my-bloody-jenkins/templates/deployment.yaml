@@ -89,6 +89,8 @@ spec:
             - name: JENKINS_ENV_JENKINS_URL
               value: {{ .Values.ingress.httpProtocol }}://{{ .Values.ingress.hostname }}{{ .Values.ingress.path }}
           {{- end }}
+            - name: ENVVARS_DIRS
+              value: /var/jenkins_secrets/JENKINS_SECRET{{ range $i, $name := .Values.envSecrets }},/var/jenkins_secrets/{{ $name }}{{ end }}
 
           volumeMounts:
 {{- if and .Values.persistence .Values.persistence.mounts }}
@@ -107,6 +109,15 @@ spec:
               name: docker-socket
               readOnly: false
             {{- end }}
+
+            {{/* Using internal secret - each key will become JENKINS_SECRET_${key} */}}
+            {{- if .Values.secrets }}
+            - mountPath: /var/jenkins_secrets/JENKINS_SECRET
+              name: {{ printf "%s-%s" (include "my-bloody-jenkins.fullname" .) "secrets" | quote }}
+              readOnly: true
+            {{- end }}
+
+            {{/* Using external secret - each key will become ${SECRET_NAME}_${key} */}}
             {{- if .Values.envSecrets }}
             {{- range .Values.envSecrets }}
 
@@ -127,6 +138,8 @@ spec:
             - mountPath: /var/jenkins_managed_config
               name: {{ (include "my-bloody-jenkins.fullname" .) | quote }}
               readOnly: true
+
+
 
       volumes:
 {{- if and .Values.persistence .Values.persistence.volumes }}
@@ -169,6 +182,11 @@ spec:
         - name: {{ (include "my-bloody-jenkins.fullname" .) | quote }}
           configMap:
             name: {{ (include "my-bloody-jenkins.fullname" .) | quote }}
+        {{- if .Values.secrets }}
+        - name: {{ printf "%s-%s" (include "my-bloody-jenkins.fullname" .) "secrets" | quote }}
+          secret:
+            secretName: {{ (include "my-bloody-jenkins.fullname" .) | quote }}
+        {{- end }}
 
     {{- with .Values.nodeSelector }}
       nodeSelector:
