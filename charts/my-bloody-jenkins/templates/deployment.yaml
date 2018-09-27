@@ -91,6 +91,10 @@ spec:
           {{- end }}
             - name: ENVVARS_DIRS
               value: /var/jenkins_secrets/JENKINS_SECRET{{ range $i, $name := .Values.envSecrets }},/var/jenkins_secrets/{{ $name }}{{ end }}
+            - name: JENKINS_ENV_HOST_IP
+              valueFrom:
+                fieldRef:
+                  fieldPath: status.podIP
 
           volumeMounts:
 {{- if and .Values.persistence .Values.persistence.mounts }}

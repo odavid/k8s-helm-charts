@@ -18,7 +18,7 @@
 
 2. To watch Jenkins logs, run the following command:
 export POD_NAME=$(kubectl get pods --namespace {{ .Release.Namespace }} -l "app={{ template "my-bloody-jenkins.name" . }},release={{ .Release.Name }}" -o jsonpath="{.items[0].metadata.name}")
-kubectl log -f --namespace {{ .Release.Namespace }} $POD_NAME
+kubectl logs -f --namespace {{ .Release.Namespace }} $POD_NAME
 
 {{- if not .Values.persistence.jenkinsHome.enabled }}
 
