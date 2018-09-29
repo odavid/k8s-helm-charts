@@ -134,6 +134,11 @@ affinity: {}
 ########################################################
 
 ########################################################
+## If true, will set the jenkins master to use hostNetwork=true
+useHostNetwork: false
+########################################################
+
+########################################################
 ## Additional Environment variables to be provided to the container
 env:
 #   ENVIRONMENT_VARIABLE_NAME: VALUE

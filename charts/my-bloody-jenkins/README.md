@@ -174,4 +174,6 @@ The following table lists the configurable parameters of the chart and their def
 | `configMaps` | List of external config maps to be used as configuration files - see [Docs](https://github.com/odavid/my-bloody-jenkins/pull/102) |
 | `jenkinsAdminUser` | The name of the admin user - must be a valid user within the [Jenkins Security Realm](https://github.com/odavid/my-bloody-jenkins#security-section)| `admin`
 | `javaMemoryOpts` | Jenkins Java Memory Opts | `-Xmx256m`
+| `useHostNetwork` | If true, jenkins master will use hostNetwork | `false`
+
 
