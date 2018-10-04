@@ -21,6 +21,10 @@ spec:
       labels:
         app: {{ template "my-bloody-jenkins.name" . }}
         release: {{ .Release.Name }}
+    {{- if .Values.podAnnotations }}
+      annotations:
+{{ toYaml .Values.podAnnotations | indent 8 }}
+    {{- end }}
     spec:
       {{- if and .Values.useHostNetwork }}
       hostNetwork: true

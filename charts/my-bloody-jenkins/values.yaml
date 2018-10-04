@@ -28,11 +28,18 @@ ingress:
   ## tls termination using annotations
   httpProtocol: http
   enabled: false
-  path: /
+  path: /*
   # hostname: jenkins.host.name
   # annotations: {}
   # tls:
   #   secretName:
+
+  ## Ability to add more ingress rules
+  additionalRules:
+  # - http:
+  #     paths:
+  #     - path: path
+  #       backend:
 ########################################################
 
 ########################################################
@@ -131,6 +138,11 @@ persistence:
 nodeSelector: {}
 tolerations: []
 affinity: {}
+########################################################
+
+########################################################
+## Add more annotations to pod
+podAnnotations: {}
 ########################################################
 
 ########################################################
