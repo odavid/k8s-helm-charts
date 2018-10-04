@@ -21,11 +21,14 @@ spec:
       secretName: {{ .Values.ingress.tls.secretName }}
 {{- end }}
   rules:
-    - host: {{ required ".Values.ingress.hostname is required!" .Values.ingress.hostname }}
-      http:
-        paths:
-          - path: {{ .Values.ingress.path }}
-            backend:
-              serviceName: {{ $fullName }}
-              servicePort: http
+  - host: {{ required ".Values.ingress.hostname is required!" .Values.ingress.hostname }}
+    http:
+      paths:
+        - path: {{ .Values.ingress.path }}
+          backend:
+            serviceName: {{ $fullName }}
+            servicePort: http
+{{- if .Values.ingress.additionalRules }}
+{{ toYaml .Values.ingress.additionalRules | indent 2 }}
+{{- end }}
 {{- end }}

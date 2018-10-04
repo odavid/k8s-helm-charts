@@ -132,7 +132,8 @@ The following table lists the configurable parameters of the chart and their def
 | `service.loadBalancerSourceRanges`        | Array Of IP CIDR ranges to whitelist (Only if service type is `LoadBalancer`) |
 | `service.loadBalancerIP`        | Service Load Balancer IP Address (Only if service type is `LoadBalancer`) |
 | `ingress.enabled`        | If `true` Ingress will be created      | `false`
-| `ingress.path`        | Ingress Path (Only if ingress is enabled)| `/`
+| `ingress.path`        | Ingress Path (Only if ingress is enabled)| `/*`
+| `ingress.additionalRules`        | Additional Ingress Rules| `[]`
 | `ingress.annotations`        | Ingress Annoations| `{}`
 | `ingress.hostname`        | Ingress Hostname (Required only if ingress is enabled)|
 | `ingress.tls.secretName`        | Ingress TLS Secret Name - if provided, the ingress will terminate TLS|
@@ -163,6 +164,7 @@ The following table lists the configurable parameters of the chart and their def
 | `persistence.jenkinsWorkspace.accessMode` | Jenkins Workspace Storage PesistentVolumeClaim accessMode | `ReadWriteOnce`
 | `persistence.jenkinsWorkspace.size` | Jenkins Workspace Storage PesistentVolumeClaim size | `8Gi`
 | `persistence.jenkinsWorkspace.storageClass` | External Jenkins Workspace Storage PesistentVolumeClaim | If set to `"-"`, then storageClass: `""`, which disables dynamic provisioning. If undefined (the default) or set to null, no storageClass spec is set, choosing the default provisioner. (gp2 on AWS, standard on GKE, AWS & OpenStack)
+| `podAnnotations` | Additional Pod Annotations | `{}`
 | `persistence.volumes` | Additional volumes to be included within the Deployments |
 | `persistence.mounts` | Additional mounts to be mounted to the container |
 | `nodeSelector` | Node Selector | `{}`
