@@ -28,7 +28,7 @@ ingress:
   ## tls termination using annotations
   httpProtocol: http
   enabled: false
-  path: /*
+  path: /
   # hostname: jenkins.host.name
   # annotations: {}
   # tls:

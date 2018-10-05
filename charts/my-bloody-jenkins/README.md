@@ -132,7 +132,7 @@ The following table lists the configurable parameters of the chart and their def
 | `service.loadBalancerSourceRanges`        | Array Of IP CIDR ranges to whitelist (Only if service type is `LoadBalancer`) |
 | `service.loadBalancerIP`        | Service Load Balancer IP Address (Only if service type is `LoadBalancer`) |
 | `ingress.enabled`        | If `true` Ingress will be created      | `false`
-| `ingress.path`        | Ingress Path (Only if ingress is enabled)| `/*`
+| `ingress.path`        | Ingress Path (Only if ingress is enabled)| `/`
 | `ingress.additionalRules`        | Additional Ingress Rules| `[]`
 | `ingress.annotations`        | Ingress Annoations| `{}`
 | `ingress.hostname`        | Ingress Hostname (Required only if ingress is enabled)|
