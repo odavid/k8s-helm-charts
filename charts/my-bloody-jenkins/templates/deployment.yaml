@@ -154,7 +154,7 @@ spec:
 
       volumes:
 {{- if and .Values.persistence .Values.persistence.volumes }}
-{{ toYaml .Values.persistence.volumes | indent 6 }}
+{{ toYaml .Values.persistence.volumes | indent 8 }}
 {{- end }}
         {{- if .Values.persistence.mountDockerSocket }}
         - name: docker-socket
