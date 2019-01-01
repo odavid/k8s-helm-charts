@@ -32,6 +32,10 @@ spec:
       {{- if and .Values.rbac .Values.rbac.create }}
       serviceAccountName: {{ (include "my-bloody-jenkins.fullname" .) | quote }}
       {{- end }}
+    {{- with .Values.image.imagePullSecrets }}
+      imagePullSecrets:
+{{ toYaml . | indent 8 }}
+    {{- end }}
       containers:
         - name: {{ .Chart.Name }}
           image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
