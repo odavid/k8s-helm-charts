@@ -64,6 +64,7 @@ The chart provides the ability to control:
 * `persistence.jenkinsHome.size` - the managed volume size
 * `persistence.jenkinsHome.storageClass` - If set to `"-"`, then storageClass: `""`, which disables dynamic provisioning. If undefined (the default) or set to null, no storageClass spec is set, choosing the default provisioner. (gp2 on AWS, standard on GKE, AWS & OpenStack)
 * `persistence.jenkinsHome.existingClaim` - if provided, jenkins storage will be stored on an manually managed persistentVolumeClaim
+* `persistence.jenkinsHome.resourcePolicy` - If set to keep, the persistent volume will not be deleted when the release is deleted. Default is `keep`
 * `persistence.jenkinsHome.annotations` - annotations that will be added to the managed persistentVolumeClaim
 
 ## Secrets
@@ -163,6 +164,7 @@ The following table lists the configurable parameters of the chart and their def
 | `persistence.jenkinsWorkspace.annotations` | Jenkins Workspace Storage PesistentVolumeClaim annotations | `{}`
 | `persistence.jenkinsWorkspace.accessMode` | Jenkins Workspace Storage PesistentVolumeClaim accessMode | `ReadWriteOnce`
 | `persistence.jenkinsWorkspace.size` | Jenkins Workspace Storage PesistentVolumeClaim size | `8Gi`
+* `persistence.jenkinsWorkspace.resourcePolicy` - Jenkins Workspace Storage PesistentVolumeClaim resource policy, whether to keep or delete the PesistentVolumeClaim when the release is deleted | `keep`
 | `persistence.jenkinsWorkspace.storageClass` | External Jenkins Workspace Storage PesistentVolumeClaim | If set to `"-"`, then storageClass: `""`, which disables dynamic provisioning. If undefined (the default) or set to null, no storageClass spec is set, choosing the default provisioner. (gp2 on AWS, standard on GKE, AWS & OpenStack)
 | `podAnnotations` | Additional Pod Annotations | `{}`
 | `persistence.volumes` | Additional volumes to be included within the Deployments |

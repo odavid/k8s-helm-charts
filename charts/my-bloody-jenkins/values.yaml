@@ -91,6 +91,8 @@ livenessProbe:
 persistence:
   mountDockerSocket: true
   jenkinsHome:
+    # helm resource policy - whether to keep or delete the persistent workspace after the release is deleted
+    resourcePolicy: keep
     enabled: true
     annotations: {}
     accessMode: ReadWriteOnce
@@ -108,6 +110,8 @@ persistence:
     # storageClass: "-"
   jenkinsWorkspace:
     enabled: false
+    # helm resource policy - whether to keep or delete the persistent workspace after the release is deleted
+    resourcePolicy: keep
     annotations: {}
     accessMode: ReadWriteOnce
     size: 8Gi

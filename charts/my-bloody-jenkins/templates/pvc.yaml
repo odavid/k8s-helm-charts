@@ -3,9 +3,14 @@
 kind: PersistentVolumeClaim
 apiVersion: v1
 metadata:
-{{- if .Values.persistence.jenkinsHome.annotations }}
+{{- if or .Values.persistence.jenkinsHome.annotations .Values.persistence.jenkinsHome.resourcePolicy }}
   annotations:
+{{- if .Values.persistence.jenkinsHome.annotations }}
 {{ toYaml .Values.persistence.jenkinsHome.annotations | indent 4 }}
+{{- end }}
+{{- if .Values.persistence.jenkinsHome.resourcePolicy }}
+    "helm.sh/resource-policy": {{ .Values.persistence.jenkinsHome.resourcePolicy }}
+{{- end }}
 {{- end }}
   name: {{ template "my-bloody-jenkins.jenkinsHome.claimName" . }}
   labels:
@@ -33,9 +38,14 @@ spec:
 kind: PersistentVolumeClaim
 apiVersion: v1
 metadata:
-{{- if .Values.persistence.jenkinsWorkspace.annotations }}
+{{- if or .Values.persistence.jenkinsWorkspace.annotations .Values.persistence.jenkinsWorkspace.resourcePolicy }}
   annotations:
+{{- if .Values.persistence.jenkinsWorkspace.annotations }}
 {{ toYaml .Values.persistence.jenkinsWorkspace.annotations | indent 4 }}
+{{- end }}
+{{- if .Values.persistence.jenkinsWorkspace.resourcePolicy }}
+    "helm.sh/resource-policy": {{ .Values.persistence.jenkinsWorkspace.resourcePolicy }}
+{{- end }}
 {{- end }}
   name: {{ template "my-bloody-jenkins.jenkinsWorkspace.claimName" . }}
   labels:
