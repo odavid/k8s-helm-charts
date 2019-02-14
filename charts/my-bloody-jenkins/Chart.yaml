@@ -1,11 +1,11 @@
 ---
 name: my-bloody-jenkins
-version: 0.1.15
-appVersion: "2.150.1-100"
+version: 0.1.18
+appVersion: "2.150.2-106"
 icon: https://wiki.jenkins-ci.org/download/attachments/2916393/logo.png
 description: >
    A Helm chart for my-bloody-jenkins - a self configured jenkins docker image, based on Jenkins LTS.
-   Inspired by https://github.com/kubernetes/charts/tree/master/stable/jenkins, but better suites https://github.com/odavid/my-bloody-jenkins.
+   Inspired by https://github.com/kubernetes/charts/tree/master/stable/jenkins, but better suites https://github.com/odavid/my-bloody-jenkins
 sources:
   - https://github.com/odavid/my-bloody-jenkins
   - https://github.com/odavid/my-bloody-jenkins-helm-chart
