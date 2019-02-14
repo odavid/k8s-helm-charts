@@ -62,6 +62,6 @@ Define default values
 {{- .Values.persistenceExistingClaim | default (include "my-bloody-jenkins.fullname" .) -}}
 {{- end -}}
 
-{{- define "my-bloody-jenkins.tlsSecretName -}}"
+{{- define "my-bloody-jenkins.tlsSecretName" -}}
 {{- printf "%s-tls-secret" (include "my-bloody-jenkins.fullname" .) -}}
 {{- end -}}
