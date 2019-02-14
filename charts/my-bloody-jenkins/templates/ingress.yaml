@@ -23,6 +23,7 @@ spec:
 {{- else }}
       secretName: {{ template "my-bloody-jenkins.tlsSecretName" . }}
 {{- end }}
+{{- end }}
   rules:
   - host: {{ required ".Values.ingress.hostname is required!" .Values.ingress.hostname }}
     http:
