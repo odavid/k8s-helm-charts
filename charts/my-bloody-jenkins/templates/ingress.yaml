@@ -18,9 +18,9 @@ spec:
   tls:
     - hosts:
       - {{ .Values.ingress.hostname }}
-{{- if .Values.ingress.tls }}
+{{- if .Values.ingress.tls.secretName }}
       secretName: {{ .Values.ingress.tls.secretName }}
-{{- else }}
+{{- else if (and .Values.ingress.tls.certificate .Values.ingress.tls.privateKey) }}
       secretName: {{ template "my-bloody-jenkins.tlsSecretName" . }}
 {{- end }}
 {{- end }}
