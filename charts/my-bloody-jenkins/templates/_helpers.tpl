@@ -61,3 +61,7 @@ Define default values
 {{- define "my-bloody-jenkins.persistentVolumeClaimName" -}}
 {{- .Values.persistenceExistingClaim | default (include "my-bloody-jenkins.fullname" .) -}}
 {{- end -}}
+
+{{- define "my-bloody-jenkins.tlsSecretName" -}}
+{{- printf "%s-tls-secret" (include "my-bloody-jenkins.fullname" .) -}}
+{{- end -}}

@@ -14,11 +14,15 @@ metadata:
 {{ toYaml . | indent 4 }}
 {{- end }}
 spec:
-{{- if .Values.ingress.tls }}
+{{- if or .Values.ingress.tls (and .Values.ingress.tls.certificate .Values.ingress.tls.privateKey) }}
   tls:
     - hosts:
       - {{ .Values.ingress.hostname }}
+{{- if .Values.ingress.tls.secretName }}
       secretName: {{ .Values.ingress.tls.secretName }}
+{{- else if (and .Values.ingress.tls.certificate .Values.ingress.tls.privateKey) }}
+      secretName: {{ template "my-bloody-jenkins.tlsSecretName" . }}
+{{- end }}
 {{- end }}
   rules:
   - host: {{ required ".Values.ingress.hostname is required!" .Values.ingress.hostname }}

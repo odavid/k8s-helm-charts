@@ -33,6 +33,8 @@ ingress:
   # annotations: {}
   # tls:
   #   secretName:
+  #   certificate:
+  #   privateKey:
 
   ## Ability to add more ingress rules
   additionalRules:
