@@ -11,7 +11,7 @@ The chart will do the following:
 * Optionally expose Jenkins with [Ingress](https://kubernetes.io/docs/concepts/services-networking/ingress/)
 * Manages a [Persistent Volume Claim](https://kubernetes.io/docs/concepts/storage/persistent-volumes/) for Jenkins Storage
 * Optionally mount extenral [secrets](https://kubernetes.io/docs/concepts/configuration/secret/) as volumes to be used within the configuration [See docs](https://github.com/odavid/my-bloody-jenkins/pull/102)
-* Optionally mount extenral [configMaps](https://kubernetes-v1-4.github.io/docs/user-guide/configmap/) to be used as configuration data sources [See docs](https://github.com/odavid/my-bloody-jenkins/pull/102)
+* Optionally mount external [configMaps](https://kubernetes-v1-4.github.io/docs/user-guide/configmap/) to be used as configuration data sources [See docs](https://github.com/odavid/my-bloody-jenkins/pull/102)
 * Optionally configures [rbac](https://kubernetes.io/docs/reference/access-authn-authz/rbac/) and a dedicated [service account](https://kubernetes.io/docs/tasks/configure-pod-container/configure-service-account/)
 
 
