@@ -136,9 +136,9 @@ The following table lists the configurable parameters of the chart and their def
 | `ingress.additionalRules`        | Additional Ingress Rules| `[]`
 | `ingress.annotations`        | Ingress Annoations| `{}`
 | `ingress.hostname`        | Ingress Hostname (Required only if ingress is enabled)|
-| `ingress.tls.secretName`        | Ingress TLS Secret Name - if provided, the ingress will terminate TLS|
-| `ingress.tls.certificate`        | Ingress TLS Certificate - if provided, the ingress will use this certificate|
-| `ingress.tls.privateKey`        | Ingress TLS private key - if provided, the ingress will use this private key|
+| `ingress.tls.secretName`        | Ingress TLS Secret Name - if provided, the ingress will terminate TLS using the certificate and private key in this secret. This setting is mutually exclusive with ingress.tls.certificate and ingress.tls.privateKey|
+| `ingress.tls.certificate`        | Ingress TLS Certificate - if provided, the ingress will use this certificate. Use in conjunction with ingress.tls.privateKey|
+| `ingress.tls.privateKey`        | Ingress TLS private key - if provided, the ingress will use this private key. Use in conjunction with ingress.tls.certificate |
 | `rbac.create`        | If `true` - a ServiceAccount, and a Role will be created| `true`
 | `rbac.clusterWideAccess`        | If `true` - A ClusterRole will be created instead of Role - relevant only if `rbac.create` is `true`| `false`
 | `resources.requests.cpu` | Initial CPU Request  |
