@@ -14,7 +14,7 @@ metadata:
 {{ toYaml . | indent 4 }}
 {{- end }}
 spec:
-{{- if or .Values.ingress.tls (and .Values.ingress.tls.certificate .Values.ingress.tls.privateKey) }}
+{{- if .Values.ingress.tls }}
   tls:
     - hosts:
       - {{ .Values.ingress.hostname }}
