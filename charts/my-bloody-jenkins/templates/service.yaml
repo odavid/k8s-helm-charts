@@ -35,4 +35,3 @@ spec:
   loadBalancerIP: {{ .Values.service.loadBalancerIP }}
   {{end}}
   {{end}}
-
