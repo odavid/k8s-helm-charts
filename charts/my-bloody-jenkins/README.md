@@ -145,11 +145,11 @@ The following table lists the configurable parameters of the chart and their def
 | `resources.requests.memory` | Initial Memory Request  |
 | `resources.limits.cpu` | CPU Limit |
 | `resources.limits.memory` | Memory Limit |
-| `readinessProbe.timeout` | Readiness Probe Timeout | `5`
+| `readinessProbe.timeoutSeconds` | Readiness Probe Timeout in seconds | `5`
 | `readinessProbe.initialDelaySeconds` | Readiness Probe Initial Delay in seconds | `5`
 | `readinessProbe.periodSeconds` | Readiness Probe - check for readiess every `X` seconds | `5`
 | `readinessProbe.failureThreshold` | Readiness Probe - Mark the pod as not ready for traffic after `X` consecutive failures | `3`
-| `livenessProbe.timeout` | Liveness Probe Timeout | `5`
+| `livenessProbe.timeoutSeconds` | Liveness Probe Timeout in seconds | `5`
 | `livenessProbe.initialDelaySeconds` | Liveness Probe Initial Delay in seconds - a high value since it takes time to start| `600`
 | `livenessProbe.periodSeconds` | Liveness  Probe - check for liveness every `X` seconds | `5`
 | `livenessProbe.failureThreshold` | Liveness Probe - Kill the pod after `X` consecutive failures | `3`

@@ -71,13 +71,13 @@ resources:
 ## It can take a lot of time for jenkins to be started
 ## This is why the livenessProbe.initialDelaySeconds is high
 readinessProbe:
-  timeout: 5
+  timeoutSeconds: 5
   initialDelaySeconds: 5
   periodSeconds: 5
   failureThreshold: 3
 
 livenessProbe:
-  timeout: 5
+  timeoutSeconds: 5
   initialDelaySeconds: 600
   periodSeconds: 5
   failureThreshold: 3
