@@ -3,7 +3,7 @@
 ## Override image
 image:
   repository: odavid/my-bloody-jenkins
-  tag: 2.164.1-113
+  tag: 2.164.2-118
   pullPolicy: IfNotPresent
   imagePullSecrets:
 ########################################################
