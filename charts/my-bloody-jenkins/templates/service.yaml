@@ -13,6 +13,9 @@ metadata:
 {{- end }}
 spec:
   type: {{ .Values.service.type }}
+{{- with .Values.service.externalTrafficPolicy }}
+  externalTrafficPolicy: {{ . | quote }}
+{{- end }}
   selector:
     app: {{ template "my-bloody-jenkins.name" . }}
     release: {{ .Release.Name }}

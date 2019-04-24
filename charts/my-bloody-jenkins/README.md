@@ -128,6 +128,7 @@ The following table lists the configurable parameters of the chart and their def
 | `image.pullPolicy`        | Image Pull Policy                 | `IfNotPresent`
 | `image.imagePullSecrets`        | Docker registry pull secret       |
 | `service.type`            | Service Type   | `LoadBalanacer`
+| `service.externalTrafficPolicy` | externalTrafficPolicy |
 | `service.annotations`        | Service Annotations       | `{}`
 | `service.loadBalancerSourceRanges`        | Array Of IP CIDR ranges to whitelist (Only if service type is `LoadBalancer`) |
 | `service.loadBalancerIP`        | Service Load Balancer IP Address (Only if service type is `LoadBalancer`) |

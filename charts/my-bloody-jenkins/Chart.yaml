@@ -1,6 +1,6 @@
 ---
 name: my-bloody-jenkins
-version: 0.1.26
+version: 0.1.27
 appVersion: "2.164.2-118"
 icon: https://wiki.jenkins-ci.org/download/attachments/2916393/logo.png
 description: >
