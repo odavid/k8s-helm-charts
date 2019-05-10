@@ -25,13 +25,18 @@ spec:
 {{- end }}
 {{- end }}
   rules:
-  - host: {{ required ".Values.ingress.hostname is required!" .Values.ingress.hostname }}
-    http:
+{{- if .Values.ingress.preAdditionalRules }}
+{{ toYaml .Values.ingress.preAdditionalRules | indent 2 }}
+{{- end }}
+  - http:
       paths:
         - path: {{ .Values.ingress.path }}
           backend:
             serviceName: {{ $fullName }}
             servicePort: http
+{{-  if .Values.ingress.hostname }}
+    host: {{ .Values.ingress.hostname }}
+{{- end }}
 {{- if .Values.ingress.additionalRules }}
 {{ toYaml .Values.ingress.additionalRules | indent 2 }}
 {{- end }}
