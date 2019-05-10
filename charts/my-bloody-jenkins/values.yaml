@@ -23,6 +23,11 @@ service:
 
 ########################################################
 ## Exposing ingress
+##
+## Set the jenkinsURL configuration.
+## If not set and ingress is enabled, then jenkins URL is
+## {{ .Values.ingress.httpProtocol }}://{{ .Values.ingress.hostname }}{{ .Values.ingress.path }}
+# jenkinsURL: https://jenkins.host.name
 ingress:
   ## Change to https if the ingress uses tls or you are using external
   ## tls termination using annotations
@@ -42,6 +47,7 @@ ingress:
   #     paths:
   #     - path: path
   #       backend:
+  preAdditionalRules:
 ########################################################
 
 ########################################################

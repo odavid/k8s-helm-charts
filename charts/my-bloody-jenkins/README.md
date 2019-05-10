@@ -133,10 +133,12 @@ The following table lists the configurable parameters of the chart and their def
 | `service.loadBalancerSourceRanges`        | Array Of IP CIDR ranges to whitelist (Only if service type is `LoadBalancer`) |
 | `service.loadBalancerIP`        | Service Load Balancer IP Address (Only if service type is `LoadBalancer`) |
 | `ingress.enabled`        | If `true` Ingress will be created      | `false`
+| `ingress.httpProtocol`  |  Change to https if the ingress uses tls or you are using external tls termination using annotations | `http`
 | `ingress.path`        | Ingress Path (Only if ingress is enabled)| `/`
-| `ingress.additionalRules`        | Additional Ingress Rules| `[]`
+| `ingress.additionalRules`        | Additional Ingress Rules| `[]` that will be appended to the actual ingress rule.
+| `ingress.preAdditionalRules`        | Additional Ingress Rules| `[]` that will be pre-appended to the actual ingress rule. Useful when using alb ingress class with [actions](https://kubernetes-sigs.github.io/aws-alb-ingress-controller/guide/ingress/annotation/#actions)
 | `ingress.annotations`        | Ingress Annoations| `{}`
-| `ingress.hostname`        | Ingress Hostname (Required only if ingress is enabled)|
+| `ingress.hostname`        | Ingress Hostname |
 | `ingress.tls.secretName`        | Ingress TLS Secret Name - if provided, the ingress will terminate TLS using the certificate and private key in this secret. This setting is mutually exclusive with ingress.tls.certificate and ingress.tls.privateKey|
 | `ingress.tls.certificate`        | Ingress TLS Certificate - if provided, the ingress will use this certificate. Use in conjunction with ingress.tls.privateKey|
 | `ingress.tls.privateKey`        | Ingress TLS private key - if provided, the ingress will use this private key. Use in conjunction with ingress.tls.certificate |
@@ -180,5 +182,6 @@ The following table lists the configurable parameters of the chart and their def
 | `jenkinsAdminUser` | The name of the admin user - must be a valid user within the [Jenkins Security Realm](https://github.com/odavid/my-bloody-jenkins#security-section)| `admin`
 | `javaMemoryOpts` | Jenkins Java Memory Opts | `-Xmx256m`
 | `useHostNetwork` | If true, jenkins master will use hostNetwork | `false`
+| `jenkinsURL` | Set the jenkinsURL configuration. If not set and ingress is enabled, then jenkins URL is {{ .Values.ingress.httpProtocol }}://{{ .Values.ingress.hostname }}{{ .Values.ingress.path }} |
 
 

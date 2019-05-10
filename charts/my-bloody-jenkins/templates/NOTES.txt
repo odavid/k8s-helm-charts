@@ -1,5 +1,7 @@
 1. Get Jenkins URL by running these commands:
-{{- if .Values.ingress.enabled }}
+{{- if .Values.jenkinsURL }}
+  {{ .Values.jenkinsURL | quote }}
+{{- else if .Values.ingress.enabled }}
   {{ .Values.ingress.httpProtocol }}://{{ .Values.ingress.hostname }}{{ .Values.ingress.path }}
 {{- else if contains "NodePort" .Values.service.type }}
   export NODE_PORT=$(kubectl get --namespace {{ .Release.Namespace }} -o jsonpath="{.spec.ports[0].nodePort}" services {{ template "my-bloody-jenkins.fullname" . }})
