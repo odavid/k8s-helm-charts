@@ -10,14 +10,7 @@ metadata:
 data:
   jenkins-config.yml: |-
 {{- if .Values.managedConfig }}
-{{ toYaml .Values.managedConfig | indent 4}}
-{{- if not .Values.managedConfig.security }}
-    security:
-      securityOptions: {}
-{{- end }}
-{{- else }}
-    security:
-      securityOptions: {}
+{{ toYaml .Values.managedConfig | indent 4 }}
 {{- end }}
 
   k8s-default-cloud.yml: |-
@@ -36,6 +29,4 @@ data:
             jvmArgs: {{ default .Values.defaultK8sCloud.jvmArgs "-Xmx1g" }}
             volumes:
               - '/var/run/docker.sock:/var/run/docker.sock'
-{{- else }}
-    clouds: {}
 {{- end }}
