@@ -16,17 +16,17 @@ data:
   k8s-default-cloud.yml: |-
 {{- if and (.Values.defaultK8sCloud) (.Values.defaultK8sCloud.enabled) }}
     clouds:
-      {{ default .Values.defaultK8sCloud.name "k8s" }}:
+      {{ .Values.defaultK8sCloud.name | default "k8s" }}:
         type: kubernetes
         jenkinsUrl: http://{{ include "my-bloody-jenkins.fullname" . }}:8080
         namespace: {{ .Release.Namespace }}
         templates:
           - name: kubeslave
-            image: {{ default .Values.defaultK8sCloud.slaveImage "odavid/jenkins-jnlp-slave:latest" }}
+            image: {{ .Values.defaultK8sCloud.slaveImage | default "odavid/jenkins-jnlp-slave:latest" }}
             labels:
 {{ toYaml (default .Values.defaultK8sCloud.labels) | indent 14 }}
-            remoteFs: {{ default .Values.defaultK8sCloud.remoteFs "/home/jenkins" }}
-            jvmArgs: {{ default .Values.defaultK8sCloud.jvmArgs "-Xmx1g" }}
+            remoteFs: {{ .Values.defaultK8sCloud.remoteFs | default "/home/jenkins" }}
+            jvmArgs: {{ .Values.defaultK8sCloud.jvmArgs | default "-Xmx1g" }}
             volumes:
               - '/var/run/docker.sock:/var/run/docker.sock'
 {{- end }}
