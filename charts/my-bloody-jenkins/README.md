@@ -143,6 +143,7 @@ The following table lists the configurable parameters of the chart and their def
 | `ingress.tls.certificate`        | Ingress TLS Certificate - if provided, the ingress will use this certificate. Use in conjunction with ingress.tls.privateKey|
 | `ingress.tls.privateKey`        | Ingress TLS private key - if provided, the ingress will use this private key. Use in conjunction with ingress.tls.certificate |
 | `rbac.create`        | If `true` - a ServiceAccount, and a Role will be created| `true`
+| `rbac.serviceAccount.annotations`        | Specify ServiceAccount annotations | {}
 | `rbac.clusterWideAccess`        | If `true` - A ClusterRole will be created instead of Role - relevant only if `rbac.create` is `true`| `false`
 | `resources.requests.cpu` | Initial CPU Request  |
 | `resources.requests.memory` | Initial Memory Request  |
@@ -183,5 +184,3 @@ The following table lists the configurable parameters of the chart and their def
 | `javaMemoryOpts` | Jenkins Java Memory Opts | `-Xmx256m`
 | `useHostNetwork` | If true, jenkins master will use hostNetwork | `false`
 | `jenkinsURL` | Set the jenkinsURL configuration. If not set and ingress is enabled, then jenkins URL is {{ .Values.ingress.httpProtocol }}://{{ .Values.ingress.hostname }}{{ .Values.ingress.path }} |
-
-
