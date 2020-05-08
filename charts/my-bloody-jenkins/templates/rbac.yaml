@@ -5,6 +5,10 @@ apiVersion: v1
 kind: ServiceAccount
 metadata:
   name: {{ $fullName }}
+{{- with .Values.rbac.serviceAccount.annotations }}
+  annotations:
+{{ toYaml . | indent 4 }}
+{{- end }}
 
 ---
 kind: {{ if .Values.rbac.clusterWideAccess }}"ClusterRole"{{ else }}"Role"{{ end }}
