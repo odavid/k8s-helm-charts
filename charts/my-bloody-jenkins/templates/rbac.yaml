@@ -1,5 +1,6 @@
 {{- if .Values.rbac.create }}
 {{- $fullName := include "my-bloody-jenkins.fullname" . }}
+{{- if .Values.rbac.createServiceAccount }}
 ---
 apiVersion: v1
 kind: ServiceAccount
@@ -8,6 +9,7 @@ metadata:
 {{- with .Values.rbac.serviceAccount.annotations }}
   annotations:
 {{ toYaml . | indent 4 }}
+{{- end }}
 {{- end }}
 
 ---
@@ -43,6 +45,6 @@ roleRef:
   name: {{ $fullName }}
 subjects:
 - kind: ServiceAccount
-  name: {{ $fullName }}
+  name: {{ if .Values.rbac.createServiceAccount }}{{ $fullName }}{{ else }}{{ .Values.rbac.serviceAccountName }}{{ end }}
   namespace: "{{ .Release.Namespace }}"
 {{- end }}

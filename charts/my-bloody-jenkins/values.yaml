@@ -56,6 +56,10 @@ ingress:
 rbac:
   ## Create serviceAccount, Eole and RoleBindings
   create: true
+  ## If createServiceAccount = false, and rbac.create = true, the chart will only use the rbac.serviceAaccountName within RoleBindings
+  createServiceAccount: true
+  ## Ignored if createServiceAccount = true
+  serviceAaccountName: 'default'
   serviceAccount:
     annotations: {}
   ## Instead of Role, create a ClusterRole and ClusterRoleBindings
@@ -153,6 +157,11 @@ affinity: {}
 ########################################################
 ## Add more annotations to pod
 podAnnotations: {}
+########################################################
+
+########################################################
+## Security Context for jenkins pod
+securityContext: {}
 ########################################################
 
 ########################################################
