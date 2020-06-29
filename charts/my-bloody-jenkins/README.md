@@ -143,6 +143,8 @@ The following table lists the configurable parameters of the chart and their def
 | `ingress.tls.certificate`        | Ingress TLS Certificate - if provided, the ingress will use this certificate. Use in conjunction with ingress.tls.privateKey|
 | `ingress.tls.privateKey`        | Ingress TLS private key - if provided, the ingress will use this private key. Use in conjunction with ingress.tls.certificate |
 | `rbac.create`        | If `true` - a ServiceAccount, and a Role will be created| `true`
+| `rbac.createServiceAccount`        | If `createServiceAccount` = `false`, and `rbac.create` = `true`, the chart will only use the `rbac.serviceAaccountName` within RoleBindings | true
+| `rbac.serviceAccountName`        | Ignored if createServiceAccount = true | `default`
 | `rbac.serviceAccount.annotations`        | Specify ServiceAccount annotations | {}
 | `rbac.clusterWideAccess`        | If `true` - A ClusterRole will be created instead of Role - relevant only if `rbac.create` is `true`| `false`
 | `resources.requests.cpu` | Initial CPU Request  |
@@ -175,6 +177,7 @@ The following table lists the configurable parameters of the chart and their def
 | `persistence.mounts` | Additional mounts to be mounted to the container |
 | `nodeSelector` | Node Selector | `{}`
 | `tolerations` | Tolerations | `[]`
+| `securityContxet` | Security Context for jenkins pod | `{}`
 | `affinity` | Affinity | `{}`
 | `env` | Additional Environment Variables to be passed to the container - format `key`: `value` |
 | `secret` | A dict containing KEY/VALUE pairs. Each pair will become an environment variable `JENKINS_SECRET_<KEY>`, if the `secrets` dict is not empty a k8s secret will be created|

@@ -29,8 +29,12 @@ spec:
       {{- if and .Values.useHostNetwork }}
       hostNetwork: true
       {{- end }}
+      {{- with .Values.securityContext }}
+      securityContext:
+{{ toYaml . | indent 8 }}
+      {{- end }}
       {{- if and .Values.rbac .Values.rbac.create }}
-      serviceAccountName: {{ (include "my-bloody-jenkins.fullname" .) | quote }}
+      serviceAccountName: {{ if .Values.rbac.createServiceAccount }}{{ (include "my-bloody-jenkins.fullname" .) | quote }}{{ else }}{{ .Values.rbac.serviceAccountName | quote }}{{ end }}
       {{- end }}
     {{- with .Values.image.imagePullSecrets }}
       imagePullSecrets:
