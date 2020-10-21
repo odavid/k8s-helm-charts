@@ -230,7 +230,7 @@ defaultK8sCloud:
 ## A managed configuration based on
 ## My Bloody Jenkins YAML config.
 ## See: https://github.com/odavid/my-bloody-jenkins#configuration-reference
-managedConfig:
+managedConfig: {}
 ## Configure Security - https://github.com/odavid/my-bloody-jenkins#security-section
 # security:
 ## Configure tools - https://github.com/odavid/my-bloody-jenkins#tools-section

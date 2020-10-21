@@ -1,6 +1,6 @@
 ---
 name: my-bloody-jenkins
-version: 0.1.132
+version: 0.1.133
 appVersion: "2.249.2-227"
 icon: https://raw.githubusercontent.com/odavid/k8s-helm-charts/master/charts/my-bloody-jenkins/logo/jenkins-logo.png
 description: >
