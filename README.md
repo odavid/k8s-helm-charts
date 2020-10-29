@@ -1,5 +1,5 @@
 # Helm Charts
-[![Build Status](https://travis-ci.org/odavid/k8s-helm-charts.svg?branch=master)](https://travis-ci.org/odavid/k8s-helm-charts)
+[![Build Status](https://travis-ci.com/odavid/k8s-helm-charts.svg?branch=master)](https://travis-ci.com/odavid/k8s-helm-charts)
 
 List of Helm Charts to support docker images that are maintained by [odavid](https://github.com/odavid).
 
