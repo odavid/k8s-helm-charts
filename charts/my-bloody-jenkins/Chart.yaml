@@ -1,7 +1,7 @@
 ---
 name: my-bloody-jenkins
-version: 0.1.143
-appVersion: "2.263.2-237"
+version: 0.1.144
+appVersion: "2.263.2-238"
 icon: https://raw.githubusercontent.com/odavid/k8s-helm-charts/master/charts/my-bloody-jenkins/logo/jenkins-logo.png
 description: >
    A Helm chart for my-bloody-jenkins - a self configured jenkins docker image, based on Jenkins LTS.
