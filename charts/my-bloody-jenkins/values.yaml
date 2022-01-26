@@ -34,8 +34,11 @@ ingress:
   httpProtocol: http
   enabled: false
   path: /
+  pathType: Prefix
+  # ingressClassName: ""
   # hostname: jenkins.host.name
   # annotations: {}
+  # labels: {}
   # tls:
   #   secretName:
   #   certificate:
@@ -59,7 +62,7 @@ rbac:
   ## If createServiceAccount = false, and rbac.create = true, the chart will only use the rbac.serviceAaccountName within RoleBindings
   createServiceAccount: true
   ## Ignored if createServiceAccount = true
-  serviceAaccountName: 'default'
+  serviceAaccountName: "default"
   serviceAccount:
     annotations: {}
   ## Instead of Role, create a ClusterRole and ClusterRoleBindings
@@ -199,7 +202,6 @@ configMaps:
 #  - my-config-map
 ########################################################
 
-
 ########################################################
 ## The jenkins Admin Username - must be a valid username
 ## within the Jenkins Security Realm
@@ -209,7 +211,7 @@ jenkinsAdminUser: admin
 ########################################################
 ## Java Options for Jenkins Master. Make sure
 ## resource limits and requests are defined accordingly
-javaMemoryOpts: '-Xmx256m'
+javaMemoryOpts: "-Xmx256m"
 ########################################################
 
 ########################################################

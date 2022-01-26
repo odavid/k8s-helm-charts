@@ -138,7 +138,10 @@ The following table lists the configurable parameters of the chart and their def
 | `ingress.additionalRules`        | Additional Ingress Rules| `[]` that will be appended to the actual ingress rule.
 | `ingress.preAdditionalRules`        | Additional Ingress Rules| `[]` that will be pre-appended to the actual ingress rule. Useful when using alb ingress class with [actions](https://kubernetes-sigs.github.io/aws-alb-ingress-controller/guide/ingress/annotation/#actions)
 | `ingress.annotations`        | Ingress Annoations| `{}`
+| `ingress.labels`        | Ingress Labels| `{}`
 | `ingress.hostname`        | Ingress Hostname |
+| `ingress.ingressClassName`        | Ingress Class Name | 
+| `ingress.pathType`        | Ingress Path Type | `Prefix`
 | `ingress.tls.secretName`        | Ingress TLS Secret Name - if provided, the ingress will terminate TLS using the certificate and private key in this secret. This setting is mutually exclusive with ingress.tls.certificate and ingress.tls.privateKey|
 | `ingress.tls.certificate`        | Ingress TLS Certificate - if provided, the ingress will use this certificate. Use in conjunction with ingress.tls.privateKey|
 | `ingress.tls.privateKey`        | Ingress TLS private key - if provided, the ingress will use this private key. Use in conjunction with ingress.tls.certificate |
