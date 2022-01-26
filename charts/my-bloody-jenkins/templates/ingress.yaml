@@ -1,7 +1,7 @@
 {{- if .Values.ingress.enabled -}}
 {{- $fullName := include "my-bloody-jenkins.fullname" . -}}
-{{- if .Capabilities.APIVersions.Has "networking.k8s.io/v1beta1" }}
-apiVersion: networking.k8s.io/v1beta1
+{{- if .Capabilities.APIVersions.Has "networking.k8s.io/v1" }}
+apiVersion: networking.k8s.io/v1
 {{ else }}
 apiVersion: extensions/v1beta1
 {{ end -}}
@@ -13,11 +13,17 @@ metadata:
     chart: {{ template "my-bloody-jenkins.chart" . }}
     release: {{ .Release.Name }}
     heritage: {{ .Release.Service }}
+{{- with .Values.ingress.labels }}
+{{ toYaml . | indent 4 }}
+{{- end }}
 {{- with .Values.ingress.annotations }}
   annotations:
 {{ toYaml . | indent 4 }}
 {{- end }}
 spec:
+{{- if .Values.ingress.ingressClassName }}
+  ingressClassName: {{ .Values.ingress.ingressClassName }}
+{{- end }}
 {{- if .Values.ingress.tls }}
   tls:
     - hosts:
@@ -35,9 +41,12 @@ spec:
   - http:
       paths:
         - path: {{ .Values.ingress.path }}
+          pathType: {{ .Values.ingress.pathType }}
           backend:
-            serviceName: {{ $fullName }}
-            servicePort: http
+            service: 
+              name: {{ $fullName }}
+              port: 
+                name: http
 {{-  if .Values.ingress.hostname }}
     host: {{ .Values.ingress.hostname }}
 {{- end }}
