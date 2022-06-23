@@ -21,4 +21,3305 @@ entries:
     urls:
     - https://github.com/odavid/k8s-helm-charts/releases/download/my-bloody-jenkins-0.1.189/my-bloody-jenkins-0.1.189.tgz
     version: 0.1.189
-generated: "2022-06-23T12:54:22.336534366Z"
+  - apiVersion: v1
+    name: my-bloody-jenkins
+    description: "A Helm chart for my-bloody-jenkins - a self configured jenkins docker\
+      \ image, based on Jenkins LTS. Inspired by https://github.com/kubernetes/charts/tree/master/stable/jenkins,\
+      \ but better suites https://github.com/odavid/my-bloody-jenkins\n"
+    version: 0.1.185
+    created: 2022-05-13T22:11:16.043Z
+    appVersion: 2.332.3-277
+    digest: 8173451d0b533056af63686bad11ba705f62a0063befb359923b6edf4cfa120a
+    icon: https://raw.githubusercontent.com/odavid/k8s-helm-charts/master/charts/my-bloody-jenkins/logo/jenkins-logo.png
+    urls:
+    - my-bloody-jenkins-0.1.185.tgz
+    sources:
+    - https://github.com/odavid/my-bloody-jenkins
+    - https://github.com/odavid/k8s-helm-charts/tree/master/charts/my-bloody-jenkins
+    - https://github.com/odavid/jenkins-jnlp-slave
+    maintainers:
+    - email: ohad.david@gmail.com
+      name: odavid
+  - apiVersion: v1
+    name: my-bloody-jenkins
+    description: "A Helm chart for my-bloody-jenkins - a self configured jenkins docker\
+      \ image, based on Jenkins LTS. Inspired by https://github.com/kubernetes/charts/tree/master/stable/jenkins,\
+      \ but better suites https://github.com/odavid/my-bloody-jenkins\n"
+    version: 0.1.184
+    created: 2022-05-13T21:47:10.793Z
+    appVersion: 2.332.3-276
+    digest: 2cb584de21a87e53363bd0fe71ecc6bb5c9b6f3957f5c55fb361045caab61f5d
+    icon: https://raw.githubusercontent.com/odavid/k8s-helm-charts/master/charts/my-bloody-jenkins/logo/jenkins-logo.png
+    urls:
+    - my-bloody-jenkins-0.1.184.tgz
+    sources:
+    - https://github.com/odavid/my-bloody-jenkins
+    - https://github.com/odavid/k8s-helm-charts/tree/master/charts/my-bloody-jenkins
+    - https://github.com/odavid/jenkins-jnlp-slave
+    maintainers:
+    - email: ohad.david@gmail.com
+      name: odavid
+  - apiVersion: v1
+    name: my-bloody-jenkins
+    description: "A Helm chart for my-bloody-jenkins - a self configured jenkins docker\
+      \ image, based on Jenkins LTS. Inspired by https://github.com/kubernetes/charts/tree/master/stable/jenkins,\
+      \ but better suites https://github.com/odavid/my-bloody-jenkins\n"
+    version: 0.1.183
+    created: 2022-04-07T23:10:03.299Z
+    appVersion: 2.332.2-275
+    digest: 4e5a97bbad01f12103648954a5005c802cf60258a73d2814466161366afa6062
+    icon: https://raw.githubusercontent.com/odavid/k8s-helm-charts/master/charts/my-bloody-jenkins/logo/jenkins-logo.png
+    urls:
+    - my-bloody-jenkins-0.1.183.tgz
+    sources:
+    - https://github.com/odavid/my-bloody-jenkins
+    - https://github.com/odavid/k8s-helm-charts/tree/master/charts/my-bloody-jenkins
+    - https://github.com/odavid/jenkins-jnlp-slave
+    maintainers:
+    - email: ohad.david@gmail.com
+      name: odavid
+  - apiVersion: v1
+    name: my-bloody-jenkins
+    description: "A Helm chart for my-bloody-jenkins - a self configured jenkins docker\
+      \ image, based on Jenkins LTS. Inspired by https://github.com/kubernetes/charts/tree/master/stable/jenkins,\
+      \ but better suites https://github.com/odavid/my-bloody-jenkins\n"
+    version: 0.1.182
+    created: 2022-04-07T22:45:29.056Z
+    appVersion: 2.332.2-274
+    digest: 1ec88f93c25d7678ceea2d5e000f4367ab004c128787114b2cc6a3dc5ee53372
+    icon: https://raw.githubusercontent.com/odavid/k8s-helm-charts/master/charts/my-bloody-jenkins/logo/jenkins-logo.png
+    urls:
+    - my-bloody-jenkins-0.1.182.tgz
+    sources:
+    - https://github.com/odavid/my-bloody-jenkins
+    - https://github.com/odavid/k8s-helm-charts/tree/master/charts/my-bloody-jenkins
+    - https://github.com/odavid/jenkins-jnlp-slave
+    maintainers:
+    - email: ohad.david@gmail.com
+      name: odavid
+  - apiVersion: v1
+    name: my-bloody-jenkins
+    description: "A Helm chart for my-bloody-jenkins - a self configured jenkins docker\
+      \ image, based on Jenkins LTS. Inspired by https://github.com/kubernetes/charts/tree/master/stable/jenkins,\
+      \ but better suites https://github.com/odavid/my-bloody-jenkins\n"
+    version: 0.1.181
+    created: 2022-03-18T13:14:05.892Z
+    appVersion: 2.332.1-273
+    digest: 837f653cd12d561b3f7300ed2c66ba1ae516253fb2fe2035a0d37ca7dd719fa1
+    icon: https://raw.githubusercontent.com/odavid/k8s-helm-charts/master/charts/my-bloody-jenkins/logo/jenkins-logo.png
+    urls:
+    - my-bloody-jenkins-0.1.181.tgz
+    sources:
+    - https://github.com/odavid/my-bloody-jenkins
+    - https://github.com/odavid/k8s-helm-charts/tree/master/charts/my-bloody-jenkins
+    - https://github.com/odavid/jenkins-jnlp-slave
+    maintainers:
+    - email: ohad.david@gmail.com
+      name: odavid
+  - apiVersion: v1
+    name: my-bloody-jenkins
+    description: "A Helm chart for my-bloody-jenkins - a self configured jenkins docker\
+      \ image, based on Jenkins LTS. Inspired by https://github.com/kubernetes/charts/tree/master/stable/jenkins,\
+      \ but better suites https://github.com/odavid/my-bloody-jenkins\n"
+    version: 0.1.180
+    created: 2022-03-18T12:55:57.216Z
+    appVersion: 2.332.1-272
+    digest: 684e0a0aa8a7aa8c0a49743e48950f628b042f2831dba5a40361b89d77d33271
+    icon: https://raw.githubusercontent.com/odavid/k8s-helm-charts/master/charts/my-bloody-jenkins/logo/jenkins-logo.png
+    urls:
+    - my-bloody-jenkins-0.1.180.tgz
+    sources:
+    - https://github.com/odavid/my-bloody-jenkins
+    - https://github.com/odavid/k8s-helm-charts/tree/master/charts/my-bloody-jenkins
+    - https://github.com/odavid/jenkins-jnlp-slave
+    maintainers:
+    - email: ohad.david@gmail.com
+      name: odavid
+  - apiVersion: v1
+    name: my-bloody-jenkins
+    description: "A Helm chart for my-bloody-jenkins - a self configured jenkins docker\
+      \ image, based on Jenkins LTS. Inspired by https://github.com/kubernetes/charts/tree/master/stable/jenkins,\
+      \ but better suites https://github.com/odavid/my-bloody-jenkins\n"
+    version: 0.1.179
+    created: 2022-02-18T11:57:25.706Z
+    appVersion: 2.319.3-271
+    digest: e81929fa6655ef9aea6e20df62c9768820fb0ccb0300655d8d33a455e2a6876c
+    icon: https://raw.githubusercontent.com/odavid/k8s-helm-charts/master/charts/my-bloody-jenkins/logo/jenkins-logo.png
+    urls:
+    - my-bloody-jenkins-0.1.179.tgz
+    sources:
+    - https://github.com/odavid/my-bloody-jenkins
+    - https://github.com/odavid/k8s-helm-charts/tree/master/charts/my-bloody-jenkins
+    - https://github.com/odavid/jenkins-jnlp-slave
+    maintainers:
+    - email: ohad.david@gmail.com
+      name: odavid
+  - apiVersion: v1
+    name: my-bloody-jenkins
+    description: "A Helm chart for my-bloody-jenkins - a self configured jenkins docker\
+      \ image, based on Jenkins LTS. Inspired by https://github.com/kubernetes/charts/tree/master/stable/jenkins,\
+      \ but better suites https://github.com/odavid/my-bloody-jenkins\n"
+    version: 0.1.178
+    created: 2022-02-15T06:50:09.479Z
+    appVersion: 2.319.3-270
+    digest: 3bd37ea4b3867ea5cfdf4174d44b6f25834801f92a3d12385880ad25c76607c1
+    icon: https://raw.githubusercontent.com/odavid/k8s-helm-charts/master/charts/my-bloody-jenkins/logo/jenkins-logo.png
+    urls:
+    - my-bloody-jenkins-0.1.178.tgz
+    sources:
+    - https://github.com/odavid/my-bloody-jenkins
+    - https://github.com/odavid/k8s-helm-charts/tree/master/charts/my-bloody-jenkins
+    - https://github.com/odavid/jenkins-jnlp-slave
+    maintainers:
+    - email: ohad.david@gmail.com
+      name: odavid
+  - apiVersion: v1
+    name: my-bloody-jenkins
+    description: "A Helm chart for my-bloody-jenkins - a self configured jenkins docker\
+      \ image, based on Jenkins LTS. Inspired by https://github.com/kubernetes/charts/tree/master/stable/jenkins,\
+      \ but better suites https://github.com/odavid/my-bloody-jenkins\n"
+    version: 0.1.177
+    created: 2022-02-14T21:24:52.291Z
+    appVersion: 2.319.3-269
+    digest: 6b8d52339a04c0f2cba68cb4915075c2474c1cdb18761655073a08ae2481800e
+    icon: https://raw.githubusercontent.com/odavid/k8s-helm-charts/master/charts/my-bloody-jenkins/logo/jenkins-logo.png
+    urls:
+    - my-bloody-jenkins-0.1.177.tgz
+    sources:
+    - https://github.com/odavid/my-bloody-jenkins
+    - https://github.com/odavid/k8s-helm-charts/tree/master/charts/my-bloody-jenkins
+    - https://github.com/odavid/jenkins-jnlp-slave
+    maintainers:
+    - email: ohad.david@gmail.com
+      name: odavid
+  - apiVersion: v1
+    name: my-bloody-jenkins
+    description: "A Helm chart for my-bloody-jenkins - a self configured jenkins docker\
+      \ image, based on Jenkins LTS. Inspired by https://github.com/kubernetes/charts/tree/master/stable/jenkins,\
+      \ but better suites https://github.com/odavid/my-bloody-jenkins\n"
+    version: 0.1.176
+    created: 2022-01-26T18:22:48.580Z
+    appVersion: 2.319.2-268
+    digest: 9c53afac9dc57ab7d85e3c44de8d52a87f3758e743425ae6649af72c87630454
+    icon: https://raw.githubusercontent.com/odavid/k8s-helm-charts/master/charts/my-bloody-jenkins/logo/jenkins-logo.png
+    urls:
+    - my-bloody-jenkins-0.1.176.tgz
+    sources:
+    - https://github.com/odavid/my-bloody-jenkins
+    - https://github.com/odavid/k8s-helm-charts/tree/master/charts/my-bloody-jenkins
+    - https://github.com/odavid/jenkins-jnlp-slave
+    maintainers:
+    - email: ohad.david@gmail.com
+      name: odavid
+  - apiVersion: v1
+    name: my-bloody-jenkins
+    description: "A Helm chart for my-bloody-jenkins - a self configured jenkins docker\
+      \ image, based on Jenkins LTS. Inspired by https://github.com/kubernetes/charts/tree/master/stable/jenkins,\
+      \ but better suites https://github.com/odavid/my-bloody-jenkins\n"
+    version: 0.1.175
+    created: 2022-01-15T10:58:53.391Z
+    appVersion: 2.319.2-268
+    digest: c269ee01e60a0da0a6cdd854e3f109dbd17bb53346a8d4a1afe429f51eb06acf
+    icon: https://raw.githubusercontent.com/odavid/k8s-helm-charts/master/charts/my-bloody-jenkins/logo/jenkins-logo.png
+    urls:
+    - my-bloody-jenkins-0.1.175.tgz
+    sources:
+    - https://github.com/odavid/my-bloody-jenkins
+    - https://github.com/odavid/k8s-helm-charts/tree/master/charts/my-bloody-jenkins
+    - https://github.com/odavid/jenkins-jnlp-slave
+    maintainers:
+    - email: ohad.david@gmail.com
+      name: odavid
+  - apiVersion: v1
+    name: my-bloody-jenkins
+    description: "A Helm chart for my-bloody-jenkins - a self configured jenkins docker\
+      \ image, based on Jenkins LTS. Inspired by https://github.com/kubernetes/charts/tree/master/stable/jenkins,\
+      \ but better suites https://github.com/odavid/my-bloody-jenkins\n"
+    version: 0.1.174
+    created: 2022-01-15T10:42:26.875Z
+    appVersion: 2.319.2-267
+    digest: 00244f41e466d0ce6a2636e26066e96877279850686462a6e083b31ec3728b57
+    icon: https://raw.githubusercontent.com/odavid/k8s-helm-charts/master/charts/my-bloody-jenkins/logo/jenkins-logo.png
+    urls:
+    - my-bloody-jenkins-0.1.174.tgz
+    sources:
+    - https://github.com/odavid/my-bloody-jenkins
+    - https://github.com/odavid/k8s-helm-charts/tree/master/charts/my-bloody-jenkins
+    - https://github.com/odavid/jenkins-jnlp-slave
+    maintainers:
+    - email: ohad.david@gmail.com
+      name: odavid
+  - apiVersion: v1
+    name: my-bloody-jenkins
+    description: "A Helm chart for my-bloody-jenkins - a self configured jenkins docker\
+      \ image, based on Jenkins LTS. Inspired by https://github.com/kubernetes/charts/tree/master/stable/jenkins,\
+      \ but better suites https://github.com/odavid/my-bloody-jenkins\n"
+    version: 0.1.173
+    created: 2021-12-03T12:47:20.222Z
+    appVersion: 2.319.1-266
+    digest: b79ccaeb49c65a28400c2d4f982a8c0859d59dede55d6fb8b9570d01c7ee1880
+    icon: https://raw.githubusercontent.com/odavid/k8s-helm-charts/master/charts/my-bloody-jenkins/logo/jenkins-logo.png
+    urls:
+    - my-bloody-jenkins-0.1.173.tgz
+    sources:
+    - https://github.com/odavid/my-bloody-jenkins
+    - https://github.com/odavid/k8s-helm-charts/tree/master/charts/my-bloody-jenkins
+    - https://github.com/odavid/jenkins-jnlp-slave
+    maintainers:
+    - email: ohad.david@gmail.com
+      name: odavid
+  - apiVersion: v1
+    name: my-bloody-jenkins
+    description: "A Helm chart for my-bloody-jenkins - a self configured jenkins docker\
+      \ image, based on Jenkins LTS. Inspired by https://github.com/kubernetes/charts/tree/master/stable/jenkins,\
+      \ but better suites https://github.com/odavid/my-bloody-jenkins\n"
+    version: 0.1.172
+    created: 2021-12-03T07:19:07.115Z
+    appVersion: 2.319.1-265
+    digest: 14259d4b69644de076bdf6ad210213dc3e72534de32e3e8ab20c7b2d67578c67
+    icon: https://raw.githubusercontent.com/odavid/k8s-helm-charts/master/charts/my-bloody-jenkins/logo/jenkins-logo.png
+    urls:
+    - my-bloody-jenkins-0.1.172.tgz
+    sources:
+    - https://github.com/odavid/my-bloody-jenkins
+    - https://github.com/odavid/k8s-helm-charts/tree/master/charts/my-bloody-jenkins
+    - https://github.com/odavid/jenkins-jnlp-slave
+    maintainers:
+    - email: ohad.david@gmail.com
+      name: odavid
+  - apiVersion: v1
+    name: my-bloody-jenkins
+    description: "A Helm chart for my-bloody-jenkins - a self configured jenkins docker\
+      \ image, based on Jenkins LTS. Inspired by https://github.com/kubernetes/charts/tree/master/stable/jenkins,\
+      \ but better suites https://github.com/odavid/my-bloody-jenkins\n"
+    version: 0.1.171
+    created: 2021-11-08T20:47:08.675Z
+    appVersion: 2.303.3-264
+    digest: 2046cb6124677add9e819a44c4bf35148d960a6e103d99a60a6fe2c8f09c981c
+    icon: https://raw.githubusercontent.com/odavid/k8s-helm-charts/master/charts/my-bloody-jenkins/logo/jenkins-logo.png
+    urls:
+    - my-bloody-jenkins-0.1.171.tgz
+    sources:
+    - https://github.com/odavid/my-bloody-jenkins
+    - https://github.com/odavid/k8s-helm-charts/tree/master/charts/my-bloody-jenkins
+    - https://github.com/odavid/jenkins-jnlp-slave
+    maintainers:
+    - email: ohad.david@gmail.com
+      name: odavid
+  - apiVersion: v1
+    name: my-bloody-jenkins
+    description: "A Helm chart for my-bloody-jenkins - a self configured jenkins docker\
+      \ image, based on Jenkins LTS. Inspired by https://github.com/kubernetes/charts/tree/master/stable/jenkins,\
+      \ but better suites https://github.com/odavid/my-bloody-jenkins\n"
+    version: 0.1.170
+    created: 2021-10-11T06:24:57.981Z
+    appVersion: 2.303.2-263
+    digest: 57d044f787b84a7977bc591b50a1c84ec2b1e93fe8c69d9ea7d7d15a0ac64039
+    icon: https://raw.githubusercontent.com/odavid/k8s-helm-charts/master/charts/my-bloody-jenkins/logo/jenkins-logo.png
+    urls:
+    - my-bloody-jenkins-0.1.170.tgz
+    sources:
+    - https://github.com/odavid/my-bloody-jenkins
+    - https://github.com/odavid/k8s-helm-charts/tree/master/charts/my-bloody-jenkins
+    - https://github.com/odavid/jenkins-jnlp-slave
+    maintainers:
+    - email: ohad.david@gmail.com
+      name: odavid
+  - apiVersion: v1
+    name: my-bloody-jenkins
+    description: "A Helm chart for my-bloody-jenkins - a self configured jenkins docker\
+      \ image, based on Jenkins LTS. Inspired by https://github.com/kubernetes/charts/tree/master/stable/jenkins,\
+      \ but better suites https://github.com/odavid/my-bloody-jenkins\n"
+    version: 0.1.169
+    created: 2021-10-10T17:25:21.340Z
+    appVersion: 2.303.2-262
+    digest: fb41377d316019fc4e98da08831aece13ebb9d3dac6486436a3389c7825b2055
+    icon: https://raw.githubusercontent.com/odavid/k8s-helm-charts/master/charts/my-bloody-jenkins/logo/jenkins-logo.png
+    urls:
+    - my-bloody-jenkins-0.1.169.tgz
+    sources:
+    - https://github.com/odavid/my-bloody-jenkins
+    - https://github.com/odavid/k8s-helm-charts/tree/master/charts/my-bloody-jenkins
+    - https://github.com/odavid/jenkins-jnlp-slave
+    maintainers:
+    - email: ohad.david@gmail.com
+      name: odavid
+  - apiVersion: v1
+    name: my-bloody-jenkins
+    description: "A Helm chart for my-bloody-jenkins - a self configured jenkins docker\
+      \ image, based on Jenkins LTS. Inspired by https://github.com/kubernetes/charts/tree/master/stable/jenkins,\
+      \ but better suites https://github.com/odavid/my-bloody-jenkins\n"
+    version: 0.1.168
+    created: 2021-08-27T20:42:52.936Z
+    appVersion: 2.303.1-261
+    digest: a472abe21821efa79c4950b69b989e55072e0893aa1d3d515cda22210e2673f6
+    icon: https://raw.githubusercontent.com/odavid/k8s-helm-charts/master/charts/my-bloody-jenkins/logo/jenkins-logo.png
+    urls:
+    - my-bloody-jenkins-0.1.168.tgz
+    sources:
+    - https://github.com/odavid/my-bloody-jenkins
+    - https://github.com/odavid/k8s-helm-charts/tree/master/charts/my-bloody-jenkins
+    - https://github.com/odavid/jenkins-jnlp-slave
+    maintainers:
+    - email: ohad.david@gmail.com
+      name: odavid
+  - apiVersion: v1
+    name: my-bloody-jenkins
+    description: "A Helm chart for my-bloody-jenkins - a self configured jenkins docker\
+      \ image, based on Jenkins LTS. Inspired by https://github.com/kubernetes/charts/tree/master/stable/jenkins,\
+      \ but better suites https://github.com/odavid/my-bloody-jenkins\n"
+    version: 0.1.167
+    created: 2021-08-27T15:51:37.659Z
+    appVersion: 2.303.1-260
+    digest: 3f0452a09734f47581fa52cb3b0d867e97ce0d269bb6063c741f6ae13c9db3f0
+    icon: https://raw.githubusercontent.com/odavid/k8s-helm-charts/master/charts/my-bloody-jenkins/logo/jenkins-logo.png
+    urls:
+    - my-bloody-jenkins-0.1.167.tgz
+    sources:
+    - https://github.com/odavid/my-bloody-jenkins
+    - https://github.com/odavid/k8s-helm-charts/tree/master/charts/my-bloody-jenkins
+    - https://github.com/odavid/jenkins-jnlp-slave
+    maintainers:
+    - email: ohad.david@gmail.com
+      name: odavid
+  - apiVersion: v1
+    name: my-bloody-jenkins
+    description: "A Helm chart for my-bloody-jenkins - a self configured jenkins docker\
+      \ image, based on Jenkins LTS. Inspired by https://github.com/kubernetes/charts/tree/master/stable/jenkins,\
+      \ but better suites https://github.com/odavid/my-bloody-jenkins\n"
+    version: 0.1.166
+    created: 2021-08-07T11:08:54.353Z
+    appVersion: 2.289.3-259
+    digest: 0036d30e6de1b7529ed1f858beddaddb74b779197c7e9a49103b39831785d807
+    icon: https://raw.githubusercontent.com/odavid/k8s-helm-charts/master/charts/my-bloody-jenkins/logo/jenkins-logo.png
+    urls:
+    - my-bloody-jenkins-0.1.166.tgz
+    sources:
+    - https://github.com/odavid/my-bloody-jenkins
+    - https://github.com/odavid/k8s-helm-charts/tree/master/charts/my-bloody-jenkins
+    - https://github.com/odavid/jenkins-jnlp-slave
+    maintainers:
+    - email: ohad.david@gmail.com
+      name: odavid
+  - apiVersion: v1
+    name: my-bloody-jenkins
+    description: "A Helm chart for my-bloody-jenkins - a self configured jenkins docker\
+      \ image, based on Jenkins LTS. Inspired by https://github.com/kubernetes/charts/tree/master/stable/jenkins,\
+      \ but better suites https://github.com/odavid/my-bloody-jenkins\n"
+    version: 0.1.165
+    created: 2021-08-06T07:11:53.388Z
+    appVersion: 2.289.3-258
+    digest: 862a151403467be9ebd32f86b5d68f3fe89ade1e3050d2e9f06a10eea415d973
+    icon: https://raw.githubusercontent.com/odavid/k8s-helm-charts/master/charts/my-bloody-jenkins/logo/jenkins-logo.png
+    urls:
+    - my-bloody-jenkins-0.1.165.tgz
+    sources:
+    - https://github.com/odavid/my-bloody-jenkins
+    - https://github.com/odavid/k8s-helm-charts/tree/master/charts/my-bloody-jenkins
+    - https://github.com/odavid/jenkins-jnlp-slave
+    maintainers:
+    - email: ohad.david@gmail.com
+      name: odavid
+  - apiVersion: v1
+    name: my-bloody-jenkins
+    description: "A Helm chart for my-bloody-jenkins - a self configured jenkins docker\
+      \ image, based on Jenkins LTS. Inspired by https://github.com/kubernetes/charts/tree/master/stable/jenkins,\
+      \ but better suites https://github.com/odavid/my-bloody-jenkins\n"
+    version: 0.1.163
+    created: 2021-07-02T19:51:25.477Z
+    appVersion: 2.289.2-256
+    digest: 91cb7b2bbc8614015c09207b09590f2c4e08ddf211da86112189a5293c3d959f
+    icon: https://raw.githubusercontent.com/odavid/k8s-helm-charts/master/charts/my-bloody-jenkins/logo/jenkins-logo.png
+    urls:
+    - my-bloody-jenkins-0.1.163.tgz
+    sources:
+    - https://github.com/odavid/my-bloody-jenkins
+    - https://github.com/odavid/k8s-helm-charts/tree/master/charts/my-bloody-jenkins
+    - https://github.com/odavid/jenkins-jnlp-slave
+    maintainers:
+    - email: ohad.david@gmail.com
+      name: odavid
+  - apiVersion: v1
+    name: my-bloody-jenkins
+    description: "A Helm chart for my-bloody-jenkins - a self configured jenkins docker\
+      \ image, based on Jenkins LTS. Inspired by https://github.com/kubernetes/charts/tree/master/stable/jenkins,\
+      \ but better suites https://github.com/odavid/my-bloody-jenkins\n"
+    version: 0.1.162
+    created: 2021-07-01T20:13:43.153Z
+    appVersion: 2.289.2-255
+    digest: 671c2b1ea03c947ee0615555ee2ede1141f509063f091d19fa2bcfd4bd77ab20
+    icon: https://raw.githubusercontent.com/odavid/k8s-helm-charts/master/charts/my-bloody-jenkins/logo/jenkins-logo.png
+    urls:
+    - my-bloody-jenkins-0.1.162.tgz
+    sources:
+    - https://github.com/odavid/my-bloody-jenkins
+    - https://github.com/odavid/k8s-helm-charts/tree/master/charts/my-bloody-jenkins
+    - https://github.com/odavid/jenkins-jnlp-slave
+    maintainers:
+    - email: ohad.david@gmail.com
+      name: odavid
+  - apiVersion: v1
+    name: my-bloody-jenkins
+    description: "A Helm chart for my-bloody-jenkins - a self configured jenkins docker\
+      \ image, based on Jenkins LTS. Inspired by https://github.com/kubernetes/charts/tree/master/stable/jenkins,\
+      \ but better suites https://github.com/odavid/my-bloody-jenkins\n"
+    version: 0.1.161
+    created: 2021-06-09T05:32:59.355Z
+    appVersion: 2.289.1-254
+    digest: c3c8ee6b2d09d61b0058f4ceed8e1c1c6a08e97f08a3b6572a02f1ff60f69843
+    icon: https://raw.githubusercontent.com/odavid/k8s-helm-charts/master/charts/my-bloody-jenkins/logo/jenkins-logo.png
+    urls:
+    - my-bloody-jenkins-0.1.161.tgz
+    sources:
+    - https://github.com/odavid/my-bloody-jenkins
+    - https://github.com/odavid/k8s-helm-charts/tree/master/charts/my-bloody-jenkins
+    - https://github.com/odavid/jenkins-jnlp-slave
+    maintainers:
+    - email: ohad.david@gmail.com
+      name: odavid
+  - apiVersion: v1
+    name: my-bloody-jenkins
+    description: "A Helm chart for my-bloody-jenkins - a self configured jenkins docker\
+      \ image, based on Jenkins LTS. Inspired by https://github.com/kubernetes/charts/tree/master/stable/jenkins,\
+      \ but better suites https://github.com/odavid/my-bloody-jenkins\n"
+    version: 0.1.160
+    created: 2021-06-08T20:11:29.243Z
+    appVersion: 2.289.1-253
+    digest: 4c30a5feee5a19d77ccef344839c06278dcb710f591e97870e9db9083d64cab8
+    icon: https://raw.githubusercontent.com/odavid/k8s-helm-charts/master/charts/my-bloody-jenkins/logo/jenkins-logo.png
+    urls:
+    - my-bloody-jenkins-0.1.160.tgz
+    sources:
+    - https://github.com/odavid/my-bloody-jenkins
+    - https://github.com/odavid/k8s-helm-charts/tree/master/charts/my-bloody-jenkins
+    - https://github.com/odavid/jenkins-jnlp-slave
+    maintainers:
+    - email: ohad.david@gmail.com
+      name: odavid
+  - apiVersion: v1
+    name: my-bloody-jenkins
+    description: "A Helm chart for my-bloody-jenkins - a self configured jenkins docker\
+      \ image, based on Jenkins LTS. Inspired by https://github.com/kubernetes/charts/tree/master/stable/jenkins,\
+      \ but better suites https://github.com/odavid/my-bloody-jenkins\n"
+    version: 0.1.159
+    created: 2021-05-15T11:27:31.055Z
+    appVersion: 2.277.4-252
+    digest: 0583c3b4bafb734fac3e6a9b6d6306d73947af094cfc40e0aff848032da02d13
+    icon: https://raw.githubusercontent.com/odavid/k8s-helm-charts/master/charts/my-bloody-jenkins/logo/jenkins-logo.png
+    urls:
+    - my-bloody-jenkins-0.1.159.tgz
+    sources:
+    - https://github.com/odavid/my-bloody-jenkins
+    - https://github.com/odavid/k8s-helm-charts/tree/master/charts/my-bloody-jenkins
+    - https://github.com/odavid/jenkins-jnlp-slave
+    maintainers:
+    - email: ohad.david@gmail.com
+      name: odavid
+  - apiVersion: v1
+    name: my-bloody-jenkins
+    description: "A Helm chart for my-bloody-jenkins - a self configured jenkins docker\
+      \ image, based on Jenkins LTS. Inspired by https://github.com/kubernetes/charts/tree/master/stable/jenkins,\
+      \ but better suites https://github.com/odavid/my-bloody-jenkins\n"
+    version: 0.1.158
+    created: 2021-05-13T06:21:52.760Z
+    appVersion: 2.277.4-251
+    digest: 2a3be30dc6872090c93d68097aaf22b7a7fae0109d3133eba1b4ca119a7dd486
+    icon: https://raw.githubusercontent.com/odavid/k8s-helm-charts/master/charts/my-bloody-jenkins/logo/jenkins-logo.png
+    urls:
+    - my-bloody-jenkins-0.1.158.tgz
+    sources:
+    - https://github.com/odavid/my-bloody-jenkins
+    - https://github.com/odavid/k8s-helm-charts/tree/master/charts/my-bloody-jenkins
+    - https://github.com/odavid/jenkins-jnlp-slave
+    maintainers:
+    - email: ohad.david@gmail.com
+      name: odavid
+  - apiVersion: v1
+    name: my-bloody-jenkins
+    description: "A Helm chart for my-bloody-jenkins - a self configured jenkins docker\
+      \ image, based on Jenkins LTS. Inspired by https://github.com/kubernetes/charts/tree/master/stable/jenkins,\
+      \ but better suites https://github.com/odavid/my-bloody-jenkins\n"
+    version: 0.1.157
+    created: 2021-05-09T06:06:19.636Z
+    appVersion: 2.277.4-250
+    digest: 578ab971b059fe7d639b89646960d46c77168ec8899fdb2dee2683520e2db6e7
+    icon: https://raw.githubusercontent.com/odavid/k8s-helm-charts/master/charts/my-bloody-jenkins/logo/jenkins-logo.png
+    urls:
+    - my-bloody-jenkins-0.1.157.tgz
+    sources:
+    - https://github.com/odavid/my-bloody-jenkins
+    - https://github.com/odavid/k8s-helm-charts/tree/master/charts/my-bloody-jenkins
+    - https://github.com/odavid/jenkins-jnlp-slave
+    maintainers:
+    - email: ohad.david@gmail.com
+      name: odavid
+  - apiVersion: v1
+    name: my-bloody-jenkins
+    description: "A Helm chart for my-bloody-jenkins - a self configured jenkins docker\
+      \ image, based on Jenkins LTS. Inspired by https://github.com/kubernetes/charts/tree/master/stable/jenkins,\
+      \ but better suites https://github.com/odavid/my-bloody-jenkins\n"
+    version: 0.1.156
+    created: 2021-05-08T15:43:04.661Z
+    appVersion: 2.277.4-249
+    digest: 360126a063bde5d2645c6097117fe204a772a8a2a1d344670995e5ea631f1972
+    icon: https://raw.githubusercontent.com/odavid/k8s-helm-charts/master/charts/my-bloody-jenkins/logo/jenkins-logo.png
+    urls:
+    - my-bloody-jenkins-0.1.156.tgz
+    sources:
+    - https://github.com/odavid/my-bloody-jenkins
+    - https://github.com/odavid/k8s-helm-charts/tree/master/charts/my-bloody-jenkins
+    - https://github.com/odavid/jenkins-jnlp-slave
+    maintainers:
+    - email: ohad.david@gmail.com
+      name: odavid
+  - apiVersion: v1
+    name: my-bloody-jenkins
+    description: "A Helm chart for my-bloody-jenkins - a self configured jenkins docker\
+      \ image, based on Jenkins LTS. Inspired by https://github.com/kubernetes/charts/tree/master/stable/jenkins,\
+      \ but better suites https://github.com/odavid/my-bloody-jenkins\n"
+    version: 0.1.155
+    created: 2021-04-14T05:47:34.499Z
+    appVersion: 2.277.2-248
+    digest: 1615d93d8b772ef96e57b4eb19851fadad20eb14490b954a898fab6e779cbe7d
+    icon: https://raw.githubusercontent.com/odavid/k8s-helm-charts/master/charts/my-bloody-jenkins/logo/jenkins-logo.png
+    urls:
+    - my-bloody-jenkins-0.1.155.tgz
+    sources:
+    - https://github.com/odavid/my-bloody-jenkins
+    - https://github.com/odavid/k8s-helm-charts/tree/master/charts/my-bloody-jenkins
+    - https://github.com/odavid/jenkins-jnlp-slave
+    maintainers:
+    - email: ohad.david@gmail.com
+      name: odavid
+  - apiVersion: v1
+    name: my-bloody-jenkins
+    description: "A Helm chart for my-bloody-jenkins - a self configured jenkins docker\
+      \ image, based on Jenkins LTS. Inspired by https://github.com/kubernetes/charts/tree/master/stable/jenkins,\
+      \ but better suites https://github.com/odavid/my-bloody-jenkins\n"
+    version: 0.1.154
+    created: 2021-04-13T15:08:48.950Z
+    appVersion: 2.277.2-247
+    digest: da78fb296bc57b39f4acb77a46194a9c8c8dc57b1030c51d2e26fcef09a6d5ff
+    icon: https://raw.githubusercontent.com/odavid/k8s-helm-charts/master/charts/my-bloody-jenkins/logo/jenkins-logo.png
+    urls:
+    - my-bloody-jenkins-0.1.154.tgz
+    sources:
+    - https://github.com/odavid/my-bloody-jenkins
+    - https://github.com/odavid/k8s-helm-charts/tree/master/charts/my-bloody-jenkins
+    - https://github.com/odavid/jenkins-jnlp-slave
+    maintainers:
+    - email: ohad.david@gmail.com
+      name: odavid
+  - apiVersion: v1
+    name: my-bloody-jenkins
+    description: "A Helm chart for my-bloody-jenkins - a self configured jenkins docker\
+      \ image, based on Jenkins LTS. Inspired by https://github.com/kubernetes/charts/tree/master/stable/jenkins,\
+      \ but better suites https://github.com/odavid/my-bloody-jenkins\n"
+    version: 0.1.153
+    created: 2021-04-03T17:37:26.854Z
+    appVersion: 2.277.1-246
+    digest: caaffd0a90155eacddb0873aa866a6f1e735f4070cf5f61b30ad74078369f0e5
+    icon: https://raw.githubusercontent.com/odavid/k8s-helm-charts/master/charts/my-bloody-jenkins/logo/jenkins-logo.png
+    urls:
+    - my-bloody-jenkins-0.1.153.tgz
+    sources:
+    - https://github.com/odavid/my-bloody-jenkins
+    - https://github.com/odavid/k8s-helm-charts/tree/master/charts/my-bloody-jenkins
+    - https://github.com/odavid/jenkins-jnlp-slave
+    maintainers:
+    - email: ohad.david@gmail.com
+      name: odavid
+  - apiVersion: v1
+    name: my-bloody-jenkins
+    description: "A Helm chart for my-bloody-jenkins - a self configured jenkins docker\
+      \ image, based on Jenkins LTS. Inspired by https://github.com/kubernetes/charts/tree/master/stable/jenkins,\
+      \ but better suites https://github.com/odavid/my-bloody-jenkins\n"
+    version: 0.1.152
+    created: 2021-03-11T10:45:03.281Z
+    appVersion: 2.277.1-245
+    digest: 4a30e3d8fd206b94f9c02719856479794cd5670ad7ea1cfd2c461733d6afd3ab
+    icon: https://raw.githubusercontent.com/odavid/k8s-helm-charts/master/charts/my-bloody-jenkins/logo/jenkins-logo.png
+    urls:
+    - my-bloody-jenkins-0.1.152.tgz
+    sources:
+    - https://github.com/odavid/my-bloody-jenkins
+    - https://github.com/odavid/k8s-helm-charts/tree/master/charts/my-bloody-jenkins
+    - https://github.com/odavid/jenkins-jnlp-slave
+    maintainers:
+    - email: ohad.david@gmail.com
+      name: odavid
+  - apiVersion: v1
+    name: my-bloody-jenkins
+    description: "A Helm chart for my-bloody-jenkins - a self configured jenkins docker\
+      \ image, based on Jenkins LTS. Inspired by https://github.com/kubernetes/charts/tree/master/stable/jenkins,\
+      \ but better suites https://github.com/odavid/my-bloody-jenkins\n"
+    version: 0.1.151
+    created: 2021-03-07T21:59:43.642Z
+    appVersion: 2.263.4-244
+    digest: 4297ca2f7e0da95e2427384ec07a15228178175991612a046deb989a43508962
+    icon: https://raw.githubusercontent.com/odavid/k8s-helm-charts/master/charts/my-bloody-jenkins/logo/jenkins-logo.png
+    urls:
+    - my-bloody-jenkins-0.1.151.tgz
+    sources:
+    - https://github.com/odavid/my-bloody-jenkins
+    - https://github.com/odavid/k8s-helm-charts/tree/master/charts/my-bloody-jenkins
+    - https://github.com/odavid/jenkins-jnlp-slave
+    maintainers:
+    - email: ohad.david@gmail.com
+      name: odavid
+  - apiVersion: v1
+    name: my-bloody-jenkins
+    description: "A Helm chart for my-bloody-jenkins - a self configured jenkins docker\
+      \ image, based on Jenkins LTS. Inspired by https://github.com/kubernetes/charts/tree/master/stable/jenkins,\
+      \ but better suites https://github.com/odavid/my-bloody-jenkins\n"
+    version: 0.1.150
+    created: 2021-02-27T16:38:05.890Z
+    appVersion: 2.263.4-243
+    digest: cd9c5c570611e021bce9b6b66e27f85ae9da4603e76217dc37cc1c04d1568da2
+    icon: https://raw.githubusercontent.com/odavid/k8s-helm-charts/master/charts/my-bloody-jenkins/logo/jenkins-logo.png
+    urls:
+    - my-bloody-jenkins-0.1.150.tgz
+    sources:
+    - https://github.com/odavid/my-bloody-jenkins
+    - https://github.com/odavid/k8s-helm-charts/tree/master/charts/my-bloody-jenkins
+    - https://github.com/odavid/jenkins-jnlp-slave
+    maintainers:
+    - email: ohad.david@gmail.com
+      name: odavid
+  - apiVersion: v1
+    name: my-bloody-jenkins
+    description: "A Helm chart for my-bloody-jenkins - a self configured jenkins docker\
+      \ image, based on Jenkins LTS. Inspired by https://github.com/kubernetes/charts/tree/master/stable/jenkins,\
+      \ but better suites https://github.com/odavid/my-bloody-jenkins\n"
+    version: 0.1.149
+    created: 2021-02-18T12:00:31.495Z
+    appVersion: 2.263.4-242
+    digest: 9171db082494b14d7fbbf586e255b5465f3a2fafe63d82174b3c6c63b966da08
+    icon: https://raw.githubusercontent.com/odavid/k8s-helm-charts/master/charts/my-bloody-jenkins/logo/jenkins-logo.png
+    urls:
+    - my-bloody-jenkins-0.1.149.tgz
+    sources:
+    - https://github.com/odavid/my-bloody-jenkins
+    - https://github.com/odavid/k8s-helm-charts/tree/master/charts/my-bloody-jenkins
+    - https://github.com/odavid/jenkins-jnlp-slave
+    maintainers:
+    - email: ohad.david@gmail.com
+      name: odavid
+  - apiVersion: v1
+    name: my-bloody-jenkins
+    description: "A Helm chart for my-bloody-jenkins - a self configured jenkins docker\
+      \ image, based on Jenkins LTS. Inspired by https://github.com/kubernetes/charts/tree/master/stable/jenkins,\
+      \ but better suites https://github.com/odavid/my-bloody-jenkins\n"
+    version: 0.1.148
+    created: 2021-02-18T09:33:07.790Z
+    appVersion: 2.263.4-241
+    digest: 8f1580beff7a82266c8eb8cee7d37efdf4faa57736c0782e58bf5b781a529366
+    icon: https://raw.githubusercontent.com/odavid/k8s-helm-charts/master/charts/my-bloody-jenkins/logo/jenkins-logo.png
+    urls:
+    - my-bloody-jenkins-0.1.148.tgz
+    sources:
+    - https://github.com/odavid/my-bloody-jenkins
+    - https://github.com/odavid/k8s-helm-charts/tree/master/charts/my-bloody-jenkins
+    - https://github.com/odavid/jenkins-jnlp-slave
+    maintainers:
+    - email: ohad.david@gmail.com
+      name: odavid
+  - apiVersion: v1
+    name: my-bloody-jenkins
+    description: "A Helm chart for my-bloody-jenkins - a self configured jenkins docker\
+      \ image, based on Jenkins LTS. Inspired by https://github.com/kubernetes/charts/tree/master/stable/jenkins,\
+      \ but better suites https://github.com/odavid/my-bloody-jenkins\n"
+    version: 0.1.147
+    created: 2021-02-09T23:03:12.829Z
+    appVersion: 2.263.3-240
+    digest: 98cd447c6d38312c0d5a6b9d99058c92b0f5b18fd03c9d704d5973da039eb462
+    icon: https://raw.githubusercontent.com/odavid/k8s-helm-charts/master/charts/my-bloody-jenkins/logo/jenkins-logo.png
+    urls:
+    - my-bloody-jenkins-0.1.147.tgz
+    sources:
+    - https://github.com/odavid/my-bloody-jenkins
+    - https://github.com/odavid/k8s-helm-charts/tree/master/charts/my-bloody-jenkins
+    - https://github.com/odavid/jenkins-jnlp-slave
+    maintainers:
+    - email: ohad.david@gmail.com
+      name: odavid
+  - apiVersion: v1
+    name: my-bloody-jenkins
+    description: "A Helm chart for my-bloody-jenkins - a self configured jenkins docker\
+      \ image, based on Jenkins LTS. Inspired by https://github.com/kubernetes/charts/tree/master/stable/jenkins,\
+      \ but better suites https://github.com/odavid/my-bloody-jenkins\n"
+    version: 0.1.146
+    created: 2021-02-09T22:48:03.818Z
+    appVersion: 2.263.3-239
+    digest: 4b27fbc9b516a7a5e989330e129bf4310ce1801640ee781cc3a6972b4a8a572b
+    icon: https://raw.githubusercontent.com/odavid/k8s-helm-charts/master/charts/my-bloody-jenkins/logo/jenkins-logo.png
+    urls:
+    - my-bloody-jenkins-0.1.146.tgz
+    sources:
+    - https://github.com/odavid/my-bloody-jenkins
+    - https://github.com/odavid/k8s-helm-charts/tree/master/charts/my-bloody-jenkins
+    - https://github.com/odavid/jenkins-jnlp-slave
+    maintainers:
+    - email: ohad.david@gmail.com
+      name: odavid
+  - name: my-bloody-jenkins
+    description: "A Helm chart for my-bloody-jenkins - a self configured jenkins docker\
+      \ image, based on Jenkins LTS. Inspired by https://github.com/kubernetes/charts/tree/master/stable/jenkins,\
+      \ but better suites https://github.com/odavid/my-bloody-jenkins\n"
+    version: 0.1.145
+    created: 2021-01-26T21:54:16.064Z
+    appVersion: 2.263.3-239
+    digest: 271929c5871a4ce2b542d7a73aaa103a57bdfa1c9d90cdae6502cbd6ed16001f
+    icon: https://raw.githubusercontent.com/odavid/k8s-helm-charts/master/charts/my-bloody-jenkins/logo/jenkins-logo.png
+    urls:
+    - my-bloody-jenkins-0.1.145.tgz
+    sources:
+    - https://github.com/odavid/my-bloody-jenkins
+    - https://github.com/odavid/k8s-helm-charts/tree/master/charts/my-bloody-jenkins
+    - https://github.com/odavid/jenkins-jnlp-slave
+    maintainers:
+    - email: ohad.david@gmail.com
+      name: odavid
+  - name: my-bloody-jenkins
+    description: "A Helm chart for my-bloody-jenkins - a self configured jenkins docker\
+      \ image, based on Jenkins LTS. Inspired by https://github.com/kubernetes/charts/tree/master/stable/jenkins,\
+      \ but better suites https://github.com/odavid/my-bloody-jenkins\n"
+    version: 0.1.144
+    created: 2021-01-21T22:26:24.904Z
+    appVersion: 2.263.2-238
+    digest: 394158465ef987cbb90bcbcbd4e0a2ba8ce523594514ebcf614f3a29c9a61295
+    icon: https://raw.githubusercontent.com/odavid/k8s-helm-charts/master/charts/my-bloody-jenkins/logo/jenkins-logo.png
+    urls:
+    - my-bloody-jenkins-0.1.144.tgz
+    sources:
+    - https://github.com/odavid/my-bloody-jenkins
+    - https://github.com/odavid/k8s-helm-charts/tree/master/charts/my-bloody-jenkins
+    - https://github.com/odavid/jenkins-jnlp-slave
+    maintainers:
+    - email: ohad.david@gmail.com
+      name: odavid
+  - name: my-bloody-jenkins
+    description: "A Helm chart for my-bloody-jenkins - a self configured jenkins docker\
+      \ image, based on Jenkins LTS. Inspired by https://github.com/kubernetes/charts/tree/master/stable/jenkins,\
+      \ but better suites https://github.com/odavid/my-bloody-jenkins\n"
+    version: 0.1.143
+    created: 2021-01-14T23:19:33.640Z
+    appVersion: 2.263.2-237
+    digest: 0957dc0e8b8bfaab80274894df44ece2ed7873a06705cff3ff3a33437d78a24d
+    icon: https://raw.githubusercontent.com/odavid/k8s-helm-charts/master/charts/my-bloody-jenkins/logo/jenkins-logo.png
+    urls:
+    - my-bloody-jenkins-0.1.143.tgz
+    sources:
+    - https://github.com/odavid/my-bloody-jenkins
+    - https://github.com/odavid/k8s-helm-charts/tree/master/charts/my-bloody-jenkins
+    - https://github.com/odavid/jenkins-jnlp-slave
+    maintainers:
+    - email: ohad.david@gmail.com
+      name: odavid
+  - name: my-bloody-jenkins
+    description: "A Helm chart for my-bloody-jenkins - a self configured jenkins docker\
+      \ image, based on Jenkins LTS. Inspired by https://github.com/kubernetes/charts/tree/master/stable/jenkins,\
+      \ but better suites https://github.com/odavid/my-bloody-jenkins\n"
+    version: 0.1.142
+    created: 2020-12-09T12:15:23.601Z
+    appVersion: 2.263.1-236
+    digest: da3dcb72623fb7563e3f50a1cfbae619d54689e56068a41879b1dfec655cb14d
+    icon: https://raw.githubusercontent.com/odavid/k8s-helm-charts/master/charts/my-bloody-jenkins/logo/jenkins-logo.png
+    urls:
+    - my-bloody-jenkins-0.1.142.tgz
+    sources:
+    - https://github.com/odavid/my-bloody-jenkins
+    - https://github.com/odavid/k8s-helm-charts/tree/master/charts/my-bloody-jenkins
+    - https://github.com/odavid/jenkins-jnlp-slave
+    maintainers:
+    - email: ohad.david@gmail.com
+      name: odavid
+  - name: my-bloody-jenkins
+    description: "A Helm chart for my-bloody-jenkins - a self configured jenkins docker\
+      \ image, based on Jenkins LTS. Inspired by https://github.com/kubernetes/charts/tree/master/stable/jenkins,\
+      \ but better suites https://github.com/odavid/my-bloody-jenkins\n"
+    version: 0.1.141
+    created: 2020-12-03T11:06:59.655Z
+    appVersion: 2.263.1-235
+    digest: 52c7832a007574a48ceb7baf8befa62e8bf77566022a7d3b577adc151aaedf3f
+    icon: https://raw.githubusercontent.com/odavid/k8s-helm-charts/master/charts/my-bloody-jenkins/logo/jenkins-logo.png
+    urls:
+    - my-bloody-jenkins-0.1.141.tgz
+    sources:
+    - https://github.com/odavid/my-bloody-jenkins
+    - https://github.com/odavid/k8s-helm-charts/tree/master/charts/my-bloody-jenkins
+    - https://github.com/odavid/jenkins-jnlp-slave
+    maintainers:
+    - email: ohad.david@gmail.com
+      name: odavid
+  - name: my-bloody-jenkins
+    description: "A Helm chart for my-bloody-jenkins - a self configured jenkins docker\
+      \ image, based on Jenkins LTS. Inspired by https://github.com/kubernetes/charts/tree/master/stable/jenkins,\
+      \ but better suites https://github.com/odavid/my-bloody-jenkins\n"
+    version: 0.1.140
+    created: 2020-11-26T16:37:03.042Z
+    appVersion: 2.249.3-234
+    digest: 28bd4fc9960ff542cfc13cf10e69e4122773bdba3d44c833870168fc8edf3658
+    icon: https://raw.githubusercontent.com/odavid/k8s-helm-charts/master/charts/my-bloody-jenkins/logo/jenkins-logo.png
+    urls:
+    - my-bloody-jenkins-0.1.140.tgz
+    sources:
+    - https://github.com/odavid/my-bloody-jenkins
+    - https://github.com/odavid/k8s-helm-charts/tree/master/charts/my-bloody-jenkins
+    - https://github.com/odavid/jenkins-jnlp-slave
+    maintainers:
+    - email: ohad.david@gmail.com
+      name: odavid
+  - name: my-bloody-jenkins
+    description: "A Helm chart for my-bloody-jenkins - a self configured jenkins docker\
+      \ image, based on Jenkins LTS. Inspired by https://github.com/kubernetes/charts/tree/master/stable/jenkins,\
+      \ but better suites https://github.com/odavid/my-bloody-jenkins\n"
+    version: 0.1.139
+    created: 2020-11-18T19:09:36.302Z
+    appVersion: 2.249.3-233
+    digest: 3af7e337313770cab128b5f43f7b844da5e5b51435c9c802198edcbabc1ebc24
+    icon: https://raw.githubusercontent.com/odavid/k8s-helm-charts/master/charts/my-bloody-jenkins/logo/jenkins-logo.png
+    urls:
+    - my-bloody-jenkins-0.1.139.tgz
+    sources:
+    - https://github.com/odavid/my-bloody-jenkins
+    - https://github.com/odavid/k8s-helm-charts/tree/master/charts/my-bloody-jenkins
+    - https://github.com/odavid/jenkins-jnlp-slave
+    maintainers:
+    - email: ohad.david@gmail.com
+      name: odavid
+  - name: my-bloody-jenkins
+    description: "A Helm chart for my-bloody-jenkins - a self configured jenkins docker\
+      \ image, based on Jenkins LTS. Inspired by https://github.com/kubernetes/charts/tree/master/stable/jenkins,\
+      \ but better suites https://github.com/odavid/my-bloody-jenkins\n"
+    version: 0.1.138
+    created: 2020-11-09T22:38:08.250Z
+    appVersion: 2.249.3-232
+    digest: d6eb3344d9f765df9047b58153d91aa166c0dec125c58cc835dbe0d4ada01fb3
+    icon: https://raw.githubusercontent.com/odavid/k8s-helm-charts/master/charts/my-bloody-jenkins/logo/jenkins-logo.png
+    urls:
+    - my-bloody-jenkins-0.1.138.tgz
+    sources:
+    - https://github.com/odavid/my-bloody-jenkins
+    - https://github.com/odavid/k8s-helm-charts/tree/master/charts/my-bloody-jenkins
+    - https://github.com/odavid/jenkins-jnlp-slave
+    maintainers:
+    - email: ohad.david@gmail.com
+      name: odavid
+  - name: my-bloody-jenkins
+    description: "A Helm chart for my-bloody-jenkins - a self configured jenkins docker\
+      \ image, based on Jenkins LTS. Inspired by https://github.com/kubernetes/charts/tree/master/stable/jenkins,\
+      \ but better suites https://github.com/odavid/my-bloody-jenkins\n"
+    version: 0.1.137
+    created: 2020-11-06T13:20:48.405Z
+    appVersion: 2.249.2-231
+    digest: 51df7c5149585f5952d31314c60f74d7133eff2e051cb7ace26fa013ab0feb4e
+    icon: https://raw.githubusercontent.com/odavid/k8s-helm-charts/master/charts/my-bloody-jenkins/logo/jenkins-logo.png
+    urls:
+    - my-bloody-jenkins-0.1.137.tgz
+    sources:
+    - https://github.com/odavid/my-bloody-jenkins
+    - https://github.com/odavid/k8s-helm-charts/tree/master/charts/my-bloody-jenkins
+    - https://github.com/odavid/jenkins-jnlp-slave
+    maintainers:
+    - email: ohad.david@gmail.com
+      name: odavid
+  - name: my-bloody-jenkins
+    description: "A Helm chart for my-bloody-jenkins - a self configured jenkins docker\
+      \ image, based on Jenkins LTS. Inspired by https://github.com/kubernetes/charts/tree/master/stable/jenkins,\
+      \ but better suites https://github.com/odavid/my-bloody-jenkins\n"
+    version: 0.1.136
+    created: 2020-11-02T19:42:08.900Z
+    appVersion: 2.249.2-230
+    digest: f56308e984d6ca026e5b25bd59c14298dd7884bbdcfccd818b1aa6299c246139
+    icon: https://raw.githubusercontent.com/odavid/k8s-helm-charts/master/charts/my-bloody-jenkins/logo/jenkins-logo.png
+    urls:
+    - my-bloody-jenkins-0.1.136.tgz
+    sources:
+    - https://github.com/odavid/my-bloody-jenkins
+    - https://github.com/odavid/k8s-helm-charts/tree/master/charts/my-bloody-jenkins
+    - https://github.com/odavid/jenkins-jnlp-slave
+    maintainers:
+    - email: ohad.david@gmail.com
+      name: odavid
+  - name: my-bloody-jenkins
+    description: "A Helm chart for my-bloody-jenkins - a self configured jenkins docker\
+      \ image, based on Jenkins LTS. Inspired by https://github.com/kubernetes/charts/tree/master/stable/jenkins,\
+      \ but better suites https://github.com/odavid/my-bloody-jenkins\n"
+    version: 0.1.135
+    created: 2020-10-29T19:55:12.296Z
+    appVersion: 2.249.2-229
+    digest: e5137b294939183be41ea68bbd486f33e36e97d8d4ae6f0f26f3a7c0814f461c
+    icon: https://raw.githubusercontent.com/odavid/k8s-helm-charts/master/charts/my-bloody-jenkins/logo/jenkins-logo.png
+    urls:
+    - my-bloody-jenkins-0.1.135.tgz
+    sources:
+    - https://github.com/odavid/my-bloody-jenkins
+    - https://github.com/odavid/k8s-helm-charts/tree/master/charts/my-bloody-jenkins
+    - https://github.com/odavid/jenkins-jnlp-slave
+    maintainers:
+    - email: ohad.david@gmail.com
+      name: odavid
+  - name: my-bloody-jenkins
+    description: "A Helm chart for my-bloody-jenkins - a self configured jenkins docker\
+      \ image, based on Jenkins LTS. Inspired by https://github.com/kubernetes/charts/tree/master/stable/jenkins,\
+      \ but better suites https://github.com/odavid/my-bloody-jenkins\n"
+    version: 0.1.134
+    created: 2020-10-23T12:19:53.759Z
+    appVersion: 2.249.2-228
+    digest: afa168f628e08e38dcf0cd259984b9da69435b7fba366a8f8b0916b5ce2ef77f
+    icon: https://raw.githubusercontent.com/odavid/k8s-helm-charts/master/charts/my-bloody-jenkins/logo/jenkins-logo.png
+    urls:
+    - my-bloody-jenkins-0.1.134.tgz
+    sources:
+    - https://github.com/odavid/my-bloody-jenkins
+    - https://github.com/odavid/k8s-helm-charts/tree/master/charts/my-bloody-jenkins
+    - https://github.com/odavid/jenkins-jnlp-slave
+    maintainers:
+    - email: ohad.david@gmail.com
+      name: odavid
+  - name: my-bloody-jenkins
+    description: "A Helm chart for my-bloody-jenkins - a self configured jenkins docker\
+      \ image, based on Jenkins LTS. Inspired by https://github.com/kubernetes/charts/tree/master/stable/jenkins,\
+      \ but better suites https://github.com/odavid/my-bloody-jenkins\n"
+    version: 0.1.133
+    created: 2020-10-21T12:14:18.425Z
+    appVersion: 2.249.2-227
+    digest: e8cf2777ccc4a0840565f8ecec1c275a3ae78f65a17a1ce89cfd227a9a625fc2
+    icon: https://raw.githubusercontent.com/odavid/k8s-helm-charts/master/charts/my-bloody-jenkins/logo/jenkins-logo.png
+    urls:
+    - my-bloody-jenkins-0.1.133.tgz
+    sources:
+    - https://github.com/odavid/my-bloody-jenkins
+    - https://github.com/odavid/k8s-helm-charts/tree/master/charts/my-bloody-jenkins
+    - https://github.com/odavid/jenkins-jnlp-slave
+    maintainers:
+    - email: ohad.david@gmail.com
+      name: odavid
+  - name: my-bloody-jenkins
+    description: "A Helm chart for my-bloody-jenkins - a self configured jenkins docker\
+      \ image, based on Jenkins LTS. Inspired by https://github.com/kubernetes/charts/tree/master/stable/jenkins,\
+      \ but better suites https://github.com/odavid/my-bloody-jenkins\n"
+    version: 0.1.132
+    created: 2020-10-15T21:28:54.319Z
+    appVersion: 2.249.2-227
+    digest: 16cedcb431fddc69392f43080ce34f7f5b3b5104d6c63db70c5afc3d7d5805bc
+    icon: https://raw.githubusercontent.com/odavid/k8s-helm-charts/master/charts/my-bloody-jenkins/logo/jenkins-logo.png
+    urls:
+    - my-bloody-jenkins-0.1.132.tgz
+    sources:
+    - https://github.com/odavid/my-bloody-jenkins
+    - https://github.com/odavid/k8s-helm-charts/tree/master/charts/my-bloody-jenkins
+    - https://github.com/odavid/jenkins-jnlp-slave
+    maintainers:
+    - email: ohad.david@gmail.com
+      name: odavid
+  - name: my-bloody-jenkins
+    description: "A Helm chart for my-bloody-jenkins - a self configured jenkins docker\
+      \ image, based on Jenkins LTS. Inspired by https://github.com/kubernetes/charts/tree/master/stable/jenkins,\
+      \ but better suites https://github.com/odavid/my-bloody-jenkins\n"
+    version: 0.1.131
+    created: 2020-10-08T16:28:00.942Z
+    appVersion: 2.249.2-226
+    digest: 9c7a326d3d5f4c2a2e9547d086f66cd8fac9c47a622f7d5a508deb48458f4df8
+    icon: https://raw.githubusercontent.com/odavid/k8s-helm-charts/master/charts/my-bloody-jenkins/logo/jenkins-logo.png
+    urls:
+    - my-bloody-jenkins-0.1.131.tgz
+    sources:
+    - https://github.com/odavid/my-bloody-jenkins
+    - https://github.com/odavid/k8s-helm-charts/tree/master/charts/my-bloody-jenkins
+    - https://github.com/odavid/jenkins-jnlp-slave
+    maintainers:
+    - email: ohad.david@gmail.com
+      name: odavid
+  - name: my-bloody-jenkins
+    description: "A Helm chart for my-bloody-jenkins - a self configured jenkins docker\
+      \ image, based on Jenkins LTS. Inspired by https://github.com/kubernetes/charts/tree/master/stable/jenkins,\
+      \ but better suites https://github.com/odavid/my-bloody-jenkins\n"
+    version: 0.1.130
+    created: 2020-10-07T06:41:47.971Z
+    appVersion: 2.249.1-225
+    digest: 88069e4083d7eb02491b8343a923873551b2fe7424a2171d8463eae194ae3474
+    icon: https://raw.githubusercontent.com/odavid/k8s-helm-charts/master/charts/my-bloody-jenkins/logo/jenkins-logo.png
+    urls:
+    - my-bloody-jenkins-0.1.130.tgz
+    sources:
+    - https://github.com/odavid/my-bloody-jenkins
+    - https://github.com/odavid/k8s-helm-charts/tree/master/charts/my-bloody-jenkins
+    - https://github.com/odavid/jenkins-jnlp-slave
+    maintainers:
+    - email: ohad.david@gmail.com
+      name: odavid
+  - name: my-bloody-jenkins
+    description: "A Helm chart for my-bloody-jenkins - a self configured jenkins docker\
+      \ image, based on Jenkins LTS. Inspired by https://github.com/kubernetes/charts/tree/master/stable/jenkins,\
+      \ but better suites https://github.com/odavid/my-bloody-jenkins\n"
+    version: 0.1.129
+    created: 2020-09-30T09:01:13.322Z
+    appVersion: 2.249.1-224
+    digest: 96b9b53f12a142611f1346a66a308a117d154557c811de1f963d51b2ec8556ce
+    icon: https://raw.githubusercontent.com/odavid/k8s-helm-charts/master/charts/my-bloody-jenkins/logo/jenkins-logo.png
+    urls:
+    - my-bloody-jenkins-0.1.129.tgz
+    sources:
+    - https://github.com/odavid/my-bloody-jenkins
+    - https://github.com/odavid/k8s-helm-charts/tree/master/charts/my-bloody-jenkins
+    - https://github.com/odavid/jenkins-jnlp-slave
+    maintainers:
+    - email: ohad.david@gmail.com
+      name: odavid
+  - name: my-bloody-jenkins
+    description: "A Helm chart for my-bloody-jenkins - a self configured jenkins docker\
+      \ image, based on Jenkins LTS. Inspired by https://github.com/kubernetes/charts/tree/master/stable/jenkins,\
+      \ but better suites https://github.com/odavid/my-bloody-jenkins\n"
+    version: 0.1.128
+    created: 2020-09-23T18:06:17.868Z
+    appVersion: 2.249.1-223
+    digest: 4283504b209e0d3e9966846d40b1e88857883497bdee344d345ca5ed2701c632
+    icon: https://raw.githubusercontent.com/odavid/k8s-helm-charts/master/charts/my-bloody-jenkins/logo/jenkins-logo.png
+    urls:
+    - my-bloody-jenkins-0.1.128.tgz
+    sources:
+    - https://github.com/odavid/my-bloody-jenkins
+    - https://github.com/odavid/k8s-helm-charts/tree/master/charts/my-bloody-jenkins
+    - https://github.com/odavid/jenkins-jnlp-slave
+    maintainers:
+    - email: ohad.david@gmail.com
+      name: odavid
+  - name: my-bloody-jenkins
+    description: "A Helm chart for my-bloody-jenkins - a self configured jenkins docker\
+      \ image, based on Jenkins LTS. Inspired by https://github.com/kubernetes/charts/tree/master/stable/jenkins,\
+      \ but better suites https://github.com/odavid/my-bloody-jenkins\n"
+    version: 0.1.127
+    created: 2020-09-18T11:16:12.026Z
+    appVersion: 2.249.1-222
+    digest: 122c2905bae710100f73c447d1e7b0aa09448447bdf7007484d3ab82d75f6798
+    icon: https://raw.githubusercontent.com/odavid/k8s-helm-charts/master/charts/my-bloody-jenkins/logo/jenkins-logo.png
+    urls:
+    - my-bloody-jenkins-0.1.127.tgz
+    sources:
+    - https://github.com/odavid/my-bloody-jenkins
+    - https://github.com/odavid/k8s-helm-charts/tree/master/charts/my-bloody-jenkins
+    - https://github.com/odavid/jenkins-jnlp-slave
+    maintainers:
+    - email: ohad.david@gmail.com
+      name: odavid
+  - name: my-bloody-jenkins
+    description: "A Helm chart for my-bloody-jenkins - a self configured jenkins docker\
+      \ image, based on Jenkins LTS. Inspired by https://github.com/kubernetes/charts/tree/master/stable/jenkins,\
+      \ but better suites https://github.com/odavid/my-bloody-jenkins\n"
+    version: 0.1.126
+    created: 2020-09-17T08:24:31.734Z
+    appVersion: 2.249.1-221
+    digest: e9b1d79e32634f18d9cb83af99f7e936b70e47943bb82da91665f2a6953bddbc
+    icon: https://raw.githubusercontent.com/odavid/k8s-helm-charts/master/charts/my-bloody-jenkins/logo/jenkins-logo.png
+    urls:
+    - my-bloody-jenkins-0.1.126.tgz
+    sources:
+    - https://github.com/odavid/my-bloody-jenkins
+    - https://github.com/odavid/k8s-helm-charts/tree/master/charts/my-bloody-jenkins
+    - https://github.com/odavid/jenkins-jnlp-slave
+    maintainers:
+    - email: ohad.david@gmail.com
+      name: odavid
+  - name: my-bloody-jenkins
+    description: "A Helm chart for my-bloody-jenkins - a self configured jenkins docker\
+      \ image, based on Jenkins LTS. Inspired by https://github.com/kubernetes/charts/tree/master/stable/jenkins,\
+      \ but better suites https://github.com/odavid/my-bloody-jenkins\n"
+    version: 0.1.125
+    created: 2020-09-16T06:42:28.677Z
+    appVersion: 2.249.1-220
+    digest: f1563469c7daa5fc78549accedeccc45584286d0962ceb6d865f029ca4a33632
+    icon: https://raw.githubusercontent.com/odavid/k8s-helm-charts/master/charts/my-bloody-jenkins/logo/jenkins-logo.png
+    urls:
+    - my-bloody-jenkins-0.1.125.tgz
+    sources:
+    - https://github.com/odavid/my-bloody-jenkins
+    - https://github.com/odavid/k8s-helm-charts/tree/master/charts/my-bloody-jenkins
+    - https://github.com/odavid/jenkins-jnlp-slave
+    maintainers:
+    - email: ohad.david@gmail.com
+      name: odavid
+  - name: my-bloody-jenkins
+    description: "A Helm chart for my-bloody-jenkins - a self configured jenkins docker\
+      \ image, based on Jenkins LTS. Inspired by https://github.com/kubernetes/charts/tree/master/stable/jenkins,\
+      \ but better suites https://github.com/odavid/my-bloody-jenkins\n"
+    version: 0.1.124
+    created: 2020-09-16T05:56:38.614Z
+    appVersion: 2.249.1-219
+    digest: 03e1e1dddfebb1bdf3ce574b27213d6add87d5ecda371c5da43db73f14656162
+    icon: https://raw.githubusercontent.com/odavid/k8s-helm-charts/master/charts/my-bloody-jenkins/logo/jenkins-logo.png
+    urls:
+    - my-bloody-jenkins-0.1.124.tgz
+    sources:
+    - https://github.com/odavid/my-bloody-jenkins
+    - https://github.com/odavid/k8s-helm-charts/tree/master/charts/my-bloody-jenkins
+    - https://github.com/odavid/jenkins-jnlp-slave
+    maintainers:
+    - email: ohad.david@gmail.com
+      name: odavid
+  - name: my-bloody-jenkins
+    description: "A Helm chart for my-bloody-jenkins - a self configured jenkins docker\
+      \ image, based on Jenkins LTS. Inspired by https://github.com/kubernetes/charts/tree/master/stable/jenkins,\
+      \ but better suites https://github.com/odavid/my-bloody-jenkins\n"
+    version: 0.1.123
+    created: 2020-09-09T21:48:34.209Z
+    appVersion: 2.235.5-218
+    digest: 56f8e13cdfbe1620bfac81b6df49f973b10e5344b21a78e9a295dc74a26481ca
+    icon: https://raw.githubusercontent.com/odavid/k8s-helm-charts/master/charts/my-bloody-jenkins/logo/jenkins-logo.png
+    urls:
+    - my-bloody-jenkins-0.1.123.tgz
+    sources:
+    - https://github.com/odavid/my-bloody-jenkins
+    - https://github.com/odavid/k8s-helm-charts/tree/master/charts/my-bloody-jenkins
+    - https://github.com/odavid/jenkins-jnlp-slave
+    maintainers:
+    - email: ohad.david@gmail.com
+      name: odavid
+  - name: my-bloody-jenkins
+    description: "A Helm chart for my-bloody-jenkins - a self configured jenkins docker\
+      \ image, based on Jenkins LTS. Inspired by https://github.com/kubernetes/charts/tree/master/stable/jenkins,\
+      \ but better suites https://github.com/odavid/my-bloody-jenkins\n"
+    version: 0.1.122
+    created: 2020-08-28T18:54:52.473Z
+    appVersion: 2.235.5-216
+    digest: db26da93b7b9d2966cfcc9b0f84c7c61d6f7499a29b7599f0982fa6c9df2d9c5
+    icon: https://raw.githubusercontent.com/odavid/k8s-helm-charts/master/charts/my-bloody-jenkins/logo/jenkins-logo.png
+    urls:
+    - my-bloody-jenkins-0.1.122.tgz
+    sources:
+    - https://github.com/odavid/my-bloody-jenkins
+    - https://github.com/odavid/k8s-helm-charts/tree/master/charts/my-bloody-jenkins
+    - https://github.com/odavid/jenkins-jnlp-slave
+    maintainers:
+    - email: ohad.david@gmail.com
+      name: odavid
+  - name: my-bloody-jenkins
+    description: "A Helm chart for my-bloody-jenkins - a self configured jenkins docker\
+      \ image, based on Jenkins LTS. Inspired by https://github.com/kubernetes/charts/tree/master/stable/jenkins,\
+      \ but better suites https://github.com/odavid/my-bloody-jenkins\n"
+    version: 0.1.121
+    created: 2020-08-24T07:26:57.933Z
+    appVersion: 2.235.5-215
+    digest: cc9c20b2c127288587edb376ebc0a573100a79e762fcbe6f64596a2f47861933
+    icon: https://raw.githubusercontent.com/odavid/k8s-helm-charts/master/charts/my-bloody-jenkins/logo/jenkins-logo.png
+    urls:
+    - my-bloody-jenkins-0.1.121.tgz
+    sources:
+    - https://github.com/odavid/my-bloody-jenkins
+    - https://github.com/odavid/k8s-helm-charts/tree/master/charts/my-bloody-jenkins
+    - https://github.com/odavid/jenkins-jnlp-slave
+    maintainers:
+    - email: ohad.david@gmail.com
+      name: odavid
+  - name: my-bloody-jenkins
+    description: "A Helm chart for my-bloody-jenkins - a self configured jenkins docker\
+      \ image, based on Jenkins LTS. Inspired by https://github.com/kubernetes/charts/tree/master/stable/jenkins,\
+      \ but better suites https://github.com/odavid/my-bloody-jenkins\n"
+    version: 0.1.120
+    created: 2020-08-22T20:53:31.831Z
+    appVersion: 2.235.5-214
+    digest: 6a896ae05afb3289048129425c28f4bfc43d4b98ab79e158488c5084e83d78d4
+    icon: https://raw.githubusercontent.com/odavid/k8s-helm-charts/master/charts/my-bloody-jenkins/logo/jenkins-logo.png
+    urls:
+    - my-bloody-jenkins-0.1.120.tgz
+    sources:
+    - https://github.com/odavid/my-bloody-jenkins
+    - https://github.com/odavid/k8s-helm-charts/tree/master/charts/my-bloody-jenkins
+    - https://github.com/odavid/jenkins-jnlp-slave
+    maintainers:
+    - email: ohad.david@gmail.com
+      name: odavid
+  - name: my-bloody-jenkins
+    description: "A Helm chart for my-bloody-jenkins - a self configured jenkins docker\
+      \ image, based on Jenkins LTS. Inspired by https://github.com/kubernetes/charts/tree/master/stable/jenkins,\
+      \ but better suites https://github.com/odavid/my-bloody-jenkins\n"
+    version: 0.1.119
+    created: 2020-08-19T05:51:02.907Z
+    appVersion: 2.235.5-214
+    digest: d7749a2d69701998006e535597e2dec79dcd2d18e97915c53f3c3be6527b787c
+    icon: https://raw.githubusercontent.com/odavid/k8s-helm-charts/master/charts/my-bloody-jenkins/logo/jenkins-logo.png
+    urls:
+    - my-bloody-jenkins-0.1.119.tgz
+    sources:
+    - https://github.com/odavid/my-bloody-jenkins
+    - https://github.com/odavid/k8s-helm-charts/tree/master/charts/my-bloody-jenkins
+    - https://github.com/odavid/jenkins-jnlp-slave
+    maintainers:
+    - email: ohad.david@gmail.com
+      name: odavid
+  - name: my-bloody-jenkins
+    description: "A Helm chart for my-bloody-jenkins - a self configured jenkins docker\
+      \ image, based on Jenkins LTS. Inspired by https://github.com/kubernetes/charts/tree/master/stable/jenkins,\
+      \ but better suites https://github.com/odavid/my-bloody-jenkins\n"
+    version: 0.1.118
+    created: 2020-08-14T12:11:33.012Z
+    appVersion: 2.235.3-213
+    digest: 5628b27c16b51294f02030ca5bb10f4cf65a924a677bf7ec2ddab0e483c1179f
+    icon: https://raw.githubusercontent.com/odavid/k8s-helm-charts/master/charts/my-bloody-jenkins/logo/jenkins-logo.png
+    urls:
+    - my-bloody-jenkins-0.1.118.tgz
+    sources:
+    - https://github.com/odavid/my-bloody-jenkins
+    - https://github.com/odavid/k8s-helm-charts/tree/master/charts/my-bloody-jenkins
+    - https://github.com/odavid/jenkins-jnlp-slave
+    maintainers:
+    - email: ohad.david@gmail.com
+      name: odavid
+  - name: my-bloody-jenkins
+    description: "A Helm chart for my-bloody-jenkins - a self configured jenkins docker\
+      \ image, based on Jenkins LTS. Inspired by https://github.com/kubernetes/charts/tree/master/stable/jenkins,\
+      \ but better suites https://github.com/odavid/my-bloody-jenkins\n"
+    version: 0.1.117
+    created: 2020-08-07T11:46:55.134Z
+    appVersion: 2.235.3-212
+    digest: be5682a5e721ad99357cb555d001a75267958ab29497e615077afb21af5877ae
+    icon: https://raw.githubusercontent.com/odavid/k8s-helm-charts/master/charts/my-bloody-jenkins/logo/jenkins-logo.png
+    urls:
+    - my-bloody-jenkins-0.1.117.tgz
+    sources:
+    - https://github.com/odavid/my-bloody-jenkins
+    - https://github.com/odavid/k8s-helm-charts/tree/master/charts/my-bloody-jenkins
+    - https://github.com/odavid/jenkins-jnlp-slave
+    maintainers:
+    - email: ohad.david@gmail.com
+      name: odavid
+  - name: my-bloody-jenkins
+    description: "A Helm chart for my-bloody-jenkins - a self configured jenkins docker\
+      \ image, based on Jenkins LTS. Inspired by https://github.com/kubernetes/charts/tree/master/stable/jenkins,\
+      \ but better suites https://github.com/odavid/my-bloody-jenkins\n"
+    version: 0.1.116
+    created: 2020-07-31T09:17:14.314Z
+    appVersion: 2.235.3-211
+    digest: 1ca73b1e4b1d1265f20a6d0339cb2562c64c7f2ca045c9ba931e77ba348e89c8
+    icon: https://raw.githubusercontent.com/odavid/k8s-helm-charts/master/charts/my-bloody-jenkins/logo/jenkins-logo.png
+    urls:
+    - my-bloody-jenkins-0.1.116.tgz
+    sources:
+    - https://github.com/odavid/my-bloody-jenkins
+    - https://github.com/odavid/k8s-helm-charts/tree/master/charts/my-bloody-jenkins
+    - https://github.com/odavid/jenkins-jnlp-slave
+    maintainers:
+    - email: ohad.david@gmail.com
+      name: odavid
+  - name: my-bloody-jenkins
+    description: "A Helm chart for my-bloody-jenkins - a self configured jenkins docker\
+      \ image, based on Jenkins LTS. Inspired by https://github.com/kubernetes/charts/tree/master/stable/jenkins,\
+      \ but better suites https://github.com/odavid/my-bloody-jenkins\n"
+    version: 0.1.115
+    created: 2020-07-26T05:51:57.516Z
+    appVersion: 2.235.2-209
+    digest: 08cea560bf3a952c53b2316a796747bc4cdeb81d66282e3521c8b27897c91801
+    icon: https://raw.githubusercontent.com/odavid/k8s-helm-charts/master/charts/my-bloody-jenkins/logo/jenkins-logo.png
+    urls:
+    - my-bloody-jenkins-0.1.115.tgz
+    sources:
+    - https://github.com/odavid/my-bloody-jenkins
+    - https://github.com/odavid/k8s-helm-charts/tree/master/charts/my-bloody-jenkins
+    - https://github.com/odavid/jenkins-jnlp-slave
+    maintainers:
+    - email: ohad.david@gmail.com
+      name: odavid
+  - name: my-bloody-jenkins
+    description: "A Helm chart for my-bloody-jenkins - a self configured jenkins docker\
+      \ image, based on Jenkins LTS. Inspired by https://github.com/kubernetes/charts/tree/master/stable/jenkins,\
+      \ but better suites https://github.com/odavid/my-bloody-jenkins\n"
+    version: 0.1.114
+    created: 2020-07-16T07:10:16.989Z
+    appVersion: 2.235.2-208
+    digest: a07b10b12a52e63097cc667270030adaa913a78ee5700e993113f46ea8979a78
+    icon: https://raw.githubusercontent.com/odavid/k8s-helm-charts/master/charts/my-bloody-jenkins/logo/jenkins-logo.png
+    urls:
+    - my-bloody-jenkins-0.1.114.tgz
+    sources:
+    - https://github.com/odavid/my-bloody-jenkins
+    - https://github.com/odavid/k8s-helm-charts/tree/master/charts/my-bloody-jenkins
+    - https://github.com/odavid/jenkins-jnlp-slave
+    maintainers:
+    - email: ohad.david@gmail.com
+      name: odavid
+  - name: my-bloody-jenkins
+    description: "A Helm chart for my-bloody-jenkins - a self configured jenkins docker\
+      \ image, based on Jenkins LTS. Inspired by https://github.com/kubernetes/charts/tree/master/stable/jenkins,\
+      \ but better suites https://github.com/odavid/my-bloody-jenkins\n"
+    version: 0.1.113
+    created: 2020-07-15T22:26:13.646Z
+    appVersion: 2.235.1-207
+    digest: 1540a69e160431c2f1222335de3424b934bdb00cde6669575ca06ec2031319ff
+    icon: https://raw.githubusercontent.com/odavid/k8s-helm-charts/master/charts/my-bloody-jenkins/logo/jenkins-logo.png
+    urls:
+    - my-bloody-jenkins-0.1.113.tgz
+    sources:
+    - https://github.com/odavid/my-bloody-jenkins
+    - https://github.com/odavid/k8s-helm-charts/tree/master/charts/my-bloody-jenkins
+    - https://github.com/odavid/jenkins-jnlp-slave
+    maintainers:
+    - email: ohad.david@gmail.com
+      name: odavid
+  - name: my-bloody-jenkins
+    description: "A Helm chart for my-bloody-jenkins - a self configured jenkins docker\
+      \ image, based on Jenkins LTS. Inspired by https://github.com/kubernetes/charts/tree/master/stable/jenkins,\
+      \ but better suites https://github.com/odavid/my-bloody-jenkins\n"
+    version: 0.1.112
+    created: 2020-07-15T06:52:55.093Z
+    appVersion: 2.235.1-206
+    digest: ef96ffb086bfe31468aecc59497714e304adedee819526f8e6726e65f73df87c
+    icon: https://raw.githubusercontent.com/odavid/k8s-helm-charts/master/charts/my-bloody-jenkins/logo/jenkins-logo.png
+    urls:
+    - my-bloody-jenkins-0.1.112.tgz
+    sources:
+    - https://github.com/odavid/my-bloody-jenkins
+    - https://github.com/odavid/k8s-helm-charts/tree/master/charts/my-bloody-jenkins
+    - https://github.com/odavid/jenkins-jnlp-slave
+    maintainers:
+    - email: ohad.david@gmail.com
+      name: odavid
+  - name: my-bloody-jenkins
+    description: "A Helm chart for my-bloody-jenkins - a self configured jenkins docker\
+      \ image, based on Jenkins LTS. Inspired by https://github.com/kubernetes/charts/tree/master/stable/jenkins,\
+      \ but better suites https://github.com/odavid/my-bloody-jenkins\n"
+    version: 0.1.111
+    created: 2020-07-11T20:17:25.761Z
+    appVersion: 2.235.1-206
+    digest: a968ee5c8445c95715ce3c83d0b6b4486dac41c0ef0068674cfa07668657461f
+    icon: https://wiki.jenkins-ci.org/download/attachments/2916393/logo.png
+    urls:
+    - my-bloody-jenkins-0.1.111.tgz
+    sources:
+    - https://github.com/odavid/my-bloody-jenkins
+    - https://github.com/odavid/k8s-helm-charts/tree/master/charts/my-bloody-jenkins
+    - https://github.com/odavid/jenkins-jnlp-slave
+    maintainers:
+    - email: ohad.david@gmail.com
+      name: odavid
+  - name: my-bloody-jenkins
+    description: "A Helm chart for my-bloody-jenkins - a self configured jenkins docker\
+      \ image, based on Jenkins LTS. Inspired by https://github.com/kubernetes/charts/tree/master/stable/jenkins,\
+      \ but better suites https://github.com/odavid/my-bloody-jenkins\n"
+    version: 0.1.110
+    created: 2020-07-07T21:34:04.163Z
+    appVersion: v2.235.1-205
+    digest: 0eb07d2249dc76b383dfa3e06ec54ddbc716e240e49bd49ddda5b43ec7d27ec3
+    icon: https://wiki.jenkins-ci.org/download/attachments/2916393/logo.png
+    urls:
+    - my-bloody-jenkins-0.1.110.tgz
+    sources:
+    - https://github.com/odavid/my-bloody-jenkins
+    - https://github.com/odavid/k8s-helm-charts/tree/master/charts/my-bloody-jenkins
+    - https://github.com/odavid/jenkins-jnlp-slave
+    maintainers:
+    - email: ohad.david@gmail.com
+      name: odavid
+  - name: my-bloody-jenkins
+    description: "A Helm chart for my-bloody-jenkins - a self configured jenkins docker\
+      \ image, based on Jenkins LTS. Inspired by https://github.com/kubernetes/charts/tree/master/stable/jenkins,\
+      \ but better suites https://github.com/odavid/my-bloody-jenkins\n"
+    version: 0.1.109
+    created: 2020-07-02T20:28:04.928Z
+    appVersion: v2.235.1-204
+    digest: 892a92d07110e7b505866bcaba4c521a2e737ca8ebcbf07cebcb92dcff9d522a
+    icon: https://wiki.jenkins-ci.org/download/attachments/2916393/logo.png
+    urls:
+    - my-bloody-jenkins-0.1.109.tgz
+    sources:
+    - https://github.com/odavid/my-bloody-jenkins
+    - https://github.com/odavid/k8s-helm-charts/tree/master/charts/my-bloody-jenkins
+    - https://github.com/odavid/jenkins-jnlp-slave
+    maintainers:
+    - email: ohad.david@gmail.com
+      name: odavid
+  - name: my-bloody-jenkins
+    description: "A Helm chart for my-bloody-jenkins - a self configured jenkins docker\
+      \ image, based on Jenkins LTS. Inspired by https://github.com/kubernetes/charts/tree/master/stable/jenkins,\
+      \ but better suites https://github.com/odavid/my-bloody-jenkins\n"
+    version: 0.1.108
+    created: 2020-07-01T05:46:37.922Z
+    appVersion: v2.235.1-203
+    digest: 9964712b3420cb1752ec6f32e4867f39c66602c4ad9049eb978b6c3e9a3a79d8
+    icon: https://wiki.jenkins-ci.org/download/attachments/2916393/logo.png
+    urls:
+    - my-bloody-jenkins-0.1.108.tgz
+    sources:
+    - https://github.com/odavid/my-bloody-jenkins
+    - https://github.com/odavid/k8s-helm-charts/tree/master/charts/my-bloody-jenkins
+    - https://github.com/odavid/jenkins-jnlp-slave
+    maintainers:
+    - email: ohad.david@gmail.com
+      name: odavid
+  - name: my-bloody-jenkins
+    description: "A Helm chart for my-bloody-jenkins - a self configured jenkins docker\
+      \ image, based on Jenkins LTS. Inspired by https://github.com/kubernetes/charts/tree/master/stable/jenkins,\
+      \ but better suites https://github.com/odavid/my-bloody-jenkins\n"
+    version: 0.1.107
+    created: 2020-06-29T12:45:03.778Z
+    appVersion: v2.235.1-202
+    digest: 4c5568c9a311f3ef7fb79d4f7efd6feeb299038a0cf1c13c23644620ed7022c2
+    icon: https://wiki.jenkins-ci.org/download/attachments/2916393/logo.png
+    urls:
+    - my-bloody-jenkins-0.1.107.tgz
+    sources:
+    - https://github.com/odavid/my-bloody-jenkins
+    - https://github.com/odavid/k8s-helm-charts/tree/master/charts/my-bloody-jenkins
+    - https://github.com/odavid/jenkins-jnlp-slave
+    maintainers:
+    - email: ohad.david@gmail.com
+      name: odavid
+  - name: my-bloody-jenkins
+    description: "A Helm chart for my-bloody-jenkins - a self configured jenkins docker\
+      \ image, based on Jenkins LTS. Inspired by https://github.com/kubernetes/charts/tree/master/stable/jenkins,\
+      \ but better suites https://github.com/odavid/my-bloody-jenkins\n"
+    version: 0.1.106
+    created: 2020-06-24T19:06:23.493Z
+    appVersion: v2.235.1-202
+    digest: 4c19e02192199592f8c99f81bcad3f2a67ba8a5643dc8753e89951545931fdc0
+    icon: https://wiki.jenkins-ci.org/download/attachments/2916393/logo.png
+    urls:
+    - my-bloody-jenkins-0.1.106.tgz
+    sources:
+    - https://github.com/odavid/my-bloody-jenkins
+    - https://github.com/odavid/k8s-helm-charts/tree/master/charts/my-bloody-jenkins
+    - https://github.com/odavid/jenkins-jnlp-slave
+    maintainers:
+    - email: ohad.david@gmail.com
+      name: odavid
+  - name: my-bloody-jenkins
+    description: "A Helm chart for my-bloody-jenkins - a self configured jenkins docker\
+      \ image, based on Jenkins LTS. Inspired by https://github.com/kubernetes/charts/tree/master/stable/jenkins,\
+      \ but better suites https://github.com/odavid/my-bloody-jenkins\n"
+    version: 0.1.105
+    created: 2020-06-23T21:18:58.724Z
+    appVersion: v2.235.1-201
+    digest: 69207746af6c41d5e9acd5b4f2b139a4a6f48034530fc5d42e3bd463ad57baa5
+    icon: https://wiki.jenkins-ci.org/download/attachments/2916393/logo.png
+    urls:
+    - my-bloody-jenkins-0.1.105.tgz
+    sources:
+    - https://github.com/odavid/my-bloody-jenkins
+    - https://github.com/odavid/k8s-helm-charts/tree/master/charts/my-bloody-jenkins
+    - https://github.com/odavid/jenkins-jnlp-slave
+    maintainers:
+    - email: ohad.david@gmail.com
+      name: odavid
+  - name: my-bloody-jenkins
+    description: "A Helm chart for my-bloody-jenkins - a self configured jenkins docker\
+      \ image, based on Jenkins LTS. Inspired by https://github.com/kubernetes/charts/tree/master/stable/jenkins,\
+      \ but better suites https://github.com/odavid/my-bloody-jenkins\n"
+    version: 0.1.104
+    created: 2020-06-18T22:03:35.420Z
+    appVersion: v2.235.1-200
+    digest: 69f6e6ff873a1ba02e15023a0af1851f30f7fb2ad4c7d26bacb5596483a6d98c
+    icon: https://wiki.jenkins-ci.org/download/attachments/2916393/logo.png
+    urls:
+    - my-bloody-jenkins-0.1.104.tgz
+    sources:
+    - https://github.com/odavid/my-bloody-jenkins
+    - https://github.com/odavid/k8s-helm-charts/tree/master/charts/my-bloody-jenkins
+    - https://github.com/odavid/jenkins-jnlp-slave
+    maintainers:
+    - email: ohad.david@gmail.com
+      name: odavid
+  - name: my-bloody-jenkins
+    description: "A Helm chart for my-bloody-jenkins - a self configured jenkins docker\
+      \ image, based on Jenkins LTS. Inspired by https://github.com/kubernetes/charts/tree/master/stable/jenkins,\
+      \ but better suites https://github.com/odavid/my-bloody-jenkins\n"
+    version: 0.1.103
+    created: 2020-06-16T07:13:49.827Z
+    appVersion: v2.222.4-199
+    digest: 959ce6c82c7d0e46a8fe9ed6dcc59091fe0491b058f262350ca9a3db2466d755
+    icon: https://wiki.jenkins-ci.org/download/attachments/2916393/logo.png
+    urls:
+    - my-bloody-jenkins-0.1.103.tgz
+    sources:
+    - https://github.com/odavid/my-bloody-jenkins
+    - https://github.com/odavid/k8s-helm-charts/tree/master/charts/my-bloody-jenkins
+    - https://github.com/odavid/jenkins-jnlp-slave
+    maintainers:
+    - email: ohad.david@gmail.com
+      name: odavid
+  - name: my-bloody-jenkins
+    description: "A Helm chart for my-bloody-jenkins - a self configured jenkins docker\
+      \ image, based on Jenkins LTS. Inspired by https://github.com/kubernetes/charts/tree/master/stable/jenkins,\
+      \ but better suites https://github.com/odavid/my-bloody-jenkins\n"
+    version: 0.1.102
+    created: 2020-06-09T06:35:53.895Z
+    appVersion: v2.222.4-198
+    digest: 6ae258a0cf796c53baaf3aa83923b777bdbdc09bb69bbf54e78aec6f37c39a90
+    icon: https://wiki.jenkins-ci.org/download/attachments/2916393/logo.png
+    urls:
+    - my-bloody-jenkins-0.1.102.tgz
+    sources:
+    - https://github.com/odavid/my-bloody-jenkins
+    - https://github.com/odavid/k8s-helm-charts/tree/master/charts/my-bloody-jenkins
+    - https://github.com/odavid/jenkins-jnlp-slave
+    maintainers:
+    - email: ohad.david@gmail.com
+      name: odavid
+  - name: my-bloody-jenkins
+    description: "A Helm chart for my-bloody-jenkins - a self configured jenkins docker\
+      \ image, based on Jenkins LTS. Inspired by https://github.com/kubernetes/charts/tree/master/stable/jenkins,\
+      \ but better suites https://github.com/odavid/my-bloody-jenkins\n"
+    version: 0.1.101
+    created: 2020-06-02T20:20:17.016Z
+    appVersion: v2.222.4-197
+    digest: fa51cb58deccee5258f7fe27b4d8d92f8e3b4d57f080561c971c58288a59a82b
+    icon: https://wiki.jenkins-ci.org/download/attachments/2916393/logo.png
+    urls:
+    - my-bloody-jenkins-0.1.101.tgz
+    sources:
+    - https://github.com/odavid/my-bloody-jenkins
+    - https://github.com/odavid/k8s-helm-charts/tree/master/charts/my-bloody-jenkins
+    - https://github.com/odavid/jenkins-jnlp-slave
+    maintainers:
+    - email: ohad.david@gmail.com
+      name: odavid
+  - name: my-bloody-jenkins
+    description: "A Helm chart for my-bloody-jenkins - a self configured jenkins docker\
+      \ image, based on Jenkins LTS. Inspired by https://github.com/kubernetes/charts/tree/master/stable/jenkins,\
+      \ but better suites https://github.com/odavid/my-bloody-jenkins\n"
+    version: 0.1.100
+    created: 2020-05-28T10:57:59.113Z
+    appVersion: v2.222.3-196
+    digest: b44cc968911c770e564223dad249411769bc92fb44028cec92f8f44e75bcc756
+    icon: https://wiki.jenkins-ci.org/download/attachments/2916393/logo.png
+    urls:
+    - my-bloody-jenkins-0.1.100.tgz
+    sources:
+    - https://github.com/odavid/my-bloody-jenkins
+    - https://github.com/odavid/k8s-helm-charts/tree/master/charts/my-bloody-jenkins
+    - https://github.com/odavid/jenkins-jnlp-slave
+    maintainers:
+    - email: ohad.david@gmail.com
+      name: odavid
+  - name: my-bloody-jenkins
+    description: "A Helm chart for my-bloody-jenkins - a self configured jenkins docker\
+      \ image, based on Jenkins LTS. Inspired by https://github.com/kubernetes/charts/tree/master/stable/jenkins,\
+      \ but better suites https://github.com/odavid/my-bloody-jenkins\n"
+    version: 0.1.99
+    created: 2020-05-22T18:06:05.272Z
+    appVersion: v2.222.3-195
+    digest: 15acded3a9ac366ee82051fd5ef69d1223f0dbb35e4ca1c292ccb545423b9d4f
+    icon: https://wiki.jenkins-ci.org/download/attachments/2916393/logo.png
+    urls:
+    - my-bloody-jenkins-0.1.99.tgz
+    sources:
+    - https://github.com/odavid/my-bloody-jenkins
+    - https://github.com/odavid/k8s-helm-charts/tree/master/charts/my-bloody-jenkins
+    - https://github.com/odavid/jenkins-jnlp-slave
+    maintainers:
+    - email: ohad.david@gmail.com
+      name: odavid
+  - name: my-bloody-jenkins
+    description: "A Helm chart for my-bloody-jenkins - a self configured jenkins docker\
+      \ image, based on Jenkins LTS. Inspired by https://github.com/kubernetes/charts/tree/master/stable/jenkins,\
+      \ but better suites https://github.com/odavid/my-bloody-jenkins\n"
+    version: 0.1.98
+    created: 2020-05-19T11:47:16.072Z
+    appVersion: v2.222.3-194
+    digest: b7180af4c27e43026c7414d5ba4325c83cac82d6d7c785f955162d4cd754e2d2
+    icon: https://wiki.jenkins-ci.org/download/attachments/2916393/logo.png
+    urls:
+    - my-bloody-jenkins-0.1.98.tgz
+    sources:
+    - https://github.com/odavid/my-bloody-jenkins
+    - https://github.com/odavid/k8s-helm-charts/tree/master/charts/my-bloody-jenkins
+    - https://github.com/odavid/jenkins-jnlp-slave
+    maintainers:
+    - email: ohad.david@gmail.com
+      name: odavid
+  - name: my-bloody-jenkins
+    description: "A Helm chart for my-bloody-jenkins - a self configured jenkins docker\
+      \ image, based on Jenkins LTS. Inspired by https://github.com/kubernetes/charts/tree/master/stable/jenkins,\
+      \ but better suites https://github.com/odavid/my-bloody-jenkins\n"
+    version: 0.1.97
+    created: 2020-05-18T22:19:30.875Z
+    appVersion: v2.222.3-193
+    digest: b70f1f730c0024832c5ad58a55bd97a19b10bd5924f63ff180c62066abf92686
+    icon: https://wiki.jenkins-ci.org/download/attachments/2916393/logo.png
+    urls:
+    - my-bloody-jenkins-0.1.97.tgz
+    sources:
+    - https://github.com/odavid/my-bloody-jenkins
+    - https://github.com/odavid/k8s-helm-charts/tree/master/charts/my-bloody-jenkins
+    - https://github.com/odavid/jenkins-jnlp-slave
+    maintainers:
+    - email: ohad.david@gmail.com
+      name: odavid
+  - name: my-bloody-jenkins
+    description: "A Helm chart for my-bloody-jenkins - a self configured jenkins docker\
+      \ image, based on Jenkins LTS. Inspired by https://github.com/kubernetes/charts/tree/master/stable/jenkins,\
+      \ but better suites https://github.com/odavid/my-bloody-jenkins\n"
+    version: 0.1.96
+    created: 2020-05-12T07:43:41.032Z
+    appVersion: v2.222.3-193
+    digest: 21ab480929d98dd9c857c219c2d3b3f6d6dbcf314cfc20cea603891f3da5a49c
+    icon: https://wiki.jenkins-ci.org/download/attachments/2916393/logo.png
+    urls:
+    - my-bloody-jenkins-0.1.96.tgz
+    sources:
+    - https://github.com/odavid/my-bloody-jenkins
+    - https://github.com/odavid/k8s-helm-charts/tree/master/charts/my-bloody-jenkins
+    - https://github.com/odavid/jenkins-jnlp-slave
+    maintainers:
+    - email: ohad.david@gmail.com
+      name: odavid
+  - name: my-bloody-jenkins
+    description: "A Helm chart for my-bloody-jenkins - a self configured jenkins docker\
+      \ image, based on Jenkins LTS. Inspired by https://github.com/kubernetes/charts/tree/master/stable/jenkins,\
+      \ but better suites https://github.com/odavid/my-bloody-jenkins\n"
+    version: 0.1.95
+    created: 2020-05-08T09:08:27.106Z
+    appVersion: v2.222.3-192
+    digest: 845cf3c5458ccc7ed4916c46f9dc44f305c2cb32a3b37e03b8b0047869fda295
+    icon: https://wiki.jenkins-ci.org/download/attachments/2916393/logo.png
+    urls:
+    - my-bloody-jenkins-0.1.95.tgz
+    sources:
+    - https://github.com/odavid/my-bloody-jenkins
+    - https://github.com/odavid/k8s-helm-charts/tree/master/charts/my-bloody-jenkins
+    - https://github.com/odavid/jenkins-jnlp-slave
+    maintainers:
+    - email: ohad.david@gmail.com
+      name: odavid
+  - name: my-bloody-jenkins
+    description: "A Helm chart for my-bloody-jenkins - a self configured jenkins docker\
+      \ image, based on Jenkins LTS. Inspired by https://github.com/kubernetes/charts/tree/master/stable/jenkins,\
+      \ but better suites https://github.com/odavid/my-bloody-jenkins\n"
+    version: 0.1.94
+    created: 2020-05-08T08:46:03.111Z
+    appVersion: v2.222.3-191
+    digest: fb0cf38abfaf6b5eaed3e9b1cb5be43eaeb8b5c497334a62a79f36ee3e1cadde
+    icon: https://wiki.jenkins-ci.org/download/attachments/2916393/logo.png
+    urls:
+    - my-bloody-jenkins-0.1.94.tgz
+    sources:
+    - https://github.com/odavid/my-bloody-jenkins
+    - https://github.com/odavid/k8s-helm-charts/tree/master/charts/my-bloody-jenkins
+    - https://github.com/odavid/jenkins-jnlp-slave
+    maintainers:
+    - email: ohad.david@gmail.com
+      name: odavid
+  - name: my-bloody-jenkins
+    description: "A Helm chart for my-bloody-jenkins - a self configured jenkins docker\
+      \ image, based on Jenkins LTS. Inspired by https://github.com/kubernetes/charts/tree/master/stable/jenkins,\
+      \ but better suites https://github.com/odavid/my-bloody-jenkins\n"
+    version: 0.1.93
+    created: 2020-04-28T18:56:46.092Z
+    appVersion: v2.222.3-191
+    digest: e550e6b34f941b978b362554f70c3ecc57df91fd67b9012c0886bacb35509132
+    icon: https://wiki.jenkins-ci.org/download/attachments/2916393/logo.png
+    urls:
+    - my-bloody-jenkins-0.1.93.tgz
+    sources:
+    - https://github.com/odavid/my-bloody-jenkins
+    - https://github.com/odavid/k8s-helm-charts/tree/master/charts/my-bloody-jenkins
+    - https://github.com/odavid/jenkins-jnlp-slave
+    maintainers:
+    - email: ohad.david@gmail.com
+      name: odavid
+  - name: my-bloody-jenkins
+    description: "A Helm chart for my-bloody-jenkins - a self configured jenkins docker\
+      \ image, based on Jenkins LTS. Inspired by https://github.com/kubernetes/charts/tree/master/stable/jenkins,\
+      \ but better suites https://github.com/odavid/my-bloody-jenkins\n"
+    version: 0.1.92
+    created: 2020-04-23T22:42:50.676Z
+    appVersion: v2.222.1-190
+    digest: 581aa0d1c6adbd26e1c87888d35c282a22526008f06062adecfb31169c3461c8
+    icon: https://wiki.jenkins-ci.org/download/attachments/2916393/logo.png
+    urls:
+    - my-bloody-jenkins-0.1.92.tgz
+    sources:
+    - https://github.com/odavid/my-bloody-jenkins
+    - https://github.com/odavid/k8s-helm-charts/tree/master/charts/my-bloody-jenkins
+    - https://github.com/odavid/jenkins-jnlp-slave
+    maintainers:
+    - email: ohad.david@gmail.com
+      name: odavid
+  - name: my-bloody-jenkins
+    description: "A Helm chart for my-bloody-jenkins - a self configured jenkins docker\
+      \ image, based on Jenkins LTS. Inspired by https://github.com/kubernetes/charts/tree/master/stable/jenkins,\
+      \ but better suites https://github.com/odavid/my-bloody-jenkins\n"
+    version: 0.1.91
+    created: 2020-04-17T17:13:24.574Z
+    appVersion: v2.222.1-189
+    digest: 284a397056fc80dcf680c8aea46950097546462c23abb7b221af63545041dfda
+    icon: https://wiki.jenkins-ci.org/download/attachments/2916393/logo.png
+    urls:
+    - my-bloody-jenkins-0.1.91.tgz
+    sources:
+    - https://github.com/odavid/my-bloody-jenkins
+    - https://github.com/odavid/k8s-helm-charts/tree/master/charts/my-bloody-jenkins
+    - https://github.com/odavid/jenkins-jnlp-slave
+    maintainers:
+    - email: ohad.david@gmail.com
+      name: odavid
+  - name: my-bloody-jenkins
+    description: "A Helm chart for my-bloody-jenkins - a self configured jenkins docker\
+      \ image, based on Jenkins LTS. Inspired by https://github.com/kubernetes/charts/tree/master/stable/jenkins,\
+      \ but better suites https://github.com/odavid/my-bloody-jenkins\n"
+    version: 0.1.90
+    created: 2020-04-11T09:09:39.995Z
+    appVersion: v2.222.1-188
+    digest: 4f0daa77c1a147b95a00c3ca2c2815465e770df48675b8828e4a3f2aa2b563d0
+    icon: https://wiki.jenkins-ci.org/download/attachments/2916393/logo.png
+    urls:
+    - my-bloody-jenkins-0.1.90.tgz
+    sources:
+    - https://github.com/odavid/my-bloody-jenkins
+    - https://github.com/odavid/k8s-helm-charts/tree/master/charts/my-bloody-jenkins
+    - https://github.com/odavid/jenkins-jnlp-slave
+    maintainers:
+    - email: ohad.david@gmail.com
+      name: odavid
+  - name: my-bloody-jenkins
+    description: "A Helm chart for my-bloody-jenkins - a self configured jenkins docker\
+      \ image, based on Jenkins LTS. Inspired by https://github.com/kubernetes/charts/tree/master/stable/jenkins,\
+      \ but better suites https://github.com/odavid/my-bloody-jenkins\n"
+    version: 0.1.88
+    created: 2020-03-26T19:22:51.117Z
+    appVersion: v2.222.1-186
+    digest: ac9f4f1cfb3f65e0e66d4d521a0d2f74974c3e91e092a4bdbc0664236544126f
+    icon: https://wiki.jenkins-ci.org/download/attachments/2916393/logo.png
+    urls:
+    - my-bloody-jenkins-0.1.88.tgz
+    sources:
+    - https://github.com/odavid/my-bloody-jenkins
+    - https://github.com/odavid/k8s-helm-charts/tree/master/charts/my-bloody-jenkins
+    - https://github.com/odavid/jenkins-jnlp-slave
+    maintainers:
+    - email: ohad.david@gmail.com
+      name: odavid
+  - name: my-bloody-jenkins
+    description: "A Helm chart for my-bloody-jenkins - a self configured jenkins docker\
+      \ image, based on Jenkins LTS. Inspired by https://github.com/kubernetes/charts/tree/master/stable/jenkins,\
+      \ but better suites https://github.com/odavid/my-bloody-jenkins\n"
+    version: 0.1.87
+    created: 2020-03-19T21:14:22.324Z
+    appVersion: v2.204.5-185
+    digest: 097fcdefc39843ea761a314b3c1db5e061adcf0c4f983f42900bacbc7eb6ca09
+    icon: https://wiki.jenkins-ci.org/download/attachments/2916393/logo.png
+    urls:
+    - my-bloody-jenkins-0.1.87.tgz
+    sources:
+    - https://github.com/odavid/my-bloody-jenkins
+    - https://github.com/odavid/k8s-helm-charts/tree/master/charts/my-bloody-jenkins
+    - https://github.com/odavid/jenkins-jnlp-slave
+    maintainers:
+    - email: ohad.david@gmail.com
+      name: odavid
+  - name: my-bloody-jenkins
+    description: "A Helm chart for my-bloody-jenkins - a self configured jenkins docker\
+      \ image, based on Jenkins LTS. Inspired by https://github.com/kubernetes/charts/tree/master/stable/jenkins,\
+      \ but better suites https://github.com/odavid/my-bloody-jenkins\n"
+    version: 0.1.86
+    created: 2020-03-10T14:32:29.653Z
+    appVersion: v2.204.5-184
+    digest: c366485f85dda24758b1c62d0929d119ba020c85f27125e98ca849a5ed23c6ca
+    icon: https://wiki.jenkins-ci.org/download/attachments/2916393/logo.png
+    urls:
+    - my-bloody-jenkins-0.1.86.tgz
+    sources:
+    - https://github.com/odavid/my-bloody-jenkins
+    - https://github.com/odavid/k8s-helm-charts/tree/master/charts/my-bloody-jenkins
+    - https://github.com/odavid/jenkins-jnlp-slave
+    maintainers:
+    - email: ohad.david@gmail.com
+      name: odavid
+  - name: my-bloody-jenkins
+    description: "A Helm chart for my-bloody-jenkins - a self configured jenkins docker\
+      \ image, based on Jenkins LTS. Inspired by https://github.com/kubernetes/charts/tree/master/stable/jenkins,\
+      \ but better suites https://github.com/odavid/my-bloody-jenkins\n"
+    version: 0.1.85
+    created: 2020-03-06T06:20:11.537Z
+    appVersion: v2.204.4-183
+    digest: 5cfe08054f44d7f2207c3dc10198f20547ffc7b45a059ec217a3ab3e39cab939
+    icon: https://wiki.jenkins-ci.org/download/attachments/2916393/logo.png
+    urls:
+    - my-bloody-jenkins-0.1.85.tgz
+    sources:
+    - https://github.com/odavid/my-bloody-jenkins
+    - https://github.com/odavid/k8s-helm-charts/tree/master/charts/my-bloody-jenkins
+    - https://github.com/odavid/jenkins-jnlp-slave
+    maintainers:
+    - email: ohad.david@gmail.com
+      name: odavid
+  - name: my-bloody-jenkins
+    description: "A Helm chart for my-bloody-jenkins - a self configured jenkins docker\
+      \ image, based on Jenkins LTS. Inspired by https://github.com/kubernetes/charts/tree/master/stable/jenkins,\
+      \ but better suites https://github.com/odavid/my-bloody-jenkins\n"
+    version: 0.1.83
+    created: 2020-02-25T20:31:07.517Z
+    appVersion: v2.204.2-181
+    digest: 53b8aa9883026b350dc6711a2e11c62cd6187ac1781f9d3e1dedfd3d4b69317d
+    icon: https://wiki.jenkins-ci.org/download/attachments/2916393/logo.png
+    urls:
+    - my-bloody-jenkins-0.1.83.tgz
+    sources:
+    - https://github.com/odavid/my-bloody-jenkins
+    - https://github.com/odavid/k8s-helm-charts/tree/master/charts/my-bloody-jenkins
+    - https://github.com/odavid/jenkins-jnlp-slave
+    maintainers:
+    - email: ohad.david@gmail.com
+      name: odavid
+  - name: my-bloody-jenkins
+    description: "A Helm chart for my-bloody-jenkins - a self configured jenkins docker\
+      \ image, based on Jenkins LTS. Inspired by https://github.com/kubernetes/charts/tree/master/stable/jenkins,\
+      \ but better suites https://github.com/odavid/my-bloody-jenkins\n"
+    version: 0.1.82
+    created: 2020-02-24T09:56:56.809Z
+    appVersion: v2.204.2-180
+    digest: 6a15b799799e0438f0acdd9720868e209bd111fbf4fcef81e491af898247b66c
+    icon: https://wiki.jenkins-ci.org/download/attachments/2916393/logo.png
+    urls:
+    - my-bloody-jenkins-0.1.82.tgz
+    sources:
+    - https://github.com/odavid/my-bloody-jenkins
+    - https://github.com/odavid/k8s-helm-charts/tree/master/charts/my-bloody-jenkins
+    - https://github.com/odavid/jenkins-jnlp-slave
+    maintainers:
+    - email: ohad.david@gmail.com
+      name: odavid
+  - name: my-bloody-jenkins
+    description: "A Helm chart for my-bloody-jenkins - a self configured jenkins docker\
+      \ image, based on Jenkins LTS. Inspired by https://github.com/kubernetes/charts/tree/master/stable/jenkins,\
+      \ but better suites https://github.com/odavid/my-bloody-jenkins\n"
+    version: 0.1.81
+    created: 2020-02-20T18:09:36.185Z
+    appVersion: v2.204.2-180
+    digest: be2e4d92c8eb33fb3965215066d07083e4716dc410051f66added62db04af407
+    icon: https://wiki.jenkins-ci.org/download/attachments/2916393/logo.png
+    urls:
+    - my-bloody-jenkins-0.1.81.tgz
+    sources:
+    - https://github.com/odavid/my-bloody-jenkins
+    - https://github.com/odavid/k8s-helm-charts/tree/master/charts/my-bloody-jenkins
+    - https://github.com/odavid/jenkins-jnlp-slave
+    maintainers:
+    - email: ohad.david@gmail.com
+      name: odavid
+  - name: my-bloody-jenkins
+    description: "A Helm chart for my-bloody-jenkins - a self configured jenkins docker\
+      \ image, based on Jenkins LTS. Inspired by https://github.com/kubernetes/charts/tree/master/stable/jenkins,\
+      \ but better suites https://github.com/odavid/my-bloody-jenkins\n"
+    version: 0.1.80
+    created: 2020-02-18T19:38:41.277Z
+    appVersion: v2.204.2-179
+    digest: 521c6c8cc75359e0831aa606ef5dcdaf642d4604f419996bdd2c99f4879174cf
+    icon: https://wiki.jenkins-ci.org/download/attachments/2916393/logo.png
+    urls:
+    - my-bloody-jenkins-0.1.80.tgz
+    sources:
+    - https://github.com/odavid/my-bloody-jenkins
+    - https://github.com/odavid/k8s-helm-charts/tree/master/charts/my-bloody-jenkins
+    - https://github.com/odavid/jenkins-jnlp-slave
+    maintainers:
+    - email: ohad.david@gmail.com
+      name: odavid
+  - name: my-bloody-jenkins
+    description: "A Helm chart for my-bloody-jenkins - a self configured jenkins docker\
+      \ image, based on Jenkins LTS. Inspired by https://github.com/kubernetes/charts/tree/master/stable/jenkins,\
+      \ but better suites https://github.com/odavid/my-bloody-jenkins\n"
+    version: 0.1.79
+    created: 2020-02-13T08:26:35.589Z
+    appVersion: v2.204.2-178
+    digest: 0a3e433f7354e6b624c11dbcc1ba4ddfbea4397e1961f1d8bc65d1074e0422b9
+    icon: https://wiki.jenkins-ci.org/download/attachments/2916393/logo.png
+    urls:
+    - my-bloody-jenkins-0.1.79.tgz
+    sources:
+    - https://github.com/odavid/my-bloody-jenkins
+    - https://github.com/odavid/k8s-helm-charts/tree/master/charts/my-bloody-jenkins
+    - https://github.com/odavid/jenkins-jnlp-slave
+    maintainers:
+    - email: ohad.david@gmail.com
+      name: odavid
+  - name: my-bloody-jenkins
+    description: "A Helm chart for my-bloody-jenkins - a self configured jenkins docker\
+      \ image, based on Jenkins LTS. Inspired by https://github.com/kubernetes/charts/tree/master/stable/jenkins,\
+      \ but better suites https://github.com/odavid/my-bloody-jenkins\n"
+    version: 0.1.78
+    created: 2020-02-04T20:27:30.496Z
+    appVersion: v2.204.2-177
+    digest: 3d12aeadccb5852039cd1d578f3ce486e842e9f2bbabab9085e907e4239f992c
+    icon: https://wiki.jenkins-ci.org/download/attachments/2916393/logo.png
+    urls:
+    - my-bloody-jenkins-0.1.78.tgz
+    sources:
+    - https://github.com/odavid/my-bloody-jenkins
+    - https://github.com/odavid/k8s-helm-charts/tree/master/charts/my-bloody-jenkins
+    - https://github.com/odavid/jenkins-jnlp-slave
+    maintainers:
+    - email: ohad.david@gmail.com
+      name: odavid
+  - name: my-bloody-jenkins
+    description: "A Helm chart for my-bloody-jenkins - a self configured jenkins docker\
+      \ image, based on Jenkins LTS. Inspired by https://github.com/kubernetes/charts/tree/master/stable/jenkins,\
+      \ but better suites https://github.com/odavid/my-bloody-jenkins\n"
+    version: 0.1.77
+    created: 2020-01-29T23:38:37.635Z
+    appVersion: v2.204.2-176
+    digest: bc46adcd7548fd7239a0803211ce19688ad3a0120007e578cc0134cc4daf441e
+    icon: https://wiki.jenkins-ci.org/download/attachments/2916393/logo.png
+    urls:
+    - my-bloody-jenkins-0.1.77.tgz
+    sources:
+    - https://github.com/odavid/my-bloody-jenkins
+    - https://github.com/odavid/k8s-helm-charts/tree/master/charts/my-bloody-jenkins
+    - https://github.com/odavid/jenkins-jnlp-slave
+    maintainers:
+    - email: ohad.david@gmail.com
+      name: odavid
+  - name: my-bloody-jenkins
+    description: "A Helm chart for my-bloody-jenkins - a self configured jenkins docker\
+      \ image, based on Jenkins LTS. Inspired by https://github.com/kubernetes/charts/tree/master/stable/jenkins,\
+      \ but better suites https://github.com/odavid/my-bloody-jenkins\n"
+    version: 0.1.76
+    created: 2020-01-29T22:29:53.122Z
+    appVersion: v2.204.1-175
+    digest: 677c7a2b32c85bb785ec0d2e623a39c1dee38ed84d2965522c567c6f5dca6a28
+    icon: https://wiki.jenkins-ci.org/download/attachments/2916393/logo.png
+    urls:
+    - my-bloody-jenkins-0.1.76.tgz
+    sources:
+    - https://github.com/odavid/my-bloody-jenkins
+    - https://github.com/odavid/k8s-helm-charts/tree/master/charts/my-bloody-jenkins
+    - https://github.com/odavid/jenkins-jnlp-slave
+    maintainers:
+    - email: ohad.david@gmail.com
+      name: odavid
+  - name: my-bloody-jenkins
+    description: "A Helm chart for my-bloody-jenkins - a self configured jenkins docker\
+      \ image, based on Jenkins LTS. Inspired by https://github.com/kubernetes/charts/tree/master/stable/jenkins,\
+      \ but better suites https://github.com/odavid/my-bloody-jenkins\n"
+    version: 0.1.75
+    created: 2020-01-22T21:31:18.042Z
+    appVersion: v2.204.1-174
+    digest: d07b6b2aeac9abb15abb2fcbcbdb8ecb7c5295fb430d323447c2f67bb23a92fc
+    icon: https://wiki.jenkins-ci.org/download/attachments/2916393/logo.png
+    urls:
+    - my-bloody-jenkins-0.1.75.tgz
+    sources:
+    - https://github.com/odavid/my-bloody-jenkins
+    - https://github.com/odavid/k8s-helm-charts/tree/master/charts/my-bloody-jenkins
+    - https://github.com/odavid/jenkins-jnlp-slave
+    maintainers:
+    - email: ohad.david@gmail.com
+      name: odavid
+  - name: my-bloody-jenkins
+    description: "A Helm chart for my-bloody-jenkins - a self configured jenkins docker\
+      \ image, based on Jenkins LTS. Inspired by https://github.com/kubernetes/charts/tree/master/stable/jenkins,\
+      \ but better suites https://github.com/odavid/my-bloody-jenkins\n"
+    version: 0.1.74
+    created: 2020-01-17T09:51:52.837Z
+    appVersion: v2.204.1-173
+    digest: f85e8cb5e33e1b98c8b1ce58108e5d332d8ba9bc326c5321c4fbf2a6d13cd577
+    icon: https://wiki.jenkins-ci.org/download/attachments/2916393/logo.png
+    urls:
+    - my-bloody-jenkins-0.1.74.tgz
+    sources:
+    - https://github.com/odavid/my-bloody-jenkins
+    - https://github.com/odavid/k8s-helm-charts/tree/master/charts/my-bloody-jenkins
+    - https://github.com/odavid/jenkins-jnlp-slave
+    maintainers:
+    - email: ohad.david@gmail.com
+      name: odavid
+  - name: my-bloody-jenkins
+    description: "A Helm chart for my-bloody-jenkins - a self configured jenkins docker\
+      \ image, based on Jenkins LTS. Inspired by https://github.com/kubernetes/charts/tree/master/stable/jenkins,\
+      \ but better suites https://github.com/odavid/my-bloody-jenkins\n"
+    version: 0.1.73
+    created: 2020-01-11T08:42:43.674Z
+    appVersion: v2.204.1-172
+    digest: 845d9323ee216b677d9770f3dec72dbd1fd93b976808e9263b9d91121b8ff0a5
+    icon: https://wiki.jenkins-ci.org/download/attachments/2916393/logo.png
+    urls:
+    - my-bloody-jenkins-0.1.73.tgz
+    sources:
+    - https://github.com/odavid/my-bloody-jenkins
+    - https://github.com/odavid/k8s-helm-charts/tree/master/charts/my-bloody-jenkins
+    - https://github.com/odavid/jenkins-jnlp-slave
+    maintainers:
+    - email: ohad.david@gmail.com
+      name: odavid
+  - name: my-bloody-jenkins
+    description: "A Helm chart for my-bloody-jenkins - a self configured jenkins docker\
+      \ image, based on Jenkins LTS. Inspired by https://github.com/kubernetes/charts/tree/master/stable/jenkins,\
+      \ but better suites https://github.com/odavid/my-bloody-jenkins\n"
+    version: 0.1.72
+    created: 2020-01-06T17:17:55.043Z
+    appVersion: v2.204.1-171
+    digest: c00c861b603e83afe67d193097de0ca0f0d30fa46181cc9d55867edb5cc451dd
+    icon: https://wiki.jenkins-ci.org/download/attachments/2916393/logo.png
+    urls:
+    - my-bloody-jenkins-0.1.72.tgz
+    sources:
+    - https://github.com/odavid/my-bloody-jenkins
+    - https://github.com/odavid/my-bloody-jenkins-helm-chart
+    - https://github.com/odavid/jenkins-jnlp-slave
+    maintainers:
+    - email: ohad.david@gmail.com
+      name: odavid
+  - name: my-bloody-jenkins
+    description: "A Helm chart for my-bloody-jenkins - a self configured jenkins docker\
+      \ image, based on Jenkins LTS. Inspired by https://github.com/kubernetes/charts/tree/master/stable/jenkins,\
+      \ but better suites https://github.com/odavid/my-bloody-jenkins\n"
+    version: 0.1.71
+    created: 2020-01-05T20:02:01.908Z
+    appVersion: v2.204.1-170
+    digest: 9c9c3031184c8d3f850f03facae0b0eecb5ec4792d83127765b906fff4cd4cbd
+    icon: https://wiki.jenkins-ci.org/download/attachments/2916393/logo.png
+    urls:
+    - my-bloody-jenkins-0.1.71.tgz
+    sources:
+    - https://github.com/odavid/my-bloody-jenkins
+    - https://github.com/odavid/my-bloody-jenkins-helm-chart
+    - https://github.com/odavid/jenkins-jnlp-slave
+    maintainers:
+    - email: ohad.david@gmail.com
+      name: odavid
+  - name: my-bloody-jenkins
+    description: "A Helm chart for my-bloody-jenkins - a self configured jenkins docker\
+      \ image, based on Jenkins LTS. Inspired by https://github.com/kubernetes/charts/tree/master/stable/jenkins,\
+      \ but better suites https://github.com/odavid/my-bloody-jenkins\n"
+    version: 0.1.70
+    created: 2019-12-23T20:59:53.351Z
+    appVersion: v2.204.1-169
+    digest: 722f2e11f381235b3934411eaa5f9e9cb0b87827f3c7d5ca199e6c9c38055ac7
+    icon: https://wiki.jenkins-ci.org/download/attachments/2916393/logo.png
+    urls:
+    - my-bloody-jenkins-0.1.70.tgz
+    sources:
+    - https://github.com/odavid/my-bloody-jenkins
+    - https://github.com/odavid/my-bloody-jenkins-helm-chart
+    - https://github.com/odavid/jenkins-jnlp-slave
+    maintainers:
+    - email: ohad.david@gmail.com
+      name: odavid
+  - name: my-bloody-jenkins
+    description: "A Helm chart for my-bloody-jenkins - a self configured jenkins docker\
+      \ image, based on Jenkins LTS. Inspired by https://github.com/kubernetes/charts/tree/master/stable/jenkins,\
+      \ but better suites https://github.com/odavid/my-bloody-jenkins\n"
+    version: 0.1.69
+    created: 2019-12-23T06:58:51.526Z
+    appVersion: v2.190.3-168
+    digest: 90cf4fe277f51bc47c369865e03a595805ae89cf3759f576dffbd113859d2811
+    icon: https://wiki.jenkins-ci.org/download/attachments/2916393/logo.png
+    urls:
+    - my-bloody-jenkins-0.1.69.tgz
+    sources:
+    - https://github.com/odavid/my-bloody-jenkins
+    - https://github.com/odavid/my-bloody-jenkins-helm-chart
+    - https://github.com/odavid/jenkins-jnlp-slave
+    maintainers:
+    - email: ohad.david@gmail.com
+      name: odavid
+  - name: my-bloody-jenkins
+    description: "A Helm chart for my-bloody-jenkins - a self configured jenkins docker\
+      \ image, based on Jenkins LTS. Inspired by https://github.com/kubernetes/charts/tree/master/stable/jenkins,\
+      \ but better suites https://github.com/odavid/my-bloody-jenkins\n"
+    version: 0.1.68
+    created: 2019-12-15T20:05:19.783Z
+    appVersion: v2.190.3-167
+    digest: 274dce05be7354f53297897425272f0dcf13051e6bcd68210625f7909446bff7
+    icon: https://wiki.jenkins-ci.org/download/attachments/2916393/logo.png
+    urls:
+    - my-bloody-jenkins-0.1.68.tgz
+    sources:
+    - https://github.com/odavid/my-bloody-jenkins
+    - https://github.com/odavid/my-bloody-jenkins-helm-chart
+    - https://github.com/odavid/jenkins-jnlp-slave
+    maintainers:
+    - email: ohad.david@gmail.com
+      name: odavid
+  - name: my-bloody-jenkins
+    description: "A Helm chart for my-bloody-jenkins - a self configured jenkins docker\
+      \ image, based on Jenkins LTS. Inspired by https://github.com/kubernetes/charts/tree/master/stable/jenkins,\
+      \ but better suites https://github.com/odavid/my-bloody-jenkins\n"
+    version: 0.1.67
+    created: 2019-12-10T10:13:50.538Z
+    appVersion: v2.190.3-166
+    digest: fa3cc52e180213113d5d6a11c0725cfdf8a8d5663ebc939e6403045bbdf23c36
+    icon: https://wiki.jenkins-ci.org/download/attachments/2916393/logo.png
+    urls:
+    - my-bloody-jenkins-0.1.67.tgz
+    sources:
+    - https://github.com/odavid/my-bloody-jenkins
+    - https://github.com/odavid/my-bloody-jenkins-helm-chart
+    - https://github.com/odavid/jenkins-jnlp-slave
+    maintainers:
+    - email: ohad.david@gmail.com
+      name: odavid
+  - name: my-bloody-jenkins
+    description: "A Helm chart for my-bloody-jenkins - a self configured jenkins docker\
+      \ image, based on Jenkins LTS. Inspired by https://github.com/kubernetes/charts/tree/master/stable/jenkins,\
+      \ but better suites https://github.com/odavid/my-bloody-jenkins\n"
+    version: 0.1.66
+    created: 2019-12-06T12:16:10.464Z
+    appVersion: v2.190.2-165
+    digest: 34609806e7bee1bf2943d0d9a1b5da0d50e7e2b2855a1cab9d897d597783a3c9
+    icon: https://wiki.jenkins-ci.org/download/attachments/2916393/logo.png
+    urls:
+    - my-bloody-jenkins-0.1.66.tgz
+    sources:
+    - https://github.com/odavid/my-bloody-jenkins
+    - https://github.com/odavid/my-bloody-jenkins-helm-chart
+    - https://github.com/odavid/jenkins-jnlp-slave
+    maintainers:
+    - email: ohad.david@gmail.com
+      name: odavid
+  - name: my-bloody-jenkins
+    description: "A Helm chart for my-bloody-jenkins - a self configured jenkins docker\
+      \ image, based on Jenkins LTS. Inspired by https://github.com/kubernetes/charts/tree/master/stable/jenkins,\
+      \ but better suites https://github.com/odavid/my-bloody-jenkins\n"
+    version: 0.1.65
+    created: 2019-11-26T11:15:32.094Z
+    appVersion: v2.190.2-164
+    digest: 4a45c07c708c029213936aec253f9bed878f94945160544d9ec7007813efb104
+    icon: https://wiki.jenkins-ci.org/download/attachments/2916393/logo.png
+    urls:
+    - my-bloody-jenkins-0.1.65.tgz
+    sources:
+    - https://github.com/odavid/my-bloody-jenkins
+    - https://github.com/odavid/my-bloody-jenkins-helm-chart
+    - https://github.com/odavid/jenkins-jnlp-slave
+    maintainers:
+    - email: ohad.david@gmail.com
+      name: odavid
+  - name: my-bloody-jenkins
+    description: "A Helm chart for my-bloody-jenkins - a self configured jenkins docker\
+      \ image, based on Jenkins LTS. Inspired by https://github.com/kubernetes/charts/tree/master/stable/jenkins,\
+      \ but better suites https://github.com/odavid/my-bloody-jenkins\n"
+    version: 0.1.64
+    created: 2019-11-21T17:44:40.869Z
+    appVersion: v2.190.2-163
+    digest: 57a366eb3d6edc2743988050cbbc9ca469fcc222663a0cfe14b51c15f751ca2e
+    icon: https://wiki.jenkins-ci.org/download/attachments/2916393/logo.png
+    urls:
+    - my-bloody-jenkins-0.1.64.tgz
+    sources:
+    - https://github.com/odavid/my-bloody-jenkins
+    - https://github.com/odavid/my-bloody-jenkins-helm-chart
+    - https://github.com/odavid/jenkins-jnlp-slave
+    maintainers:
+    - email: ohad.david@gmail.com
+      name: odavid
+  - name: my-bloody-jenkins
+    description: "A Helm chart for my-bloody-jenkins - a self configured jenkins docker\
+      \ image, based on Jenkins LTS. Inspired by https://github.com/kubernetes/charts/tree/master/stable/jenkins,\
+      \ but better suites https://github.com/odavid/my-bloody-jenkins\n"
+    version: 0.1.63
+    created: 2019-11-19T07:59:00.844Z
+    appVersion: v2.190.2-162
+    digest: ddc1713da2edeb9b844cb470b7e532e1983999ba185ded0f6ac82fc2a7007d16
+    icon: https://wiki.jenkins-ci.org/download/attachments/2916393/logo.png
+    urls:
+    - my-bloody-jenkins-0.1.63.tgz
+    sources:
+    - https://github.com/odavid/my-bloody-jenkins
+    - https://github.com/odavid/my-bloody-jenkins-helm-chart
+    - https://github.com/odavid/jenkins-jnlp-slave
+    maintainers:
+    - email: ohad.david@gmail.com
+      name: odavid
+  - name: my-bloody-jenkins
+    description: "A Helm chart for my-bloody-jenkins - a self configured jenkins docker\
+      \ image, based on Jenkins LTS. Inspired by https://github.com/kubernetes/charts/tree/master/stable/jenkins,\
+      \ but better suites https://github.com/odavid/my-bloody-jenkins\n"
+    version: 0.1.62
+    created: 2019-11-07T13:25:59.291Z
+    appVersion: v2.190.2-161
+    digest: 4890e7226f9cd2bf816d056803f50a579d5f9d98130b2b689ed3bd424d5ae987
+    icon: https://wiki.jenkins-ci.org/download/attachments/2916393/logo.png
+    urls:
+    - my-bloody-jenkins-0.1.62.tgz
+    sources:
+    - https://github.com/odavid/my-bloody-jenkins
+    - https://github.com/odavid/my-bloody-jenkins-helm-chart
+    - https://github.com/odavid/jenkins-jnlp-slave
+    maintainers:
+    - email: ohad.david@gmail.com
+      name: odavid
+  - name: my-bloody-jenkins
+    description: "A Helm chart for my-bloody-jenkins - a self configured jenkins docker\
+      \ image, based on Jenkins LTS. Inspired by https://github.com/kubernetes/charts/tree/master/stable/jenkins,\
+      \ but better suites https://github.com/odavid/my-bloody-jenkins\n"
+    version: 0.1.61
+    created: 2019-10-31T21:24:33.085Z
+    appVersion: v2.190.1-160
+    digest: b0b4a863dbe2244ffb75bdc64884b74e1564b9ca74f11a58f2ed9bcf9fbeffd5
+    icon: https://wiki.jenkins-ci.org/download/attachments/2916393/logo.png
+    urls:
+    - my-bloody-jenkins-0.1.61.tgz
+    sources:
+    - https://github.com/odavid/my-bloody-jenkins
+    - https://github.com/odavid/my-bloody-jenkins-helm-chart
+    - https://github.com/odavid/jenkins-jnlp-slave
+    maintainers:
+    - email: ohad.david@gmail.com
+      name: odavid
+  - name: my-bloody-jenkins
+    description: "A Helm chart for my-bloody-jenkins - a self configured jenkins docker\
+      \ image, based on Jenkins LTS. Inspired by https://github.com/kubernetes/charts/tree/master/stable/jenkins,\
+      \ but better suites https://github.com/odavid/my-bloody-jenkins\n"
+    version: 0.1.60
+    created: 2019-10-27T17:18:22.764Z
+    appVersion: v2.190.1-159
+    digest: 85b0a80bca3b778f92c695f00c54b092e8acede2c98349d7f55762a03913ec29
+    icon: https://wiki.jenkins-ci.org/download/attachments/2916393/logo.png
+    urls:
+    - my-bloody-jenkins-0.1.60.tgz
+    sources:
+    - https://github.com/odavid/my-bloody-jenkins
+    - https://github.com/odavid/my-bloody-jenkins-helm-chart
+    - https://github.com/odavid/jenkins-jnlp-slave
+    maintainers:
+    - email: ohad.david@gmail.com
+      name: odavid
+  - name: my-bloody-jenkins
+    description: "A Helm chart for my-bloody-jenkins - a self configured jenkins docker\
+      \ image, based on Jenkins LTS. Inspired by https://github.com/kubernetes/charts/tree/master/stable/jenkins,\
+      \ but better suites https://github.com/odavid/my-bloody-jenkins\n"
+    version: 0.1.59
+    created: 2019-10-27T16:00:39.742Z
+    appVersion: v2.190.1-158
+    digest: a318aaba80f4d4c4db5774f15abec4e8b0bcf1ea3e63a29d427d39cdd0348d96
+    icon: https://wiki.jenkins-ci.org/download/attachments/2916393/logo.png
+    urls:
+    - my-bloody-jenkins-0.1.59.tgz
+    sources:
+    - https://github.com/odavid/my-bloody-jenkins
+    - https://github.com/odavid/my-bloody-jenkins-helm-chart
+    - https://github.com/odavid/jenkins-jnlp-slave
+    maintainers:
+    - email: ohad.david@gmail.com
+      name: odavid
+  - name: my-bloody-jenkins
+    description: "A Helm chart for my-bloody-jenkins - a self configured jenkins docker\
+      \ image, based on Jenkins LTS. Inspired by https://github.com/kubernetes/charts/tree/master/stable/jenkins,\
+      \ but better suites https://github.com/odavid/my-bloody-jenkins\n"
+    version: 0.1.58
+    created: 2019-10-24T09:58:30.257Z
+    appVersion: v2.190.1-157
+    digest: 6f327489d61bc41141d19a11a06733e5c46586a43dfa3caa6a84b530765907f1
+    icon: https://wiki.jenkins-ci.org/download/attachments/2916393/logo.png
+    urls:
+    - my-bloody-jenkins-0.1.58.tgz
+    sources:
+    - https://github.com/odavid/my-bloody-jenkins
+    - https://github.com/odavid/my-bloody-jenkins-helm-chart
+    - https://github.com/odavid/jenkins-jnlp-slave
+    maintainers:
+    - email: ohad.david@gmail.com
+      name: odavid
+  - name: my-bloody-jenkins
+    description: "A Helm chart for my-bloody-jenkins - a self configured jenkins docker\
+      \ image, based on Jenkins LTS. Inspired by https://github.com/kubernetes/charts/tree/master/stable/jenkins,\
+      \ but better suites https://github.com/odavid/my-bloody-jenkins\n"
+    version: 0.1.57
+    created: 2019-09-24T05:52:52.214Z
+    appVersion: v2.176.3-156
+    digest: 3ca904bf907a0735eca439c67f5f3d04953eeef53c8c3c74813a7cab637a227f
+    icon: https://wiki.jenkins-ci.org/download/attachments/2916393/logo.png
+    urls:
+    - my-bloody-jenkins-0.1.57.tgz
+    sources:
+    - https://github.com/odavid/my-bloody-jenkins
+    - https://github.com/odavid/my-bloody-jenkins-helm-chart
+    - https://github.com/odavid/jenkins-jnlp-slave
+    maintainers:
+    - email: ohad.david@gmail.com
+      name: odavid
+  - name: my-bloody-jenkins
+    description: "A Helm chart for my-bloody-jenkins - a self configured jenkins docker\
+      \ image, based on Jenkins LTS. Inspired by https://github.com/kubernetes/charts/tree/master/stable/jenkins,\
+      \ but better suites https://github.com/odavid/my-bloody-jenkins\n"
+    version: 0.1.56
+    created: 2019-09-21T12:06:06.529Z
+    appVersion: v2.176.3-155
+    digest: cf1f8f21705068d43aba45dcd3169781de0718bbd09b60731f39c8f540fff67c
+    icon: https://wiki.jenkins-ci.org/download/attachments/2916393/logo.png
+    urls:
+    - my-bloody-jenkins-0.1.56.tgz
+    sources:
+    - https://github.com/odavid/my-bloody-jenkins
+    - https://github.com/odavid/my-bloody-jenkins-helm-chart
+    - https://github.com/odavid/jenkins-jnlp-slave
+    maintainers:
+    - email: ohad.david@gmail.com
+      name: odavid
+  - name: my-bloody-jenkins
+    description: "A Helm chart for my-bloody-jenkins - a self configured jenkins docker\
+      \ image, based on Jenkins LTS. Inspired by https://github.com/kubernetes/charts/tree/master/stable/jenkins,\
+      \ but better suites https://github.com/odavid/my-bloody-jenkins\n"
+    version: 0.1.55
+    created: 2019-09-20T05:50:10.496Z
+    appVersion: v2.176.3-154
+    digest: c41f530b70c3ee4d6e859e859abf792a3b459c7415959a1869ccab3b73b17b9e
+    icon: https://wiki.jenkins-ci.org/download/attachments/2916393/logo.png
+    urls:
+    - my-bloody-jenkins-0.1.55.tgz
+    sources:
+    - https://github.com/odavid/my-bloody-jenkins
+    - https://github.com/odavid/my-bloody-jenkins-helm-chart
+    - https://github.com/odavid/jenkins-jnlp-slave
+    maintainers:
+    - email: ohad.david@gmail.com
+      name: odavid
+  - name: my-bloody-jenkins
+    description: "A Helm chart for my-bloody-jenkins - a self configured jenkins docker\
+      \ image, based on Jenkins LTS. Inspired by https://github.com/kubernetes/charts/tree/master/stable/jenkins,\
+      \ but better suites https://github.com/odavid/my-bloody-jenkins\n"
+    version: 0.1.54
+    created: 2019-09-15T18:31:54.199Z
+    appVersion: v2.176.3-153
+    digest: b02aed3a2f69c527067ba62c364c50cadb3ef5c6a4f702f4fe2f6227a8d3c7d7
+    icon: https://wiki.jenkins-ci.org/download/attachments/2916393/logo.png
+    urls:
+    - my-bloody-jenkins-0.1.54.tgz
+    sources:
+    - https://github.com/odavid/my-bloody-jenkins
+    - https://github.com/odavid/my-bloody-jenkins-helm-chart
+    - https://github.com/odavid/jenkins-jnlp-slave
+    maintainers:
+    - email: ohad.david@gmail.com
+      name: odavid
+  - name: my-bloody-jenkins
+    description: "A Helm chart for my-bloody-jenkins - a self configured jenkins docker\
+      \ image, based on Jenkins LTS. Inspired by https://github.com/kubernetes/charts/tree/master/stable/jenkins,\
+      \ but better suites https://github.com/odavid/my-bloody-jenkins\n"
+    version: 0.1.53
+    created: 2019-09-11T14:07:25.071Z
+    appVersion: v2.176.3-152
+    digest: 076e1be15046362250b347254acb6533258cf65d0fc46a4e0f9cea3c2d38884d
+    icon: https://wiki.jenkins-ci.org/download/attachments/2916393/logo.png
+    urls:
+    - my-bloody-jenkins-0.1.53.tgz
+    sources:
+    - https://github.com/odavid/my-bloody-jenkins
+    - https://github.com/odavid/my-bloody-jenkins-helm-chart
+    - https://github.com/odavid/jenkins-jnlp-slave
+    maintainers:
+    - email: ohad.david@gmail.com
+      name: odavid
+  - name: my-bloody-jenkins
+    description: "A Helm chart for my-bloody-jenkins - a self configured jenkins docker\
+      \ image, based on Jenkins LTS. Inspired by https://github.com/kubernetes/charts/tree/master/stable/jenkins,\
+      \ but better suites https://github.com/odavid/my-bloody-jenkins\n"
+    version: 0.1.52
+    created: 2019-09-11T09:45:11.770Z
+    appVersion: v2.176.3-151
+    digest: 46f1d00d8a3298dd0e6a5a47536612123453acb06090e4f6a1465d6d2afe154d
+    icon: https://wiki.jenkins-ci.org/download/attachments/2916393/logo.png
+    urls:
+    - my-bloody-jenkins-0.1.52.tgz
+    sources:
+    - https://github.com/odavid/my-bloody-jenkins
+    - https://github.com/odavid/my-bloody-jenkins-helm-chart
+    - https://github.com/odavid/jenkins-jnlp-slave
+    maintainers:
+    - email: ohad.david@gmail.com
+      name: odavid
+  - name: my-bloody-jenkins
+    description: "A Helm chart for my-bloody-jenkins - a self configured jenkins docker\
+      \ image, based on Jenkins LTS. Inspired by https://github.com/kubernetes/charts/tree/master/stable/jenkins,\
+      \ but better suites https://github.com/odavid/my-bloody-jenkins\n"
+    version: 0.1.51
+    created: 2019-09-05T21:17:17.262Z
+    appVersion: v2.176.3-151
+    digest: f7d56264e05d2e5d24e9a4f22fc4a786646db344d8d1359aa2f4743f76f738c4
+    icon: https://wiki.jenkins-ci.org/download/attachments/2916393/logo.png
+    urls:
+    - my-bloody-jenkins-0.1.51.tgz
+    sources:
+    - https://github.com/odavid/my-bloody-jenkins
+    - https://github.com/odavid/my-bloody-jenkins-helm-chart
+    - https://github.com/odavid/jenkins-jnlp-slave
+    maintainers:
+    - email: ohad.david@gmail.com
+      name: odavid
+  - name: my-bloody-jenkins
+    description: "A Helm chart for my-bloody-jenkins - a self configured jenkins docker\
+      \ image, based on Jenkins LTS. Inspired by https://github.com/kubernetes/charts/tree/master/stable/jenkins,\
+      \ but better suites https://github.com/odavid/my-bloody-jenkins\n"
+    version: 0.1.50
+    created: 2019-09-01T08:53:18.254Z
+    appVersion: 2.176.3-150
+    digest: a7c70db2ad9c4490bb8e2cce7416a4d907fdafdd080db3e8af5223e67c5249c0
+    icon: https://wiki.jenkins-ci.org/download/attachments/2916393/logo.png
+    urls:
+    - my-bloody-jenkins-0.1.50.tgz
+    sources:
+    - https://github.com/odavid/my-bloody-jenkins
+    - https://github.com/odavid/my-bloody-jenkins-helm-chart
+    - https://github.com/odavid/jenkins-jnlp-slave
+    maintainers:
+    - email: ohad.david@gmail.com
+      name: odavid
+  - name: my-bloody-jenkins
+    description: "A Helm chart for my-bloody-jenkins - a self configured jenkins docker\
+      \ image, based on Jenkins LTS. Inspired by https://github.com/kubernetes/charts/tree/master/stable/jenkins,\
+      \ but better suites https://github.com/odavid/my-bloody-jenkins\n"
+    version: 0.1.49
+    created: 2019-08-29T06:35:00.506Z
+    appVersion: 2.176.2-149
+    digest: 58e1a38b9437431cb60f33a3744621150493285681851e056e554e94a5dd8740
+    icon: https://wiki.jenkins-ci.org/download/attachments/2916393/logo.png
+    urls:
+    - my-bloody-jenkins-0.1.49.tgz
+    sources:
+    - https://github.com/odavid/my-bloody-jenkins
+    - https://github.com/odavid/my-bloody-jenkins-helm-chart
+    - https://github.com/odavid/jenkins-jnlp-slave
+    maintainers:
+    - email: ohad.david@gmail.com
+      name: odavid
+  - name: my-bloody-jenkins
+    description: "A Helm chart for my-bloody-jenkins - a self configured jenkins docker\
+      \ image, based on Jenkins LTS. Inspired by https://github.com/kubernetes/charts/tree/master/stable/jenkins,\
+      \ but better suites https://github.com/odavid/my-bloody-jenkins\n"
+    version: 0.1.48
+    created: 2019-08-27T06:03:35.632Z
+    appVersion: 2.176.2-148
+    digest: 0392ea17ccf902e9fa523f85360b95be86d2e2bf93ab04cb041305979da2fc30
+    icon: https://wiki.jenkins-ci.org/download/attachments/2916393/logo.png
+    urls:
+    - my-bloody-jenkins-0.1.48.tgz
+    sources:
+    - https://github.com/odavid/my-bloody-jenkins
+    - https://github.com/odavid/my-bloody-jenkins-helm-chart
+    - https://github.com/odavid/jenkins-jnlp-slave
+    maintainers:
+    - email: ohad.david@gmail.com
+      name: odavid
+  - name: my-bloody-jenkins
+    description: "A Helm chart for my-bloody-jenkins - a self configured jenkins docker\
+      \ image, based on Jenkins LTS. Inspired by https://github.com/kubernetes/charts/tree/master/stable/jenkins,\
+      \ but better suites https://github.com/odavid/my-bloody-jenkins\n"
+    version: 0.1.47
+    created: 2019-08-25T14:43:20.805Z
+    appVersion: 2.176.2-147
+    digest: 343ddc2af320ae95ec9d27ece83ad0941d4ea920af1e80cfd1e110b9ab36edc5
+    icon: https://wiki.jenkins-ci.org/download/attachments/2916393/logo.png
+    urls:
+    - my-bloody-jenkins-0.1.47.tgz
+    sources:
+    - https://github.com/odavid/my-bloody-jenkins
+    - https://github.com/odavid/my-bloody-jenkins-helm-chart
+    - https://github.com/odavid/jenkins-jnlp-slave
+    maintainers:
+    - email: ohad.david@gmail.com
+      name: odavid
+  - name: my-bloody-jenkins
+    description: "A Helm chart for my-bloody-jenkins - a self configured jenkins docker\
+      \ image, based on Jenkins LTS. Inspired by https://github.com/kubernetes/charts/tree/master/stable/jenkins,\
+      \ but better suites https://github.com/odavid/my-bloody-jenkins\n"
+    version: 0.1.46
+    created: 2019-08-19T19:16:26.039Z
+    appVersion: 2.176.2-145
+    digest: c4298a7c4a481c91fccdbff4357a3d18bd82802249b6cd76458ee7376135f4e4
+    icon: https://wiki.jenkins-ci.org/download/attachments/2916393/logo.png
+    urls:
+    - my-bloody-jenkins-0.1.46.tgz
+    sources:
+    - https://github.com/odavid/my-bloody-jenkins
+    - https://github.com/odavid/my-bloody-jenkins-helm-chart
+    - https://github.com/odavid/jenkins-jnlp-slave
+    maintainers:
+    - email: ohad.david@gmail.com
+      name: odavid
+  - name: my-bloody-jenkins
+    description: "A Helm chart for my-bloody-jenkins - a self configured jenkins docker\
+      \ image, based on Jenkins LTS. Inspired by https://github.com/kubernetes/charts/tree/master/stable/jenkins,\
+      \ but better suites https://github.com/odavid/my-bloody-jenkins\n"
+    version: 0.1.45
+    created: 2019-08-16T07:39:17.060Z
+    appVersion: 2.176.2-144
+    digest: 905b09b3fb49a4e140cdd709005016a0b6d831c1b2e2ca473e831397846b1d48
+    icon: https://wiki.jenkins-ci.org/download/attachments/2916393/logo.png
+    urls:
+    - my-bloody-jenkins-0.1.45.tgz
+    sources:
+    - https://github.com/odavid/my-bloody-jenkins
+    - https://github.com/odavid/my-bloody-jenkins-helm-chart
+    - https://github.com/odavid/jenkins-jnlp-slave
+    maintainers:
+    - email: ohad.david@gmail.com
+      name: odavid
+  - name: my-bloody-jenkins
+    description: "A Helm chart for my-bloody-jenkins - a self configured jenkins docker\
+      \ image, based on Jenkins LTS. Inspired by https://github.com/kubernetes/charts/tree/master/stable/jenkins,\
+      \ but better suites https://github.com/odavid/my-bloody-jenkins\n"
+    version: 0.1.44
+    created: 2019-08-07T20:59:41.006Z
+    appVersion: 2.176.2-143
+    digest: 278976312ebce0f023fd163a582c22b21ef0504f1148a94f0503a292e1c6f978
+    icon: https://wiki.jenkins-ci.org/download/attachments/2916393/logo.png
+    urls:
+    - my-bloody-jenkins-0.1.44.tgz
+    sources:
+    - https://github.com/odavid/my-bloody-jenkins
+    - https://github.com/odavid/my-bloody-jenkins-helm-chart
+    - https://github.com/odavid/jenkins-jnlp-slave
+    maintainers:
+    - email: ohad.david@gmail.com
+      name: odavid
+  - name: my-bloody-jenkins
+    description: "A Helm chart for my-bloody-jenkins - a self configured jenkins docker\
+      \ image, based on Jenkins LTS. Inspired by https://github.com/kubernetes/charts/tree/master/stable/jenkins,\
+      \ but better suites https://github.com/odavid/my-bloody-jenkins\n"
+    version: 0.1.43
+    created: 2019-08-05T11:55:37.211Z
+    appVersion: 2.176.2-141
+    digest: b4e93557d9d055edbaf8dc91f2cccaf9cc1b5576c186c80317d18dfbabe42783
+    icon: https://wiki.jenkins-ci.org/download/attachments/2916393/logo.png
+    urls:
+    - my-bloody-jenkins-0.1.43.tgz
+    sources:
+    - https://github.com/odavid/my-bloody-jenkins
+    - https://github.com/odavid/my-bloody-jenkins-helm-chart
+    - https://github.com/odavid/jenkins-jnlp-slave
+    maintainers:
+    - email: ohad.david@gmail.com
+      name: odavid
+  - name: my-bloody-jenkins
+    description: "A Helm chart for my-bloody-jenkins - a self configured jenkins docker\
+      \ image, based on Jenkins LTS. Inspired by https://github.com/kubernetes/charts/tree/master/stable/jenkins,\
+      \ but better suites https://github.com/odavid/my-bloody-jenkins\n"
+    version: 0.1.42
+    created: 2019-08-04T08:37:29.678Z
+    appVersion: 2.176.2-140
+    digest: ce7969f1a09f57ce23a0cdc6ebb30a1ae7b85885329820960efbae53caac349b
+    icon: https://wiki.jenkins-ci.org/download/attachments/2916393/logo.png
+    urls:
+    - my-bloody-jenkins-0.1.42.tgz
+    sources:
+    - https://github.com/odavid/my-bloody-jenkins
+    - https://github.com/odavid/my-bloody-jenkins-helm-chart
+    - https://github.com/odavid/jenkins-jnlp-slave
+    maintainers:
+    - email: ohad.david@gmail.com
+      name: odavid
+  - name: my-bloody-jenkins
+    description: "A Helm chart for my-bloody-jenkins - a self configured jenkins docker\
+      \ image, based on Jenkins LTS. Inspired by https://github.com/kubernetes/charts/tree/master/stable/jenkins,\
+      \ but better suites https://github.com/odavid/my-bloody-jenkins\n"
+    version: 0.1.41
+    created: 2019-07-31T15:17:04.212Z
+    appVersion: 2.176.2-139
+    digest: a4dceffb4b855dbc2f80ca726e515e5eb46d485f9271efa8f96ec0fc3da10b96
+    icon: https://wiki.jenkins-ci.org/download/attachments/2916393/logo.png
+    urls:
+    - my-bloody-jenkins-0.1.41.tgz
+    sources:
+    - https://github.com/odavid/my-bloody-jenkins
+    - https://github.com/odavid/my-bloody-jenkins-helm-chart
+    - https://github.com/odavid/jenkins-jnlp-slave
+    maintainers:
+    - email: ohad.david@gmail.com
+      name: odavid
+  - name: my-bloody-jenkins
+    description: "A Helm chart for my-bloody-jenkins - a self configured jenkins docker\
+      \ image, based on Jenkins LTS. Inspired by https://github.com/kubernetes/charts/tree/master/stable/jenkins,\
+      \ but better suites https://github.com/odavid/my-bloody-jenkins\n"
+    version: 0.1.40
+    created: 2019-07-23T14:49:20.817Z
+    appVersion: 2.176.2-137
+    digest: 3d24542120a3a52ee2bde44bb192a712529094514f2f01c453f5f4d9a2daacf5
+    icon: https://wiki.jenkins-ci.org/download/attachments/2916393/logo.png
+    urls:
+    - my-bloody-jenkins-0.1.40.tgz
+    sources:
+    - https://github.com/odavid/my-bloody-jenkins
+    - https://github.com/odavid/my-bloody-jenkins-helm-chart
+    - https://github.com/odavid/jenkins-jnlp-slave
+    maintainers:
+    - email: ohad.david@gmail.com
+      name: odavid
+  - name: my-bloody-jenkins
+    description: "A Helm chart for my-bloody-jenkins - a self configured jenkins docker\
+      \ image, based on Jenkins LTS. Inspired by https://github.com/kubernetes/charts/tree/master/stable/jenkins,\
+      \ but better suites https://github.com/odavid/my-bloody-jenkins\n"
+    version: 0.1.39
+    created: 2019-07-14T14:31:32.453Z
+    appVersion: 2.176.1-136
+    digest: 5702dc610a6724a6b2c62c96024a16c9adaeaaa4e310d4b07e65ea556e8d1f8c
+    icon: https://wiki.jenkins-ci.org/download/attachments/2916393/logo.png
+    urls:
+    - my-bloody-jenkins-0.1.39.tgz
+    sources:
+    - https://github.com/odavid/my-bloody-jenkins
+    - https://github.com/odavid/my-bloody-jenkins-helm-chart
+    - https://github.com/odavid/jenkins-jnlp-slave
+    maintainers:
+    - email: ohad.david@gmail.com
+      name: odavid
+  - name: my-bloody-jenkins
+    description: "A Helm chart for my-bloody-jenkins - a self configured jenkins docker\
+      \ image, based on Jenkins LTS. Inspired by https://github.com/kubernetes/charts/tree/master/stable/jenkins,\
+      \ but better suites https://github.com/odavid/my-bloody-jenkins\n"
+    version: 0.1.38
+    created: 2019-06-29T11:01:12.514Z
+    appVersion: 2.176.1-133
+    digest: d97037366e5bbbbe0d4dd48da0068aeb524d2b5062043b9fe23f2a9e67a080a9
+    icon: https://wiki.jenkins-ci.org/download/attachments/2916393/logo.png
+    urls:
+    - my-bloody-jenkins-0.1.38.tgz
+    sources:
+    - https://github.com/odavid/my-bloody-jenkins
+    - https://github.com/odavid/my-bloody-jenkins-helm-chart
+    - https://github.com/odavid/jenkins-jnlp-slave
+    maintainers:
+    - email: ohad.david@gmail.com
+      name: odavid
+  - name: my-bloody-jenkins
+    description: "A Helm chart for my-bloody-jenkins - a self configured jenkins docker\
+      \ image, based on Jenkins LTS. Inspired by https://github.com/kubernetes/charts/tree/master/stable/jenkins,\
+      \ but better suites https://github.com/odavid/my-bloody-jenkins\n"
+    version: 0.1.37
+    created: 2019-06-22T09:07:08.520Z
+    appVersion: 2.176.1-132
+    digest: 8640660c654cfba1d9e59650defa878d4546fc7669b338a4be42270bc9e6e721
+    icon: https://wiki.jenkins-ci.org/download/attachments/2916393/logo.png
+    urls:
+    - my-bloody-jenkins-0.1.37.tgz
+    sources:
+    - https://github.com/odavid/my-bloody-jenkins
+    - https://github.com/odavid/my-bloody-jenkins-helm-chart
+    - https://github.com/odavid/jenkins-jnlp-slave
+    maintainers:
+    - email: ohad.david@gmail.com
+      name: odavid
+  - name: my-bloody-jenkins
+    description: "A Helm chart for my-bloody-jenkins - a self configured jenkins docker\
+      \ image, based on Jenkins LTS. Inspired by https://github.com/kubernetes/charts/tree/master/stable/jenkins,\
+      \ but better suites https://github.com/odavid/my-bloody-jenkins\n"
+    version: 0.1.36
+    created: 2019-06-12T18:30:27.414Z
+    appVersion: 2.176.1-130
+    digest: 71f1e415b9049d761a8d60d2f50776883319a79fc2ca9d4d4067aac2d0341a38
+    icon: https://wiki.jenkins-ci.org/download/attachments/2916393/logo.png
+    urls:
+    - my-bloody-jenkins-0.1.36.tgz
+    sources:
+    - https://github.com/odavid/my-bloody-jenkins
+    - https://github.com/odavid/my-bloody-jenkins-helm-chart
+    - https://github.com/odavid/jenkins-jnlp-slave
+    maintainers:
+    - email: ohad.david@gmail.com
+      name: odavid
+  - name: my-bloody-jenkins
+    description: "A Helm chart for my-bloody-jenkins - a self configured jenkins docker\
+      \ image, based on Jenkins LTS. Inspired by https://github.com/kubernetes/charts/tree/master/stable/jenkins,\
+      \ but better suites https://github.com/odavid/my-bloody-jenkins\n"
+    version: 0.1.35
+    created: 2019-06-10T18:06:03.128Z
+    appVersion: 2.164.3-129
+    digest: 6d99d96b2a830cd3bf1c0ebc76aa1552f2bfe7a76fd074de302dde6a270d95bd
+    icon: https://wiki.jenkins-ci.org/download/attachments/2916393/logo.png
+    urls:
+    - my-bloody-jenkins-0.1.35.tgz
+    sources:
+    - https://github.com/odavid/my-bloody-jenkins
+    - https://github.com/odavid/my-bloody-jenkins-helm-chart
+    - https://github.com/odavid/jenkins-jnlp-slave
+    maintainers:
+    - email: ohad.david@gmail.com
+      name: odavid
+  - name: my-bloody-jenkins
+    description: "A Helm chart for my-bloody-jenkins - a self configured jenkins docker\
+      \ image, based on Jenkins LTS. Inspired by https://github.com/kubernetes/charts/tree/master/stable/jenkins,\
+      \ but better suites https://github.com/odavid/my-bloody-jenkins\n"
+    version: 0.1.34
+    created: 2019-06-03T19:29:35.109Z
+    appVersion: 2.164.3-128
+    digest: 7f6d92da8adff9ebcf4c2b4906866dc1d6d20124ae477cf9c9421b7cc81955b6
+    icon: https://wiki.jenkins-ci.org/download/attachments/2916393/logo.png
+    urls:
+    - my-bloody-jenkins-0.1.34.tgz
+    sources:
+    - https://github.com/odavid/my-bloody-jenkins
+    - https://github.com/odavid/my-bloody-jenkins-helm-chart
+    - https://github.com/odavid/jenkins-jnlp-slave
+    maintainers:
+    - email: ohad.david@gmail.com
+      name: odavid
+  - name: my-bloody-jenkins
+    description: "A Helm chart for my-bloody-jenkins - a self configured jenkins docker\
+      \ image, based on Jenkins LTS. Inspired by https://github.com/kubernetes/charts/tree/master/stable/jenkins,\
+      \ but better suites https://github.com/odavid/my-bloody-jenkins\n"
+    version: 0.1.33
+    created: 2019-05-23T15:02:50.539Z
+    appVersion: 2.164.3-125
+    digest: 8e1d53e5ef2f3cee6526d897497099241834c904583646f950822ee96b116d0f
+    icon: https://wiki.jenkins-ci.org/download/attachments/2916393/logo.png
+    urls:
+    - my-bloody-jenkins-0.1.33.tgz
+    sources:
+    - https://github.com/odavid/my-bloody-jenkins
+    - https://github.com/odavid/my-bloody-jenkins-helm-chart
+    - https://github.com/odavid/jenkins-jnlp-slave
+    maintainers:
+    - email: ohad.david@gmail.com
+      name: odavid
+  - name: my-bloody-jenkins
+    description: "A Helm chart for my-bloody-jenkins - a self configured jenkins docker\
+      \ image, based on Jenkins LTS. Inspired by https://github.com/kubernetes/charts/tree/master/stable/jenkins,\
+      \ but better suites https://github.com/odavid/my-bloody-jenkins\n"
+    version: 0.1.32
+    created: 2019-05-17T06:53:19.807Z
+    appVersion: 2.164.3-124
+    digest: a1ea0aac7d2d7f98db05cd34bebe145e1b1ba3c3bb2338c72895ead7367ecd2d
+    icon: https://wiki.jenkins-ci.org/download/attachments/2916393/logo.png
+    urls:
+    - my-bloody-jenkins-0.1.32.tgz
+    sources:
+    - https://github.com/odavid/my-bloody-jenkins
+    - https://github.com/odavid/my-bloody-jenkins-helm-chart
+    - https://github.com/odavid/jenkins-jnlp-slave
+    maintainers:
+    - email: ohad.david@gmail.com
+      name: odavid
+  - name: my-bloody-jenkins
+    description: "A Helm chart for my-bloody-jenkins - a self configured jenkins docker\
+      \ image, based on Jenkins LTS. Inspired by https://github.com/kubernetes/charts/tree/master/stable/jenkins,\
+      \ but better suites https://github.com/odavid/my-bloody-jenkins\n"
+    version: 0.1.31
+    created: 2019-05-11T06:32:45.065Z
+    appVersion: 2.164.3-123
+    digest: 2fdf24e7af9c41ce71441616acab5641ff468fd41551cec52538e3b8ecf52da3
+    icon: https://wiki.jenkins-ci.org/download/attachments/2916393/logo.png
+    urls:
+    - my-bloody-jenkins-0.1.31.tgz
+    sources:
+    - https://github.com/odavid/my-bloody-jenkins
+    - https://github.com/odavid/my-bloody-jenkins-helm-chart
+    - https://github.com/odavid/jenkins-jnlp-slave
+    maintainers:
+    - email: ohad.david@gmail.com
+      name: odavid
+  - name: my-bloody-jenkins
+    description: "A Helm chart for my-bloody-jenkins - a self configured jenkins docker\
+      \ image, based on Jenkins LTS. Inspired by https://github.com/kubernetes/charts/tree/master/stable/jenkins,\
+      \ but better suites https://github.com/odavid/my-bloody-jenkins\n"
+    version: 0.1.30
+    created: 2019-05-10T16:44:32.937Z
+    appVersion: 2.164.2-122
+    digest: 94385ee4a53a82893ef8d6fe023146604c5400dd7a3cd8aeca8885ee07f05793
+    icon: https://wiki.jenkins-ci.org/download/attachments/2916393/logo.png
+    urls:
+    - my-bloody-jenkins-0.1.30.tgz
+    sources:
+    - https://github.com/odavid/my-bloody-jenkins
+    - https://github.com/odavid/my-bloody-jenkins-helm-chart
+    - https://github.com/odavid/jenkins-jnlp-slave
+    maintainers:
+    - email: ohad.david@gmail.com
+      name: odavid
+  - name: my-bloody-jenkins
+    description: "A Helm chart for my-bloody-jenkins - a self configured jenkins docker\
+      \ image, based on Jenkins LTS. Inspired by https://github.com/kubernetes/charts/tree/master/stable/jenkins,\
+      \ but better suites https://github.com/odavid/my-bloody-jenkins\n"
+    version: 0.1.29
+    created: 2019-05-07T19:13:39.945Z
+    appVersion: 2.164.2-122
+    digest: d7b14fef14d408cb29e70c1bd1843919e9e7eb0914cca922c74565a35bf6d9be
+    icon: https://wiki.jenkins-ci.org/download/attachments/2916393/logo.png
+    urls:
+    - my-bloody-jenkins-0.1.29.tgz
+    sources:
+    - https://github.com/odavid/my-bloody-jenkins
+    - https://github.com/odavid/my-bloody-jenkins-helm-chart
+    - https://github.com/odavid/jenkins-jnlp-slave
+    maintainers:
+    - email: ohad.david@gmail.com
+      name: odavid
+  - name: my-bloody-jenkins
+    description: "A Helm chart for my-bloody-jenkins - a self configured jenkins docker\
+      \ image, based on Jenkins LTS. Inspired by https://github.com/kubernetes/charts/tree/master/stable/jenkins,\
+      \ but better suites https://github.com/odavid/my-bloody-jenkins\n"
+    version: 0.1.28
+    created: 2019-05-07T09:47:53.090Z
+    appVersion: 2.164.2-121
+    digest: 3552f0d42e6ccc1d3b561c413c47aa1e0b690469d894305f8ba014b353990cfc
+    icon: https://wiki.jenkins-ci.org/download/attachments/2916393/logo.png
+    urls:
+    - my-bloody-jenkins-0.1.28.tgz
+    sources:
+    - https://github.com/odavid/my-bloody-jenkins
+    - https://github.com/odavid/my-bloody-jenkins-helm-chart
+    - https://github.com/odavid/jenkins-jnlp-slave
+    maintainers:
+    - email: ohad.david@gmail.com
+      name: odavid
+  - name: my-bloody-jenkins
+    description: "A Helm chart for my-bloody-jenkins - a self configured jenkins docker\
+      \ image, based on Jenkins LTS. Inspired by https://github.com/kubernetes/charts/tree/master/stable/jenkins,\
+      \ but better suites https://github.com/odavid/my-bloody-jenkins\n"
+    version: 0.1.27
+    created: 2019-04-24T21:59:50.283Z
+    appVersion: 2.164.2-118
+    digest: e8a6e00e543250a998d5f1098ebc1f647f2e5f504f7d2dfe0207a228f59257ab
+    icon: https://wiki.jenkins-ci.org/download/attachments/2916393/logo.png
+    urls:
+    - my-bloody-jenkins-0.1.27.tgz
+    sources:
+    - https://github.com/odavid/my-bloody-jenkins
+    - https://github.com/odavid/my-bloody-jenkins-helm-chart
+    - https://github.com/odavid/jenkins-jnlp-slave
+    maintainers:
+    - email: ohad.david@gmail.com
+      name: odavid
+  - name: my-bloody-jenkins
+    description: "A Helm chart for my-bloody-jenkins - a self configured jenkins docker\
+      \ image, based on Jenkins LTS. Inspired by https://github.com/kubernetes/charts/tree/master/stable/jenkins,\
+      \ but better suites https://github.com/odavid/my-bloody-jenkins\n"
+    version: 0.1.26
+    created: 2019-04-16T06:33:34.233Z
+    appVersion: 2.164.2-118
+    digest: 5e5d789fa96cafa61c49ddd900eaa77f0584b235fee822ac26e1c31537f91314
+    icon: https://wiki.jenkins-ci.org/download/attachments/2916393/logo.png
+    urls:
+    - my-bloody-jenkins-0.1.26.tgz
+    sources:
+    - https://github.com/odavid/my-bloody-jenkins
+    - https://github.com/odavid/my-bloody-jenkins-helm-chart
+    - https://github.com/odavid/jenkins-jnlp-slave
+    maintainers:
+    - email: ohad.david@gmail.com
+      name: odavid
+  - name: my-bloody-jenkins
+    description: "A Helm chart for my-bloody-jenkins - a self configured jenkins docker\
+      \ image, based on Jenkins LTS. Inspired by https://github.com/kubernetes/charts/tree/master/stable/jenkins,\
+      \ but better suites https://github.com/odavid/my-bloody-jenkins\n"
+    version: 0.1.25
+    created: 2019-03-15T08:27:15.519Z
+    appVersion: 2.164.1-113
+    digest: b14e4ff30ecc3aa67ae06f69f5917282d9dd5c0f2b949a93c9ba80c879d83777
+    icon: https://wiki.jenkins-ci.org/download/attachments/2916393/logo.png
+    urls:
+    - my-bloody-jenkins-0.1.25.tgz
+    sources:
+    - https://github.com/odavid/my-bloody-jenkins
+    - https://github.com/odavid/my-bloody-jenkins-helm-chart
+    - https://github.com/odavid/jenkins-jnlp-slave
+    maintainers:
+    - email: ohad.david@gmail.com
+      name: odavid
+  - name: my-bloody-jenkins
+    description: "A Helm chart for my-bloody-jenkins - a self configured jenkins docker\
+      \ image, based on Jenkins LTS. Inspired by https://github.com/kubernetes/charts/tree/master/stable/jenkins,\
+      \ but better suites https://github.com/odavid/my-bloody-jenkins\n"
+    version: 0.1.24
+    created: 2019-03-02T18:51:34.560Z
+    appVersion: 2.150.3-110
+    digest: 6641f882f7df9620a496662275201737a71d421195a68b064467bcaa267b4982
+    icon: https://wiki.jenkins-ci.org/download/attachments/2916393/logo.png
+    urls:
+    - my-bloody-jenkins-0.1.24.tgz
+    sources:
+    - https://github.com/odavid/my-bloody-jenkins
+    - https://github.com/odavid/my-bloody-jenkins-helm-chart
+    - https://github.com/odavid/jenkins-jnlp-slave
+    maintainers:
+    - email: ohad.david@gmail.com
+      name: odavid
+  - name: my-bloody-jenkins
+    description: "A Helm chart for my-bloody-jenkins - a self configured jenkins docker\
+      \ image, based on Jenkins LTS. Inspired by https://github.com/kubernetes/charts/tree/master/stable/jenkins,\
+      \ but better suites https://github.com/odavid/my-bloody-jenkins\n"
+    version: 0.1.23
+    created: 2019-03-02T12:39:50.847Z
+    appVersion: 2.150.3-110
+    digest: 9ede7505b0dcb9874ec835a4295e1fd1fc2ae6b164de36957850a7d384cb85e3
+    icon: https://wiki.jenkins-ci.org/download/attachments/2916393/logo.png
+    urls:
+    - my-bloody-jenkins-0.1.23.tgz
+    sources:
+    - https://github.com/odavid/my-bloody-jenkins
+    - https://github.com/odavid/my-bloody-jenkins-helm-chart
+    - https://github.com/odavid/jenkins-jnlp-slave
+    maintainers:
+    - email: ohad.david@gmail.com
+      name: odavid
+  - name: my-bloody-jenkins
+    description: "A Helm chart for my-bloody-jenkins - a self configured jenkins docker\
+      \ image, based on Jenkins LTS. Inspired by https://github.com/kubernetes/charts/tree/master/stable/jenkins,\
+      \ but better suites https://github.com/odavid/my-bloody-jenkins\n"
+    version: 0.1.22
+    created: 2019-02-21T20:18:08.974Z
+    appVersion: 2.150.3-109
+    digest: 2a85f73302857104dff0c804f99dfda8a6687986810ae825e5c777894871b4e2
+    icon: https://wiki.jenkins-ci.org/download/attachments/2916393/logo.png
+    urls:
+    - my-bloody-jenkins-0.1.22.tgz
+    sources:
+    - https://github.com/odavid/my-bloody-jenkins
+    - https://github.com/odavid/my-bloody-jenkins-helm-chart
+    - https://github.com/odavid/jenkins-jnlp-slave
+    maintainers:
+    - email: ohad.david@gmail.com
+      name: odavid
+  - name: my-bloody-jenkins
+    description: "A Helm chart for my-bloody-jenkins - a self configured jenkins docker\
+      \ image, based on Jenkins LTS. Inspired by https://github.com/kubernetes/charts/tree/master/stable/jenkins,\
+      \ but better suites https://github.com/odavid/my-bloody-jenkins\n"
+    version: 0.1.21
+    created: 2019-02-15T20:19:38.733Z
+    appVersion: 2.150.2-106
+    digest: d432dd52457fd6a50157c31316ab16bd7c5e9ef5fc2533e2aa4ee4495db503bb
+    icon: https://wiki.jenkins-ci.org/download/attachments/2916393/logo.png
+    urls:
+    - my-bloody-jenkins-0.1.21.tgz
+    sources:
+    - https://github.com/odavid/my-bloody-jenkins
+    - https://github.com/odavid/my-bloody-jenkins-helm-chart
+    - https://github.com/odavid/jenkins-jnlp-slave
+    maintainers:
+    - email: ohad.david@gmail.com
+      name: odavid
+  - name: my-bloody-jenkins
+    description: "A Helm chart for my-bloody-jenkins - a self configured jenkins docker\
+      \ image, based on Jenkins LTS. Inspired by https://github.com/kubernetes/charts/tree/master/stable/jenkins,\
+      \ but better suites https://github.com/odavid/my-bloody-jenkins\n"
+    version: 0.1.20
+    created: 2019-02-15T19:57:24.879Z
+    appVersion: 2.150.2-106
+    digest: 2ae226d6277c220249206d50dc07c298541e050370ecd3748f7b70c976711160
+    icon: https://wiki.jenkins-ci.org/download/attachments/2916393/logo.png
+    urls:
+    - my-bloody-jenkins-0.1.20.tgz
+    sources:
+    - https://github.com/odavid/my-bloody-jenkins
+    - https://github.com/odavid/my-bloody-jenkins-helm-chart
+    - https://github.com/odavid/jenkins-jnlp-slave
+    maintainers:
+    - email: ohad.david@gmail.com
+      name: odavid
+  - name: my-bloody-jenkins
+    description: "A Helm chart for my-bloody-jenkins - a self configured jenkins docker\
+      \ image, based on Jenkins LTS. Inspired by https://github.com/kubernetes/charts/tree/master/stable/jenkins,\
+      \ but better suites https://github.com/odavid/my-bloody-jenkins\n"
+    version: 0.1.19
+    created: 2019-02-15T14:59:08.846Z
+    appVersion: 2.150.2-106
+    digest: 6655d6ec47515f7f37806589b0e01ba8f386fbb68b76f2ffe11d35b3a288e897
+    icon: https://wiki.jenkins-ci.org/download/attachments/2916393/logo.png
+    urls:
+    - my-bloody-jenkins-0.1.19.tgz
+    sources:
+    - https://github.com/odavid/my-bloody-jenkins
+    - https://github.com/odavid/my-bloody-jenkins-helm-chart
+    - https://github.com/odavid/jenkins-jnlp-slave
+    maintainers:
+    - email: ohad.david@gmail.com
+      name: odavid
+  - name: my-bloody-jenkins
+    description: "A Helm chart for my-bloody-jenkins - a self configured jenkins docker\
+      \ image, based on Jenkins LTS. Inspired by https://github.com/kubernetes/charts/tree/master/stable/jenkins,\
+      \ but better suites https://github.com/odavid/my-bloody-jenkins\n"
+    version: 0.1.18
+    created: 2019-02-09T17:21:17.001Z
+    appVersion: 2.150.2-106
+    digest: 728bcde288503a1c012ae71509413c3963868c4c4a33ad7382960a87c1887acd
+    icon: https://wiki.jenkins-ci.org/download/attachments/2916393/logo.png
+    urls:
+    - my-bloody-jenkins-0.1.18.tgz
+    sources:
+    - https://github.com/odavid/my-bloody-jenkins
+    - https://github.com/odavid/my-bloody-jenkins-helm-chart
+    - https://github.com/odavid/jenkins-jnlp-slave
+    maintainers:
+    - email: ohad.david@gmail.com
+      name: odavid
+  - name: my-bloody-jenkins
+    description: "A Helm chart for my-bloody-jenkins - a self configured jenkins docker\
+      \ image, based on Jenkins LTS. Inspired by https://github.com/kubernetes/charts/tree/master/stable/jenkins,\
+      \ but better suites https://github.com/odavid/my-bloody-jenkins\n"
+    version: 0.1.17
+    created: 2019-02-08T08:39:46.281Z
+    appVersion: 2.150.2-105
+    digest: 02e559db4c24eb10a2c481417a9449b5ac643fed1728aabab95b27d7a095c89b
+    icon: https://wiki.jenkins-ci.org/download/attachments/2916393/logo.png
+    urls:
+    - my-bloody-jenkins-0.1.17.tgz
+    sources:
+    - https://github.com/odavid/my-bloody-jenkins
+    - https://github.com/odavid/my-bloody-jenkins-helm-chart
+    - https://github.com/odavid/jenkins-jnlp-slave
+    maintainers:
+    - email: ohad.david@gmail.com
+      name: odavid
+  - name: my-bloody-jenkins
+    description: "A Helm chart for my-bloody-jenkins - a self configured jenkins docker\
+      \ image, based on Jenkins LTS. Inspired by https://github.com/kubernetes/charts/tree/master/stable/jenkins,\
+      \ but better suites https://github.com/odavid/my-bloody-jenkins\n"
+    version: 0.1.16
+    created: 2019-02-03T20:50:12.556Z
+    appVersion: 2.150.2-104
+    digest: ee379b155ae9c944af2e20e277d2f0c31d9b3974e1ee70e69f2a6176e88d7348
+    icon: https://wiki.jenkins-ci.org/download/attachments/2916393/logo.png
+    urls:
+    - my-bloody-jenkins-0.1.16.tgz
+    sources:
+    - https://github.com/odavid/my-bloody-jenkins
+    - https://github.com/odavid/my-bloody-jenkins-helm-chart
+    - https://github.com/odavid/jenkins-jnlp-slave
+    maintainers:
+    - email: ohad.david@gmail.com
+      name: odavid
+  - name: my-bloody-jenkins
+    description: "A Helm chart for my-bloody-jenkins - a self configured jenkins docker\
+      \ image, based on Jenkins LTS. Inspired by https://github.com/kubernetes/charts/tree/master/stable/jenkins,\
+      \ but better suites https://github.com/odavid/my-bloody-jenkins.\n"
+    version: 0.1.15
+    created: 2019-01-15T18:21:11.268Z
+    appVersion: 2.150.1-100
+    digest: c9bb0b3090d1d759ee885b327a33687d02d438678f6abc38275e636533c65bca
+    icon: https://wiki.jenkins-ci.org/download/attachments/2916393/logo.png
+    urls:
+    - my-bloody-jenkins-0.1.15.tgz
+    sources:
+    - https://github.com/odavid/my-bloody-jenkins
+    - https://github.com/odavid/my-bloody-jenkins-helm-chart
+    - https://github.com/odavid/jenkins-jnlp-slave
+    maintainers:
+    - email: ohad.david@gmail.com
+      name: odavid
+  - name: my-bloody-jenkins
+    description: "A Helm chart for my-bloody-jenkins - a self configured jenkins docker\
+      \ image, based on Jenkins LTS. Inspired by https://github.com/kubernetes/charts/tree/master/stable/jenkins,\
+      \ but better suites https://github.com/odavid/my-bloody-jenkins.\n"
+    version: 0.1.14
+    created: 2019-01-01T10:58:42.177Z
+    appVersion: 2.150.1-96
+    digest: e350209f034fcfcc580381412cec0589d64bdb323eb983a86c9e5888463a1a14
+    urls:
+    - my-bloody-jenkins-0.1.14.tgz
+    sources:
+    - https://github.com/odavid/my-bloody-jenkins
+    - https://github.com/odavid/my-bloody-jenkins-helm-chart
+    - https://github.com/odavid/jenkins-jnlp-slave
+    maintainers:
+    - email: ohad.david@gmail.com
+      name: odavid
+  - name: my-bloody-jenkins
+    description: "A Helm chart for my-bloody-jenkins - a self configured jenkins docker\
+      \ image, based on Jenkins LTS. Inspired by https://github.com/kubernetes/charts/tree/master/stable/jenkins,\
+      \ but better suites https://github.com/odavid/my-bloody-jenkins.\n"
+    version: 0.1.13
+    created: 2018-12-09T14:35:00.231Z
+    appVersion: 2.150.1-93
+    digest: b06e7f17b4cec58fc69e3990202cd9ad17771431d5f00f81f49ae84949c4e1c7
+    urls:
+    - my-bloody-jenkins-0.1.13.tgz
+    sources:
+    - https://github.com/odavid/my-bloody-jenkins
+    - https://github.com/odavid/my-bloody-jenkins-helm-chart
+    - https://github.com/odavid/jenkins-jnlp-slave
+    maintainers:
+    - email: ohad.david@gmail.com
+      name: odavid
+  - name: my-bloody-jenkins
+    description: "A Helm chart for my-bloody-jenkins - a self configured jenkins docker\
+      \ image, based on Jenkins LTS. Inspired by https://github.com/kubernetes/charts/tree/master/stable/jenkins,\
+      \ but better suites https://github.com/odavid/my-bloody-jenkins.\n"
+    version: 0.1.12
+    created: 2018-12-08T19:50:40.406Z
+    appVersion: 2.150.1-93
+    digest: 4c144359b045172024e4033d12a5e43590ae26b5d84c50f78a127156c326274b
+    urls:
+    - my-bloody-jenkins-0.1.12.tgz
+    sources:
+    - https://github.com/odavid/my-bloody-jenkins
+    - https://github.com/odavid/my-bloody-jenkins-helm-chart
+    - https://github.com/odavid/jenkins-jnlp-slave
+    maintainers:
+    - email: ohad.david@gmail.com
+      name: odavid
+  - name: my-bloody-jenkins
+    description: "A Helm chart for my-bloody-jenkins - a self configured jenkins docker\
+      \ image, based on Jenkins LTS. Inspired by https://github.com/kubernetes/charts/tree/master/stable/jenkins,\
+      \ but better suites https://github.com/odavid/my-bloody-jenkins.\n"
+    version: 0.1.11
+    created: 2018-11-24T07:58:43.159Z
+    appVersion: 2.138.3-90
+    digest: 9886e715bb2810d0ddecbb8f4d30a37cc703b64558c1e7bf942106ef1d75872a
+    urls:
+    - my-bloody-jenkins-0.1.11.tgz
+    sources:
+    - https://github.com/odavid/my-bloody-jenkins
+    - https://github.com/odavid/my-bloody-jenkins-helm-chart
+    - https://github.com/odavid/jenkins-jnlp-slave
+    maintainers:
+    - email: ohad.david@gmail.com
+      name: odavid
+  - name: my-bloody-jenkins
+    description: "A Helm chart for my-bloody-jenkins - a self configured jenkins docker\
+      \ image, based on Jenkins LTS. Inspired by https://github.com/kubernetes/charts/tree/master/stable/jenkins,\
+      \ but better suites https://github.com/odavid/my-bloody-jenkins.\n"
+    version: 0.1.10
+    created: 2018-11-13T11:15:18.154Z
+    appVersion: 2.138.3-88
+    digest: 4810d27ae71aad4236ff821df3b338718c201c6c916edbb8d7bd0f37b7fa60c3
+    urls:
+    - my-bloody-jenkins-0.1.10.tgz
+    sources:
+    - https://github.com/odavid/my-bloody-jenkins
+    - https://github.com/odavid/my-bloody-jenkins-helm-chart
+    - https://github.com/odavid/jenkins-jnlp-slave
+    maintainers:
+    - email: ohad.david@gmail.com
+      name: odavid
+  - name: my-bloody-jenkins
+    description: "A Helm chart for my-bloody-jenkins - a self configured jenkins docker\
+      \ image, based on Jenkins LTS. Inspired by https://github.com/kubernetes/charts/tree/master/stable/jenkins,\
+      \ but better suites https://github.com/odavid/my-bloody-jenkins.\n"
+    version: 0.1.9
+    created: 2018-10-12T08:07:09.491Z
+    appVersion: v2.138.2-79
+    digest: 3a731f2222d4e2bab6f4523a0a29c5341ec23e87e78dc51a76ad32af9bc08914
+    urls:
+    - my-bloody-jenkins-0.1.9.tgz
+    sources:
+    - https://github.com/odavid/my-bloody-jenkins
+    - https://github.com/odavid/my-bloody-jenkins-helm-chart
+    - https://github.com/odavid/jenkins-jnlp-slave
+    maintainers:
+    - email: ohad.david@gmail.com
+      name: odavid
+  - name: my-bloody-jenkins
+    description: "A Helm chart for my-bloody-jenkins - a self configured jenkins docker\
+      \ image, based on Jenkins LTS. Inspired by https://github.com/kubernetes/charts/tree/master/stable/jenkins,\
+      \ but better suites https://github.com/odavid/my-bloody-jenkins.\n"
+    version: 0.1.8
+    created: 2018-10-05T23:01:07.785Z
+    appVersion: v2.138.1-76
+    digest: 700d674380cbd39ef762f41e55c3fdf7080b51c3dccb79ccd424bae30df26116
+    urls:
+    - my-bloody-jenkins-0.1.8.tgz
+    sources:
+    - https://github.com/odavid/my-bloody-jenkins
+    - https://github.com/odavid/my-bloody-jenkins-helm-chart
+    - https://github.com/odavid/jenkins-jnlp-slave
+    maintainers:
+    - email: ohad.david@gmail.com
+      name: odavid
+  - name: my-bloody-jenkins
+    description: "A Helm chart for my-bloody-jenkins - a self configured jenkins docker\
+      \ image, based on Jenkins LTS. Inspired by https://github.com/kubernetes/charts/tree/master/stable/jenkins,\
+      \ but better suites https://github.com/odavid/my-bloody-jenkins.\n"
+    version: 0.1.7
+    created: 2018-10-05T08:22:33.975Z
+    appVersion: v2.138.1-76
+    digest: fe5b44d0785f4f616367c8ec3ff6b2ecae0b7b2a211d5a545190829b55872ecc
+    urls:
+    - my-bloody-jenkins-0.1.7.tgz
+    sources:
+    - https://github.com/odavid/my-bloody-jenkins
+    - https://github.com/odavid/my-bloody-jenkins-helm-chart
+    - https://github.com/odavid/jenkins-jnlp-slave
+    maintainers:
+    - email: ohad.david@gmail.com
+      name: odavid
+  - name: my-bloody-jenkins
+    description: "A Helm chart for my-bloody-jenkins - a self configured jenkins docker\
+      \ image, based on Jenkins LTS. Inspired by https://github.com/kubernetes/charts/tree/master/stable/jenkins,\
+      \ but better suites https://github.com/odavid/my-bloody-jenkins.\n"
+    version: 0.1.6
+    created: 2018-10-05T07:36:22.252Z
+    appVersion: v2.138.1-76
+    digest: 56040042ced779e0c82ab37372c4ed46c20a732210320ac4e3d73ac8dbc1c618
+    urls:
+    - my-bloody-jenkins-0.1.6.tgz
+    sources:
+    - https://github.com/odavid/my-bloody-jenkins
+    - https://github.com/odavid/my-bloody-jenkins-helm-chart
+    - https://github.com/odavid/jenkins-jnlp-slave
+    maintainers:
+    - email: ohad.david@gmail.com
+      name: odavid
+  - name: my-bloody-jenkins
+    description: "A Helm chart for my-bloody-jenkins - a self configured jenkins docker\
+      \ image, based on Jenkins LTS. Inspired by https://github.com/kubernetes/charts/tree/master/stable/jenkins,\
+      \ but better suites https://github.com/odavid/my-bloody-jenkins.\n"
+    version: 0.1.5
+    created: 2018-10-04T06:32:43.841Z
+    appVersion: 2.138.1-74
+    digest: 21ae208dbdb6852742fd7b81bd6dfa295c062a16541f2bf4f4854fc8dd130dcb
+    urls:
+    - my-bloody-jenkins-0.1.5.tgz
+    sources:
+    - https://github.com/odavid/my-bloody-jenkins
+    - https://github.com/odavid/my-bloody-jenkins-helm-chart
+    - https://github.com/odavid/jenkins-jnlp-slave
+    maintainers:
+    - email: ohad.david@gmail.com
+      name: odavid
+  - name: my-bloody-jenkins
+    description: "A Helm chart for my-bloody-jenkins - a self configured jenkins docker\
+      \ image, based on Jenkins LTS. Inspired by https://github.com/kubernetes/charts/tree/master/stable/jenkins,\
+      \ but better suites https://github.com/odavid/my-bloody-jenkins.\n"
+    version: 0.1.4
+    created: 2018-09-29T16:17:49.897Z
+    appVersion: 2.138.1-74
+    digest: 9e22633011e245ed375add2442a1e1e35e18e398cf9871bb2615c2c5fdfaec4b
+    urls:
+    - my-bloody-jenkins-0.1.4.tgz
+    sources:
+    - https://github.com/odavid/my-bloody-jenkins
+    - https://github.com/odavid/my-bloody-jenkins-helm-chart
+    - https://github.com/odavid/jenkins-jnlp-slave
+    maintainers:
+    - email: ohad.david@gmail.com
+      name: odavid
+  - name: my-bloody-jenkins
+    description: "A Helm chart for my-bloody-jenkins - a self configured jenkins docker\
+      \ image, based on Jenkins LTS. Inspired by https://github.com/kubernetes/charts/tree/master/stable/jenkins,\
+      \ but better suites https://github.com/odavid/my-bloody-jenkins.\n"
+    version: 0.1.3
+    created: 2018-09-27T19:01:59.483Z
+    appVersion: 2.138.1-74
+    digest: 301851c2d4c1c59edf4e57c3c5e483ca93862f229d7776194cae0d3878482e0c
+    urls:
+    - my-bloody-jenkins-0.1.3.tgz
+    sources:
+    - https://github.com/odavid/my-bloody-jenkins
+    - https://github.com/odavid/my-bloody-jenkins-helm-chart
+    - https://github.com/odavid/jenkins-jnlp-slave
+    maintainers:
+    - email: ohad.david@gmail.com
+      name: odavid
+  - name: my-bloody-jenkins
+    description: "A Helm chart for my-bloody-jenkins - a self configured jenkins docker\
+      \ image, based on Jenkins LTS. Inspired by https://github.com/kubernetes/charts/tree/master/stable/jenkins,\
+      \ but better suites https://github.com/odavid/my-bloody-jenkins.\n"
+    version: 0.1.2
+    created: 2018-08-25T18:39:03.053Z
+    appVersion: 2.121.3-69
+    digest: a75d0e659053f0a8500611ad7013963c3bb770db59f779f0d50a5fa62681d848
+    urls:
+    - my-bloody-jenkins-0.1.2.tgz
+    sources:
+    - https://github.com/odavid/my-bloody-jenkins
+    - https://github.com/odavid/my-bloody-jenkins-helm-chart
+    - https://github.com/odavid/jenkins-jnlp-slave
+    maintainers:
+    - email: ohad.david@gmail.com
+      name: odavid
+  - name: my-bloody-jenkins
+    description: "A Helm chart for my-bloody-jenkins - a self configured jenkins docker\
+      \ image, based on Jenkins LTS. Inspired by https://github.com/kubernetes/charts/tree/master/stable/jenkins,\
+      \ but better suites https://github.com/odavid/my-bloody-jenkins.\n"
+    version: 0.1.1
+    created: 2018-07-15T14:35:20.608Z
+    appVersion: 2.121.1-62
+    digest: 765322169701f08da9a6b99383ee81945524a543643e29255a152000aa2f765c
+    urls:
+    - my-bloody-jenkins-0.1.1.tgz
+    sources:
+    - https://github.com/odavid/my-bloody-jenkins
+    - https://github.com/odavid/my-bloody-jenkins-helm-chart
+    - https://github.com/odavid/jenkins-jnlp-slave
+    maintainers:
+    - email: ohad.david@gmail.com
+      name: odavid
+generated: 2021-01-26T21:54:16.062Z
