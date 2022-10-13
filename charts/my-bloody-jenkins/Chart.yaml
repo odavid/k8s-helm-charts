@@ -1,7 +1,7 @@
 ---
 apiVersion: v1
 name: my-bloody-jenkins
-version: 0.1.196
+version: 0.1.197
 appVersion: "2.361.2-286"
 icon: https://raw.githubusercontent.com/odavid/k8s-helm-charts/master/charts/my-bloody-jenkins/logo/jenkins-logo.png
 description: >
