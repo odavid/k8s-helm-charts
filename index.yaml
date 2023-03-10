@@ -2,6 +2,26 @@ apiVersion: v1
 entries:
   my-bloody-jenkins:
   - apiVersion: v1
+    appVersion: 2.387.1-296
+    created: "2023-03-10T08:32:55.359505177Z"
+    description: 'A Helm chart for my-bloody-jenkins - a self configured jenkins docker
+      image, based on Jenkins LTS. Inspired by https://github.com/kubernetes/charts/tree/master/stable/jenkins,
+      but better suites https://github.com/odavid/my-bloody-jenkins '
+    digest: 335b82d0b1152c9dfd120edf4f6b7ae37b1bee6fcced3e07daf7e667ca50a351
+    home: https://github.com/odavid/my-bloody-jenkins
+    icon: https://raw.githubusercontent.com/odavid/k8s-helm-charts/master/charts/my-bloody-jenkins/logo/jenkins-logo.png
+    maintainers:
+    - email: ohad.david@gmail.com
+      name: odavid
+    name: my-bloody-jenkins
+    sources:
+    - https://github.com/odavid/my-bloody-jenkins
+    - https://github.com/odavid/k8s-helm-charts/tree/master/charts/my-bloody-jenkins
+    - https://github.com/odavid/jenkins-jnlp-slave
+    urls:
+    - https://github.com/odavid/k8s-helm-charts/releases/download/my-bloody-jenkins-0.1.207/my-bloody-jenkins-0.1.207.tgz
+    version: 0.1.207
+  - apiVersion: v1
     appVersion: 2.387.1-295
     created: "2023-03-10T08:13:07.062994069Z"
     description: 'A Helm chart for my-bloody-jenkins - a self configured jenkins docker
@@ -3805,4 +3825,4 @@ entries:
     urls:
     - my-bloody-jenkins-0.1.1.tgz
     version: 0.1.1
-generated: "2023-03-10T08:13:07.064871465Z"
+generated: "2023-03-10T08:32:55.36203803Z"
