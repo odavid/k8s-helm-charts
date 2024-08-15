@@ -10,6 +10,13 @@ image:
 
 ########################################################
 ## Exposing service
+jenkinsContainer:
+  httpPort: 8080
+  jnlpPort: 50000
+  sshdPort: 16022
+  
+########################################################
+## Exposing service
 service:
   # type: ClusterIP
   type: LoadBalancer

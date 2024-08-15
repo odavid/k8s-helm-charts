@@ -47,15 +47,15 @@ Create pvc claim names
 Define default values
 */}}
 {{- define "my-bloody-jenkins.httpPort" -}}
-{{- 8080 -}}
+{{- .Values.jenkinsContainer.httpPort -}}
 {{- end -}}
 
 {{- define "my-bloody-jenkins.jnlpPort" -}}
-{{- 50000 -}}
+{{- .Values.jenkinsContainer.jnlpPort -}}
 {{- end -}}
 
 {{- define "my-bloody-jenkins.sshdPort" -}}
-{{- 16022 -}}
+{{- .Values.jenkinsContainer.sshdPort -}}
 {{- end -}}
 
 {{- define "my-bloody-jenkins.persistentVolumeClaimName" -}}
