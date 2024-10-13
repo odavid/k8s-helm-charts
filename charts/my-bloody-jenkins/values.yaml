@@ -3,7 +3,7 @@
 ## Override image
 image:
   repository: odavid/my-bloody-jenkins
-  tag: 2.426.3-305
+  tag: 2.462.3-306
   pullPolicy: IfNotPresent
   imagePullSecrets:
 ########################################################
@@ -14,7 +14,7 @@ jenkinsContainer:
   httpPort: 8080
   jnlpPort: 50000
   sshdPort: 16022
-  
+
 ########################################################
 ## Exposing service
 service:
